@@ -1,7 +1,7 @@
 # LoreItemTooltips
 hi this is very early version
 
-this adds flavour text to most of the items (in Retail) I could find in the following zones:
+this adds flavour text to most of the quest items (in Retail) I could find in the following zones:
 <details>
 	<summary>Burning Crusade:</summary>
   
