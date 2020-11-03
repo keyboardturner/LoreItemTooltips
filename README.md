@@ -1,6 +1,9 @@
 # LoreItemTooltips
 hi this is very early version
 
+This effects the following type of items:
+Quest items, items that start quests, some cooking recipes, and learnable mounts. Many of these items can be found / filtered [here](https://www.wowhead.com/items?filter=7:5:166:16;2:1:2:6455;0:0:0:0#items;0+1+18).
+
 this adds flavour text to most of the quest items (in Retail) I could find in the following zones:
 <details>
 	<summary>Burning Crusade:</summary>
