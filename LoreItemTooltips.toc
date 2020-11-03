@@ -2,7 +2,7 @@
 ## Title: Lore Item Tooltips
 ## Notes: Adds lore to various quest items around the world.
 ## Author: Keyboardturner
-## Version: 0.0.1
+## Version: 0.0.2
 ## SavedVariables: litR, litG, litB
 
 LoreItemTooltips.lua
