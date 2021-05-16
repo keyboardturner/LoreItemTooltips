@@ -1,6 +1,12 @@
 local match = string.match
 local strsplit = strsplit
 
+LitDB = LitDB or {
+	R = 1,
+	G = 0.82,
+	B = 0,
+}
+
 local ItemIdTable = {
 
 --Draenei
@@ -43,9 +49,9 @@ local ItemIdTable = {
 	["24049"] = "\"Named after the nearby veridian dragons, the mushroom emits a green glow.\"", -- Ysera's Tear
 	["23846"] = "\"The box is dirtied and ancient.\"", -- Nolkai's Box
 	["24237"] = "\"Though battered and blooded, the pages are legible.\"", -- Galaen's Journal
+	["24132"] = "\"The words written are wobbly and shaky.\"", -- A Letter from the Admiral
 
 --Blood Elf
-
 	--Eversong
 	["22487"] = "\"Having led the siege upon Sunsail Anchorage, Aldaron's deformed head emanates fel energy.\"", -- Aldaron's Head
 	["22414"] = "\"The book is waterlogged and ruined.\"", -- Antheol's Elemental Grimoire
@@ -144,7 +150,9 @@ local ItemIdTable = {
 	["28024"] = "\"A request for aid against the Burning Legion.\"", -- Orion's Report
 	["23268"] = "\"Nothing like a little alchemical ingredients to give it some extra flavor!\"", -- Purification Mixture
 	["67419"] = "\"Just a little bent and rusty, but otherwise usable.\"", -- Salvaged Metal
-	["67420"] = "\"Just a little burnt and charred, but otherwise usable.\"", -- Salvage Wood
+	["25912"] = "\"Just a little bent and rusty, but otherwise usable.\"", -- Salvaged Metal
+	["67420"] = "\"Just a little burnt and charred, but otherwise usable.\"", -- Salvaged Wood
+	["25911"] = "\"Just a little burnt and charred, but otherwise usable.\"", -- Salvaged Wood
 	["29478"] = "\"Appears to contain the powers of nature within.\"", -- Seed of Revitalization
 	["23645"] = "\"To be wise is to keep an open mind.\"", -- Seer's Relic
 	["29501"] = "\"Jagged and fel-infused metal.\"", -- Sha'naar Key
@@ -180,7 +188,7 @@ local ItemIdTable = {
 	["24383"] = "\"A soft, warm verdant glow. Excellent as a light source.\"", -- Fulgor Spore
 	["24411"] = "\"A bunch of things and stuff inside which belong to Ikeyen.\"", -- Ikeyen's Belongings
 	["24355"] = "\"The rage of the earth is within. It's hard to think these little things will grow to be bigger than yourself.\"", -- Ironvine Seeds
-	["24280"] = "\"Despite being scaling, it almost feels fake and elastic.\"", -- Naga Claws
+	["24280"] = "\"Despite being scaled, it almost feels fake and elastic.\"", -- Naga Claws
 	["29480"] = "\"The animal flesh appears unusual and dehydrated.\"", -- Parched Hydra Sample
 	["25491"] = "\"Handle with care.\"", -- Salvaged Spore Sacs
 	["24426"] = "\"And to think you'll have to mix this in a drink... Yum!\"", -- Sporebat Eye
@@ -188,8 +196,425 @@ local ItemIdTable = {
 	["29481"] = "\"Once a lake, the Dead Mire now suffocates the wildlife.\"", -- Withered Bog Lord Sample
 	["24382"] = "\"A progress report on Swamprat Post.\"", -- Zurai's Report
 
+
 	-- does not show up in zone filter
 	["24401"] = "\"Can be handed in to Lauranna Thar'well at the Cenarion Refuge, Zangarmarsh.\"", -- Unidentified Plant Parts
+	["24330"] = "\"A vast plumbing system that seems centered in the middle of Serpent Lake.\"", -- Drain Schematics
+	["24245"] = "\"Can be exchanged for goods and reputation at Sporeggar.\"", -- Glowcap
+	["24449"] = "\"Can be exchanged for reputation at Sporeggar.\"", -- Fertile Spores
+	["24290"] = "\"You think you can see a small creature inside.\"", -- Mature Spore Sac
+	["24291"] = "\"Proof of the slaying a bog lord.\"", -- Bog Lord Tendril
+
+	--Terokkar Forest
+	["34865"] = "\"Often eating fishing bait before fully taking a bite, this one is especially fat.\"", -- Blackfin Darter
+	["31344"] = "\"Although it seemingly has ties to the Spirits, you aren't quite sure what the connection is.\"", -- Ceremonial Incense
+	["31705"] = "\"The key looks almost as though it'll break if you put it in any lock.\"", -- Derelict Caravan Chest Key
+	["31709"] = "\"Belonged to the patriarch Arunen.\"", -- Drape of Arunen
+	["31811"] = "\"This mysterious artifact pulses with barely contained power.\"", -- Dread Relic
+	["31826"] = "\"Somehow the dwarf wanted this over clefthoof meat.\"", -- Enormous Bone Worm Organs
+	["32848"] = "\"Don't drop it!\"", -- Explosives Package
+	["32822"] = "\"Completely pristine, perfect for a soul cannon.\"", -- Flawless Arcane Essence
+	["25769"] = "\"Despite Sal'salabim killing him, he didn't take the gold in the first place.\"", -- Floon's Debt
+	["31710"] = "\"Belonged to the patriarch K'alen.\"", -- Gavel of K'alen
+	["32687"] = "\"There's a bunch of weird clunky sounding stuff inside.\"", -- Hazzik's Package
+	["31814"] = "\"Stinks of rotting flesh and death.\"", -- Mature Bone Sifter Carcass
+	["32834"] = "\"They behave surprisingly well despite their appearance.\"", -- Nether Ray Cage
+	["25891"] = "\"Covered in a coat of slime, it would otherwise wriggle away if it were alive. The nearby basilisks appear to hunt these fish. Their scales waver with light.\"", -- Pristine Shimmerscale Eel
+	["34254"] = "\"Very prickly and should be handled with care. You're not sure what it's used for, but it seems in high demand.\"", -- Razorthorn Root
+	["31610"] = "\"The rod is blessed by the Naaru, A'dal.\"", -- Rod of Purification
+	["31708"] = "\"Belonged to the patriarch Atalor.\"", -- Scroll of Atalor
+	["31769"] = "\"The torch, when lit, is brimming with righteous holyfire.\"", -- Sha'tari Torch
+	["32741"] = "\"This sort of disguise would only work on somebody with poor vision.\"", -- Shabby Arakkoa Disguise
+	["32406"] = "\"Handle with care.\"", -- Skyguard Blasting Charges
+	["25815"] = "\"Can be used to bring cure blindness.\"", -- Stonegazer's Blood
+	["28677"] = "\"Necromantic runes interspersed by a list of names skitter across the pages.\"", -- The Book of the Dead
+	["24415"] = "\"Sealed with a holy wax.\"", -- Vindicator Idaar's Letter
+
+	--Aldor
+	["25817"] = "\"Before the doom of Draenor, the Draenei had many holy altars in Terokkar. Now taken over by the magic of Arakkoa, these holy sites must be cleansed.\"", -- Blessed Vial
+
+
+
+	-- does not show up in zone filter
+	["25768"] = "\"What, you thought the sporelings only dealt in mushrooms?\"", -- Coosh'coosh's Debt
+	["25767"] = "\"You don't want to know where this was kept.\"", -- Raliq's Debt
+
+	--Nagrand
+	["28668"] = "\"It took a lot of meat and hide to find this.\"", -- Aged Clefthoof Blubber
+	["25460"] = "\"Filled with medical supplies and food.\"", -- Bleeding Hollow Supply Crate
+	["25490"] = "\"Crude, yet somehow effective at unlocking cages.\"", -- Boulderfist Key
+	["25648"] = "\"Looks the same as the other Boulderfist keys, but more \"", -- Cho'war's Key
+	["24473"] = "\"Food for Gordawg, though something feels sickly about it.\"", -- Enraged Crusher Core
+	["28667"] = "\"The top of the beak hooks downward, indicative of a raptorial beak.\"", -- Flawless Greater Windroc Beak
+	["24501"] = "\"It's fairly heavy and you can't tell the difference between this and a regular old rock.\"", -- Gordawg's Boulder
+	["24503"] = "\"To be eaten by Gordawg.\"", -- Gurok's Earthen Head
+	["25590"] = "\"Large, rocky protrusions extend from the head. A single large eye lacks life.\"", -- Head of Cho'war
+	["30853"] = "\"Used to once carve a scar into the demon Xeleth.\"", -- Imbued Silver Spear
+	["25554"] = "\"The craftsmanship of orcish weapons are stained by fel magic.\"", -- Kil'sorrow Armaments
+	["25555"] = "\"Sure to draw the ire of the Warmaul ogres upon the Kil'sorrow.\"", -- Kil'sorrow Banner
+	["25458"] = "\"Place near the pyres of the Burning Blade Ruins.\"", -- Mag'har Battle Standard
+	["28665"] = "\"The eye alone is almost as big as you.\"", -- Mountain Gronn Eyeball
+	--["35233"] = "\"\"", -- Multiphase Spectrographic Goggles
+	["25509"] = "\"Here we go again.\"", -- Northwind Cleft Key
+	["25647"] = "\"The supplies are very heavy and cumbersome.\"", -- Telaar Supply Crate
+	["25751"] = "\"Covered in soot and smells of rotten eggs.\"", -- The Master Planner's Blueprints
+	["24560"] = "\"*Not guaranteed to work on anything.\n**No environments tested.\"", -- Torch of Liquid Fire
+	["25604"] = "\"Shaped to perfection with rocks, no doubt.\"", -- Warmaul Prison Key
+	["34868"] = "\"Fat from eating so much bait with a notable scar on the side of the body.\"", -- World's Largest Mudfish
+
+	-- does not show up in zone filter
+	--[""] = "\"\"", -- 
+
+	--Blade's Edge Mountains
+	["32696"] = "\"...Banish some demons, banish some more, 98 banished demons in the door!\"", -- Banishing Crystal
+	["31135"] = "\"Not the favored method of battle against the ogres.\"", -- Baron Sablemane's Poison
+	--["31129"] = "\"\"", -- Blackwhelp Net
+	["30353"] = "\"Enemies of the Bladespire, it will be interesting to see how the Bloodmaul react to this brew.\"", -- Bloodmaul Brutebane Keg
+	["31132"] = "\"The most poisonous creatures in Outland.\"", -- Crust Burster Venom Gland
+	["30650"] = "\"Carries 4 distinct wands.\"", -- Dertok's Wand Case
+	--["31763"] = "\"\"", -- Druid Signal
+	["31994"] = "\"The tablet constantly shifts with arcane Ethereal runes.\"", -- Ethereum Key Tablet - Alpha
+	["31809"] = "\"Though it seems like a generic piece of wood, you feel as though it's alive\"", -- Evergrove Wand
+	["30530"] = "\"A large amount is needed to cast spells from the Lash'an Tome.\"", -- Fistful of Feathers
+	["30175"] = "\"Crafted from the dust of fey drakes.\"", -- Gor'drek's Ointment
+	["30706"] = "\"Holds an otherworldly power capable of controlling the souls of arakkoa. Alternatively, it can be used to understand Ravenspeech.\"", -- Harbinger's Pendant
+	["31350"] = "\"It's time for a wild boar chase.\"", -- Huffer's Whistle
+	["30792"] = "\"Delicate, intricate, and soft, these wings glitter with rainbow hues when reflecting different angles of light.\"", -- Iridescent Wing
+	["31300"] = "\"Once a grove to the ancients, it has all but burned to annihilation.\"", -- Ironroot Seeds
+	["31141"] = "\"Through a communion of nature, the marmots will adhere to you. Don't let them down!\"", -- Kodohide Drum
+	["26048"] = "\"Sealed, for Kialon's eyes alone.\"", -- Letter to Kialon
+	["31740"] = "\"To Watcher Moonshade.\"", -- Meeting Note
+	["30852"] = "\"Who you gonna call?\"", -- Multi-Spectrum Light Trap
+	["31807"] = "\"Imbued with the power of Nature magic, and lethal to the Burning Legion.\"", -- Naturalized Ammunition
+	["31124"] = "\"You're not quite sure how this works. Actually, you not sure if even the gnomes know how it works.\"", -- Nether-Weather Vane
+	["31668"] = "\"Holding it, small specs of magic seem to be drawn towards the totem.\"", -- Orb Collecting Totem
+	["30701"] = "\"Five should do the trick.\"", -- Oscillating Frequency Scanners
+	["30529"] = "\"A large amount is needed to cast spells from the Lash'an Tome.\"", -- Plucked Lashh'an Feather
+	["30656"] = "\"What could possibly go wrong?\"", -- Protovoltaic Magneto Collector
+	["30818"] = "\"Letting yourself get struck by lightning? Nothing to worry about!\"", -- Repolarized Magneto Sphere
+	["31146"] = "\"The design is solid, sturdy, and yet elegant in its own right.\"", -- Rexxar's Battle Horn
+	["31128"] = "\"Crafted specially for Rexxar's hawk, Spirit.\"", -- Rexxar's Whistle
+	["29952"] = "\"Imbued with the force of nature, this tree bough will create a small storm to hasten treant growth.\"", -- Rina's Bough
+	["30251"] = "\"Gathered from the naturala dust of fey drakes, its magical properties will greatly weakaen dire wolves.\"", -- Rina's Diminution Powder
+	["31808"] = "\"A small, swirling rune seems to appear as though you can physically press it on the ring.\"", -- Sablemane's Signet
+	--["31403"] = "\"\"", -- Sablemane's Sleeping Powder
+	["31752"] = "\"From the essence of dragon fire, it's hot to the touch.\"", -- Sablemane's Trap
+	["31827"] = "\"Still hot to the touch!\"", -- Sablemane's Trap
+	["30849"] = "\"It shocks you whenever you touch it.\"", -- Scalewing Lightning Gland
+	["30791"] = "\"Useful for a variety of applications and always in demand.\"", -- Silkwing Cocoon
+	--["32456"] = "\"\"", -- Skyguard Bombs
+	["31663"] = "\"You can feel the totem tug at your core.\"", -- Spirit Calling Totems
+	["31144"] = "\"Crafted specially for Rexxar's hawk, Spirit.\"", -- Spirit's Whistle
+	["30539"] = "\"Just sign here, don't worry about it.\"", -- Tally's Waiver (Signed)
+	["30540"] = "\"Just sign here, don't worry about it.\"", -- Tally's Waiver (Unsigned)
+	["30742"] = "\"Seems to be gathering data somehow. Possibly.\"", -- Temporal Phase Modulator
+	["32467"] = "\"It veritably seethes with malevolence.\"", -- Vim'gol's Grimoire
+	["30479"] = "\"Seems to be imbued with very strong voodoo.\"", -- Wicked Strong Fetish
+	["32698"] = "\"Perfect for lassoing aether rays.\"", -- Wrangling Rope
+
+	-- does not show up in zone filter
+
+	["31363"] = "\"A gronn-shaped token, possibly useful for... something.\"", -- Gorgrom's Favor
+
+	--[""] = "\"\"", -- 
+
+	--Netherstorm
+	["29331"] = "\"\"", -- Annals of Kirin'Var
+	["29411"] = "\"The crystal hums with a resonating magic and seems quite cool to the touch.\"", -- Ara Access Crystal [Rheä-WyrmrestAccord]
+	["29366"] = "\"The glowing crystal is quite cool to the touch.\"", -- B'naar Access Crystal
+	["28769"] = "\"The stone glows with a vibrant deep blue magic.\"", -- The Keystone
+	["28580"] = "\"Details of an emergency shutdown to permanently disable naaru constructs.\"", -- B'naar Console Transcription
+	["28376"] = "\"The roster is full of a lot of incredibly long names...\"", -- B'naar Personnel Roster
+	["29796"] = "\"The stone seems to have been carved with utmost care. It glows with magical runes.\"", -- Socrethar's Teleportation Stone
+
+
+	-- does not show up in zone filter
+	--[""] = "\"\"", -- 
+
+	["28336"] = "\"Covered with hand-copied stories, accompanied by colorful illustrations\"", -- Belmara's Tome
+	["28351"] = "\"Exceptional quality, finely crafted and perfectly balanced for a battle-mage. The seal of the Kirin Tor and the name 'Dathric' are engraved into the weapon's pommel.\"", -- Dathric's Blade
+	["28352"] = "\"Of high elven craftsmanship and richly tailored, even by the standards of the Kirin Tor. The symbols and characters sewn into the cloak's fabric hold no meaning for you, but clearly imbue the garment with magical properties\"", -- Luminrath's Mantle
+	["28353"] = "\"No magical properties are bound to this item beyond a faint urge to dance\"", -- Cohlien's Cap
+	["28359"] = "\"After a number of pages of mind-numbing 'science' that seem to make absolutely no sense, there is a note scribbled at the bottom of the last page...\"", -- Netherologist's Notes
+	["28369"] = "\"It's set to 'Kill' though there don't seem to be any other settings.\"", -- Battery Recharging Blaster
+	["28472"] = "\"Full of spells and incantations.\"", -- Krasus' Compendium - Chapter 1
+	["28473"] = "\"Full of spells and incantations.\"", -- Krasus' Compendium - Chapter 2
+	["28474"] = "\"Full of spells and incantations.\"", -- Krasus' Compendium - Chapter 3
+	["28475"] = "\"Able to decode Krasus' Compendium.\"", -- Heliotrope Oculus
+	["28547"] = "\"Changes the form of an Elemental's power into a solid substance.\"", -- Elemental Power Extractor
+	["28550"] = "\"Not just any fire, but the fire of the Sunfury. Definitely more effective on their own tents and ballistas somehow.\"", -- Flaming Torch
+	["28571"] = "\"Absolutely barren.... \"", -- Blank Scroll
+	["28607"] = "\"The uniform is enchanted, allowing your form to create the perfect illusion.\"", -- Sunfury Disguise
+	--["28634"] = "\"\"", -- Scrap Reaver X6000 Controller
+	["28635"] = "\"Maybe the bit of blood on the robe melds into its dark red coloring?\"", -- Sunfury Arcanist Robes
+	["28636"] = "\"Surprisingly form-fitting.\"", -- Sunfury Researcher Gloves
+	["28637"] = "\"The necklace is crafted of silver and gold, embellished with red jewels.\"", -- Sunfury Guardsman Medallion
+	["28725"] = "\"Scintillating with magical energies, ready to be used.\"", -- Rune Activation Device
+	["28934"] = "\"Contains various items and technological stuff.\"", -- Surveying Equipment
+	["28962"] = "\"Said to pinpoint the location of a crystal of draenei legend.\"", -- Triangulation Device
+	["28969"] = "\"Used to charge ethereal teleport pads.\"", -- Teleporter Power Pack
+	["28971"] = "\"Did it just...move?\"", -- Nether Dragonkin Egg
+	["29018"] = "\"Said to pinpoint the location of a crystal of draenei legend.\"", -- Triangulation Device
+	["29101"] = "\"Intricately carved runes and dragon shapes line the horn.\"", -- Challenge of the Blue Flight
+	["29163"] = "\"The crystals glint and gleam, sharp to the touch.\"", -- Raw Farahlite
+	["29164"] = "\"The core is cold to the touch and lifeless.\"", -- Farahlite Core
+	["29207"] = "\"Glints with arcane hues, from teals to blues.\"", -- Conjuring Powder
+	["29324"] = "\"The orb glows and pulsates with a bright green hue.\"", -- Warp-Attuned Orb
+	["29338"] = "\"Cold as ice, the spirit remains are a dark gray and emanate unnatural energy.\"", -- Loathsome Remnant
+	["29361"] = "\"Necromantic in design, phylacteries are bound to the soul of a lich when they are killed. You're fairly certain this one is real...\"", -- Naberius' Phylactery
+	["29365"] = "\"Personal hammber belonging to Apprentice Andrethan.\"", -- Smithing Hammer
+	["29396"] = "\"Used to ensure emergency shutdown at Manaforge Coruu.\"", -- Coruu Access Crystal
+	["29397"] = "\"The glowing crystal is quite cool to the touch.\"", -- Duro Access Crystal
+	["29429"] = "\"Use at your own risk. And at the risk of Dr. Boom.\"", -- Boom's Doom
+	["29445"] = "\"Perfect for excavations, particularly near draenei banners in particular!\"", -- Surveying Markers
+	["29447"] = "\"You wonder just how safe this thing is.\"", -- Fel Zapper
+	["29474"] = "\"Renowned for its healing properties among the Cenarion Expedition, often found near clumps of brush in Eco-Dome Midrealm.\"", -- Ivory Bell
+	["29545"] = "\"Dispose of this information once you've finished reading this document.\"", -- Sunfury Military Briefing
+	["29546"] = "\"Dispose of this information once you've finished reading this document.\"", -- Sunfury Arcane Briefing
+	["29582"] = "\"Surely full of useful data, right?\"", -- Ethereum Data Cell
+	["29618"] = "\"The conduits protect Salhadaar, allowig\"", -- Protectorate Disruptor
+	["29624"] = "\"Delicately carved, the first half of the stone has runes that lay dormant.\"", -- First Half of Socrethar's Stone
+	["29625"] = "\"Delicately carved, the second half of the stone has runes that lay dormant.\"", -- Second Half of Socrethar's Stone
+	["29699"] = "\"The stone seems to have been carved with utmost care. It glows with magical runes.\"", -- Socrethar's Teleportation Stone
+	["29741"] = "\"This just looks like gibberish.\"", -- Diagnostic Results
+	["29742"] = "\"The design swirls with arcane ethereal runes.\"", -- The Warden's Key
+	["29768"] = "\"Far too large for the creature and would have ultimately lead to a short, painful life.\"", -- Hulking Hydra Heart
+	["29770"] = "\"Gizmos and peculiar designs are etched on to the outer shell of this piece of technology.\"", -- Experimental Repair Apparatus
+	["29797"] = "\"Details of Socrethar's Stone and Kael's new pact with the Burning Legion.\"", -- Orders From Kael'thas
+	["29798"] = "\"Vibrant with energy, channeling the very essence of the Twisting Nether to redirect it in a particular direction.\"", -- Dome Generator Segment
+	--["29803"] = "\"\"", -- Diagnostic Device
+	["29818"] = "\"Concentrating the energy of the ethereal dome to produce unknown results on a target.\"", -- Energy Field Modulator
+	["29822"] = "\"The fragmented shards swirl with shadowy magic and an inescapable dark aura.\"", -- Fragment of Dimensius
+	["30094"] = "\"You can almost feel as though the elemental spirits are in pain.\"", -- Totem of Spirits
+
+	--Shadowmoon Valley (Outland)
+	["30354"] = "\"\"", -- Ultra Deconsolodation Zapper
+	["30356"] = "\"The plant seems mostly composed of thick and toughened roots that were dug deep into the dirt.\"", -- Shadowmoon Tuber
+	["30429"] = "\"A bundle of documents pertaining to the Cipher of Damnation reside within.\"", -- Grom'tor's Lockbox
+	["30442"] = "\"Hot to the touch, the key almost seems to rage with energy.\"", -- Crystalline Key
+	["30454"] = "\"Swirling in spectral energies.\"", -- Ar'tor's Lockbox
+	--["30462"] = "\"\"", -- Oronok's Boar Whistle
+	["30501"] = "\"Native to Eversong woods, this magical succulent is is often consumed by those suffering from magical addiction.\"", -- Bundle of Bloodthistle
+	["30596"] = "\"They glow with a dark green energy and feel as if they may crumble underneath your touch.\"", -- Baa'ri Tablet Fragment
+	["30614"] = "\"Not the best design, but it'll have to do.\"", -- Fel Bomb
+	["30616"] = "\"Native to Eversong woods, this magical succulent is is often consumed by those suffering from magical addiction.\"", -- Bundle of Bloodthistle
+	["30628"] = "\"Crackling with demonic energy.\"", -- Fel Reaver Power Core
+	["30631"] = "\"The plate looks as though it could practically crumble apart due to so much fel exposure.\"", -- Fel Reaver Armor Plate
+	["30639"] = "\"The armor is enchanted, allowing your form to create the perfect illusion.\"", -- Blood Elf Disguise
+	["30646"] = "\"A sturdy box containing a fragment of the Cipher of Damnation within.\"", -- Borak's Lockbox
+	["30649"] = "\"The handwriting is actually elegant, though the ink is rough and faded.\"", -- Orders From Akama
+	["30658"] = "\"Worn and beaten on the outside, but the contents inside seem mostly salvageable.\"", -- Flanis' Pack
+	["30659"] = "\"Worn and beaten on the outside, but the contents inside seem mostly salvageable.\"", -- Kagrosh's Pack
+	["30679"] = "\"These double-edged blades have seen much recent use on the training grounds.\"", -- Sunfury Glaive
+	["30688"] = "\"A small key forged from fel-iron.\"", -- Deathforge Key
+	["30691"] = "\"A fragment of an incomplete medallion belonging to the corruptor of Air.\"", -- Haalum's Medallion Fragment
+	["30692"] = "\"A fragment of an incomplete medallion belonging to the corruptor of Earth.\"", -- Eykenen's Medallion Fragment
+	["30693"] = "\"A fragment of an incomplete medallion belonging to the corruptor of Water.\"", -- Lakaan's Medallion Fragment
+	["30694"] = "\"A fragment of an incomplete medallion belonging to the corruptor of Fire.\"", -- Uylaru's Medallion Fragment
+	["30785"] = "\"A tall and wide blade that glows with deep pulsing green energy.\"", -- Morgroron's Glaive
+	["30786"] = "\"Sharp to the touch and well kept, this polearm was crafted with many jagged edges. \"", -- Makazradon's Glaive
+	["30797"] = "\"Dark as night and drenched in a treacherous aura. The armor feels unholy to your touch.\"", -- Gorefiend's Armor
+	["30799"] = "\"You feel a dark shadow come over you when you pick up this cloak.\"", -- Gorefiend's Cloak
+	["30800"] = "\"Made of a heavy, dark metal and embedded with a sinister magical orb.\"", -- Gorefiend's Truncheon
+	["30819"] = "\"Hot to the touch and dripping with felfire.\"", -- Felfire Spleen
+	["30822"] = "\"Much of the magic from the ingots is faded.\"", -- Box of Ingots
+	["30827"] = "\"This sinister tome glows with a dark, fel energy and the words inside dance across the page with shadowy energy.\"", -- Lexicon Demonica
+	["30829"] = "\"A white glowing gem that glistens with the twinkle of sunlight.\"", -- Tear of the Earthmother
+	["30851"] = "\"A thick, scaly hide that could make a fine scale-mail.\"", -- Felspine's Hide
+	["30854"] = "\"A tome said to contain the true name of every demon in existence.\"", -- Book of Fel Names
+	["30867"] = "\"Large, meaty, warm, all the requirements for a delicious meal!\"", -- Overdeveloped Felfire Gizzard
+	["30876"] = "\"An improvement over the crude Legion weapons you started with, but still incomplete.\"", -- Quenched Illidari-Bane Blade
+	["31108"] = "\"The insignia of the Kor'Kron has been emblazoned rather crudely on this standard issue flare gun.\"", -- Kor'kron Flare Gun
+	["31169"] = "\"This ancient arakkoa totem is imbued with mystical energy that seems to be the only thing holding it together.\"", -- Sketh'lon War Totem
+	["31260"] = "\"Although most of the writing is unintelligible, some of the reports detail elaborate spells which have failed.\"", -- Sketh'lon Commander's Journal - Page 1
+	["31261"] = "\"Although most of the writing is unintelligible, some of the reports detail casualties and the deteriorating state of the arakkoa.\"", -- Sketh'lon Commander's Journal - Page 2
+	["31262"] = "\"Although most of the writing is unintelligible, some of the reports detail a 'deserter.'\"", -- Sketh'lon Commander's Journal - Page 3
+	["31271"] = "\"Scrawled in the edgiest green ink you can imagine.\"", -- Illidan's Command
+	["31278"] = "\"Woven into the soft fabric is the markings of the Illidari.\"", -- Illidari Tabard
+	["31307"] = "\"The red crystal belonging to the collection of the ata'mal crystals. It feels full of dark magics, and holding it too long boosts your strength and aggresiveness.\"", -- Heart of Fury
+	["31316"] = "\"Golden and crafted with phoenix symbols on it.\"", -- Lianthe's Key
+	["31317"] = "\"Elegant and shiny.\"", -- Rod of Lianthe
+	["31324"] = "\"Covered in ash and imbued with the spirits of the fallen arakkoa.\"", -- Sketh'lon Feather
+	["31360"] = "\"The staff is nearly finished!\"", -- Unfinished Headpiece
+	["31365"] = "\"You can feel the power within the headpiece.\"", -- Energized Headpiece
+	["31386"] = "\"A dangerous object with strong connections to the cataclysmic events of history.\"", -- Staff of Parshah
+	["31504"] = "\"These crystals should be able to be imbued with power sufficient to free enslaved drakes of their masters' grasps.\"", -- Nethervine Crystal
+	["31678"] = "\"Tuned to interfere with mo'arg brain frequencies.\"", -- Mental Interference Rod
+	["31956"] = "\"The design of this key leaves much to be desired.\"", -- Salvaged Ethereum Prison Key
+	["32469"] = "\"Totally convincing handwriting of Teron Gorefiend.\"", -- Illidari Service Papers
+	["32666"] = "\"This would fit greatly on a pair of boots!\"", -- Hardened Hide of Tyrantus
+	["32723"] = "\"What's the cargo?\"", -- Nethermine Cargo
+	["32842"] = "\"Use this flare gun to signal the Skybreakers for the attack!\"", -- Dragonmaw Flare Gun
+	["32843"] = "\"Proof of 'victory.'\"", -- Scryer Medals
+	["32853"] = "\"Proof of 'victory.'\"", -- Aldor Medals
+	["31310"] = "\"The insignia of the Wildhammer Clan has been etched into this well-used flare gun.\"", -- Wildhammer Flare Gun
+
+	--Quel'Danas
+	["35231"] = "\"An assortment of assault plans on the Shattered Sun Offensive outposts in Netherstorm.\"", -- Sunfury Attack Plans
+
+	-- does not show up in zone filter
+	["29801"] = "\"Only the best furs in all of Netherstorm!\"", -- Ripfang Lynx Pelt
+
+	--[""] = "\"\"", -- 
+	
+
+	--[""] = "\"\"", -- 
+
+--Night Elf
+	--Teldrassil
+	["3297"] = "\"It was thought that all remnants of Xavius were torn from Teldrassil, yet this corruption still lingers.\"", -- Fel Moss
+	["46700"] = "\"Kaldorei bags filled with foodstuffs.\"", -- Melithar's Supply Bag
+	["10641"] = "\"Seven parts hyacinth mushroom, four parts moonpetal lily, and one part webwood ichor is sufficient for a powerful antidote. However, the moonpetal lilies may suffice in this case.\"", -- Moonpetal Lily
+	["5184"] = "\"But a drop of the water from the Well of Eternity.\"", -- Filled Crystal Phial
+	["5186"] = "\"Filled with some of the water from the Shadowglen moonwell.\"", -- Partially Filled Vessel
+	["7627"] = "\"Filled to the brim with herbs.\"", -- Dolanaar Delivery
+	["3412"] = "\"It sticks to your hand. You can't seem to get it off without tearing it apart.\"", -- Webwood Spider Silk
+	["3409"] = "\"A pristine fang from one of the nightsabers.\"", -- Nightsaber Fang
+	["3411"] = "\"It's sort of fluffy, but makes no sound through the air.\"", -- Strigid Owl Feather
+	["16262"] = "\"Sister Aquinne's favorite recipes.\"", -- Dolanaar Recipe Book
+	["3418"] = "\"A puffy, verdant smoke emits from the corrupted seed.\"", -- Fel Cone
+	["5639"] = "\"Filled with some of the water from the Starbreeze Village moonwell.\"", -- Filled Jade Phial
+	["8048"] = "\"A rare gift with a strong connection to the Emerald Dream giving luck to those who carry it.\"", -- Emerald Dreamcatcher
+	["46716"] = "\"Like a felcone, but more angry.\"", -- Ireroot Seeds
+	["5221"] = "\"The horns are long, twisted, and pointy. It's hard to believe this satyr was once another kaldorei.\"", -- Melenas' Head
+	["8050"] = "\"As you hold the jewel in the palm of your hand, you can feel but for an instant oneness with Nature itself.\"", -- Tallonkai's Jewel
+	["5189"] = "\"Unusually plump, standing out from the rest of the flora.\"", -- Glowing Fruit
+	["3408"] = "\"One of the four relics needed to prepare the awakening ritual.\"", -- Rune of Nesting
+	["3406"] = "\"One of the four relics needed to prepare the awakening ritual.\"", -- Black Feather Quill
+	["3407"] = "\"One of the four relics needed to prepare the awakening ritual.\"", -- Sapphire of Sky
+	["3405"] = "\"One of the four relics needed to prepare the awakening ritual.\"", -- Raven Claw Talisman
+	["8363"] = "\"You feel an odd tingling sensation from this charm. It directs your hand almost like a marionette.\"", -- Shaman Voodoo Charm
+	["8149"] = "\"You feel an odd tingling sensation from this charm. It directs your hand almost like a marionette.\"", -- Shaman Voodoo Charm
+	["5391"] = "\"Various soils shipped from Darnassus.\"", -- Rare Earth
+	["5168"] = "\"Representative of the order of Nature, the timberlings oddly are angered.\"", -- Timberling Seed
+	["5169"] = "\"These seem to soak up the nearby waters.\"", -- Timberling Sprout
+	["5179"] = "\"It still continues to beat slowly and seeps a dark substance.\"", -- Moss-Twined Heart
+	["5217"] = "\"Although the moss has been removed, it still remains corrupted.\"", -- Tainted Heart
+	["5218"] = "\"Now purified, the heart beats expectantly in your hand.\"", -- Tainted Heart
+	["18151"] = "\"Filled with some of the water from the Oracle Glade moonwell.\"", -- Filled Amethyst Phial
+	["8344"] = "\"Once used to catch healing mists, Sathrah was corrupted and then brought to peace.\"", -- Silvery Spinnerets
+	["5190"] = "\"An odd aura emenates from this glistening foliage.\"", -- Shimmering Frond
+	["5204"] = "\"Approximately makes up about half of harpy clothing.\"", -- Bloodfeather Belt
+	["8136"] = "\"This thing is enormous!\"", -- Gargantuan Tumor
+	["5645"] = "\"Filled with some of the water from the Pools of Arlithrien moonwell.\"", -- Filled Tourmaline Phial
+	["5188"] = "\"The pure waters gathered from all moonwells of Teldrassil contained in one phial. It radiates with powerful magic.\"", -- Filled Vessel
+	
+	--Darkshore
+	["44864"] = "\"The muscles leak a substance which can be used to heal dire wounds.\"", -- Encrusted Clam Muscle
+	["44863"] = "\"It seems stinky.\"", -- Corrupted Tide Crawler Flesh
+	["44911"] = "\"It smells heinous.\"", -- Foul Bear Carcass Sample
+	["12238"] = "\"Ready to eat right out of the water!\"", -- Darkshore Grouper
+	["44913"] = "\"As if the smell wasn't a deterrent enough, but it would be a good idea not to eat infected meat.\"", -- Corrupted Thistle Bear Guts
+	["44927"] = "\"Who would lock awaay all these cute little critters?\"", -- Corruptor's Master Key
+	["44925"] = "\"Who would lock awaay all these cute little critters?\"", -- Corruptor's Master Key
+	["44966"] = "\"It's quite nasty.\"", -- Foul Ichor
+	["5382"] = "\"No longer tied to the corporeal world, Anaya's spirit has passed on. Even after ten thousand years, it has not been easy for Cerellean to move on.\"", -- Anaya's Pendant
+	["44969"] = "\"Holding it up in the light, you think the whisker itself might be striped.\"", -- Moonstalker Whisker
+	["45027"] = "\"Why doe?\"", -- Tuft of Mottled Doe Hair
+	["45885"] = "\"The bear suspects nothing.\"", -- Thistle Bear Fur
+	["44976"] = "\"The mushroom puffs a faint green spore, but can be made into a quality salve.\"", -- Fuming Toadstool
+	["44830"] = "\"Normally left undisturbed so not to draw the ire of the Highborne spirits.\"", -- Highborne Relic
+	["44979"] = "\"All but a few sentences seem relevant with exception to a night elf captive.\"", -- Overseer's Orders
+	["44999"] = "\"Not just any torch, but specifically a sentinel torch.\"", -- Sentinel Torch
+	["45040"] = "\"Twistedd, just like its owner.\"", -- Shatterspear Torturer's Cage Key
+	["44942"] = "\"Can be used as a focus to imbue an object to use against Shatterspear ward magic.\"", -- Shatterspear Amulet
+	["44985"] = "\"Imbued with the very power of the Shatterspear to be used against them.\"", -- Shattershield Arrow
+	["46318"] = "\"Hard evidence that the Shatterspear attacks were due to the Horde's offensive.\"", -- Hellscream's Missive
+	["44968"] = "\"Mostly insane scribbles more than actual detailed plans.\"", -- Twilight Plans
+	["44868"] = "\"Destroying the elemental bracers prevents the ability to summon them back.\"", -- Frenzied Cyclone Bracers
+	["44959"] = "\"Soothing energy emanates from the totem.\"", -- Soothing Totem
+	["46546"] = "\"Soothing energy emanates from the totem.\"", -- Energized Soothing Totem
+	["44960"] = "\"To lay the spirits to rest, their feathers must be gathered and placed within a funeral pyre.\"", -- Slain Wildkin Feather
+	["46692"] = "\"The fire glows witha teal-blue glow. Used upon the funeral pyre to place the wildkin spirits to rest, returning them to Elune.\"", -- Elune's Torch
+	["46695"] = "\"Can be used to undo the binds within the Emerald Nightmare.\"", -- Emerald Scroll
+	["44850"] = "\"The plant appears almost sickly. Usually used to heal the sick, including as a treatment for fevers.\"", -- Bear's Paw
+	["44888"] = "\"The plants appear almost sickly. Usually used to heal the sick, including as a treatment for fevers.\"", -- The Bear's Blessing
+	["44886"] = "\"Can be used to bless the bear's paw to complete it.\"", -- Fleetfoot's Tailfeathers
+	["44887"] = "\"Now blessed, it can be used to heal the sickly and perhaps set the furbolg free from the satyr's influence.\"", -- Blessed Herb Bundle
+	["44889"] = "\"Now blessed, it can be used to heal the sickly and perhaps set the furbolg free from the satyr's influence.\"", -- Blessed Herb Bundle
+
+	--Feralas
+	["53135"] = "\"Enriched in ancient mana, long forgotten.\"", -- Glowing Soil
+
+	--[""] = "\"\"", -- 
+
+--Human
+	--Elwynn Forest
+	["65733"] = "\"A small note is written: Please return to the Stormwind Library.\"", -- Paxton's Prayer Book
+	["58362"] = "\"A piece of gnomish technology, packing a lot of water into a backpack.\"", -- Milly's Fire Extinguisher
+	["58361"] = "\"The weapon is covered in soot, as though it regularly sits in fire.\"", -- Blackrock Orc Weapon
+	["745"] = "\"A report on the status of Northshire.\"", -- Marshal McBride's Documents
+	["58364"] = "\"A note inquiring Blacksmithing supplies and armor from Osric Strang.\"", -- Argus' Note
+	["772"] = "\"You no take candle!\"", -- Large Candle
+	["773"] = "\"Careful not to let it blow away in the wind.\"", -- Gold Dust
+	["60401"] = "\"Bland, but with the right spices is perfect for a decent pie.\"", -- Tender Boar Meat
+	["1208"] = "\"To be delivered to Tommy Joe Stonefield.\"", -- Maybell's Love Letter
+	["962"] = "\"Spiced and especially tasty.\"", -- Pork Belly Pie
+	["1252"] = "\"To be delivered to William Pestle.\"", -- Gramma Stonefield's Note
+	["981"] = "\"Detailed with gold and silver with a star ruby in the middle.\"", -- Bernice's Necklace
+	["1256"] = "\"Native to the ocean, this kelp is often carried by murlocs back into freshwater.\"", -- Crystal Kelp Frond
+	["1257"] = "\"Devised by William Pestle, it should allow Maybell to sneak past her family.\"", -- Invisibility Liquor
+	["57122"] = "\"Report to Marshal McCree as proof of your justice.\"", -- James Clark's Head
+	["1307"] = "\"The schedule details pickup times from the mines of Elwynn Forest.\"", -- Gold Pickup Schedule
+	["2223"] = "\"The schedule details pickup times from the mines of Elwynn Forest.\"", -- The Collector's Schedule
+	["2239"] = "\"Engraved with the words 'For years of service: -EVC.\"", -- The Collector's Ring
+	["1019"] = "\"Seemingly better than average linen.\"", -- Linen Scrap
+	["780"] = "\"Proof of your deeds to present to Guard Thomas.\"", -- Torn Murloc Fin
+	["13872"] = "\"Already chopped, but aabandoned out of fear of the bears and wolves.\"", -- Bundle of Wood
+	["735"] = "\"Identification of two guards lost to the murlocs.\"", -- Rolf and Malakai's Medallions
+	["748"] = "\"A verified note to redeem armor.\"", -- Stormwind Armor Marker
+	["782"] = "\"Coarse and rudimentary, the paint peels off easily.\"", -- Painted Gnoll Armband
+	["1971"] = "\"Details of property rights in Westfall.\"", -- Furlbrow's Deed
+	["16115"] = "\"Filled with armor and supplies for Smith Argus.\"", -- Osric's Crate
+
+--Dwarf
+	--Dun Morogh
+	--["750"] = "\"\"", -- Tough Wolf Meat
+	--["2004"] = "\"\"", -- Grelin Whitebeard's Journal
+	--["2187"] = "\"\"", -- A Stack of Letters
+	--["2188"] = "\"\"", --  A Letter to Grelin Whitebeard
+	--["16313"] = "\"\"", -- Felix's Chest
+	--["16314"] = "\"\"", -- Felix's Bucket of Bolts
+	--["10438"] = "\"\"", -- Felix's Box
+	--["10439"] = "\"\"", -- Durnan's Scalding Mornbrew
+	--["10440"] = "\"\"", -- Nori's Mug
+	--["9566"] = "\"\"", -- Etched Rune
+	--["2619"] = "\"\"", -- Grelin's Report
+	--["7646"] = "\"\"", -- Crate of Inn Supplies
+	--["2999"] = "\"\"", -- Steelgrill's Tools
+	--["15911"] = "\"\"", -- Taming Rod
+	--[""] = "\"already has quest text\"", -- Empty Leaden Collection Phial
+
+
+--Lordaeron
+	--Arathi Highlands
+	["4482"] = "\"Documents on the plannings of the Forsaken to take over all of Arathi.\"", -- Sealed Folder
+	["4435"] = "\"Used to power crystal clusters.\"", -- Mote of Myzrael
+	["4503"] = "\"Apparently very valuable and used as some sort of reagent.\"", -- Witherbark Tusk
+	["4522"] = "\"Full of alchemical and other magical reagents.\"", -- Witherbark Medicine Pouch
+
+--Shadowlands
+	--Bastion
+	--["178891"] = "\"\"", -- Elysian Thread
+	--["178885"] = "\"\"", -- Cloudstrider Pelt
+	--["178890"] = "\"\"", -- Larion Plume
+	--["178043"] = "\"\"", -- Anima Conflux	
+	--["178042"] = "\"\"", -- Eternity Plating
+	--["178041"] = "\"\"", -- Archonic Resonator
+	--["178683"] = "\"\"", -- Gorgebeak's Bill
+	--["178790"] = "\"\"", -- Umbral Plume
+	--["173691"] = "\"\"", -- Anima Drainer
+
+	--Maldraxxus
+	--["173536"] = "\"\"", -- Laboratory Equipment
+	--["180235"] = "\"\"", -- Marileth's Journal - Page One
+	--["180236"] = "\"\"", -- Marileth's Journal - Page Two
+	--["180237"] = "\"\"", -- Marileth's Journal - Page Three
+	--["177837"] = "\"\"", -- Bloodtusk Skull
+	--["174324"] = "\"\"", -- Weapons of the Fallen
+
+
+	--[""] = "\"\"", -- 
 
 --Mounts
 	--Swift Hawkstriders
@@ -213,21 +638,124 @@ local ItemIdTable = {
 	["29744"] = "\"Patient and strong, the Elekk exemplify the Draenei attitude towards the hardships of life.\"",
 	["29743"] = "\"Patient and strong, the Elekk exemplify the Draenei attitude towards the hardships of life.\"",
 
+	--Swift Horses
+	["18776"] = "\"Prized by horse breeders for their discipline and steadfastness.\"",
+	["18778"] = "\"A veteran of some of the toughest battles fought by the Argent Crusade.\"",
+	["18777"] = "\"A veteran of some of the toughest battles fought by the Argent Crusade.\"",
+
+	--Horses
+	["2414"] = "\"Its calm temperament makes it ideal to train young children in horseback riding.\"",
+	["5655"] = "\"Sturdy and steady; 'the horse that build stormwind.'\"",
+	["5656"] = "\"A favorite among Stormwind's guards thanks to its patience and stamina.\"",
+	["2411"] = "\"Rumored to be favored by SI:7 for night missions due to its dark coat.\"",
+
+	--Alliance War Mounts
+	["29471"] = "\"Like their distant nightsaber cousins, tigers are renowned for their razor-sharp claws, incredible agility, and love of being scratched behind the ears.\"", -- 
+	["35906"] = "\"Uniquely aggressive and pugnacious elekk bulls are culled from the herd and sold to Ethereal traders. The traders then train the bulls for combat and sell them to owners unconcerned about safety.\"", -- 
+	["29467"] = "\"The dwarves value their ram companions for their fearlessness charging into battle.\"", -- 
+	["29468"] = "\"Trained to withstand brutal hand-to-hand combat in the fiercest battlefields.\"", -- 
+	["18242"] = "\"Like their distant nightsaber cousins, tigers are renowned for their razor-sharp claws, incredible agility, and love of being scratched behind the ears.\"", -- 
+	["18241"] = "\"Trained to withstand brutal hand-to-hand combat in the fiercest battlefields.\"", -- 
+	["18244"] = "\"The dwarves value their ram companions for their fearlessness charging into battle.\"", -- 
+
+	--Horde War Mounts
+	["29472"] = "\"Bred from the same vicious line of raptors which sired Ohgan and brought victory to the Gurubashi Empire.\"", -- 
+	["29466"] = "\"Bred for their aggressive, unpredictable demeanor by the Kor'kron stablemasters, the Black War Kodos' trumpeting call signifies that blood will soon be shed.\"", -- 
+	["29469"] = "\"Prized by Orgrimmar guards for their keen sense of smell.\"", -- 
+	["18246"] = "\"Bred from the same vicious line of raptors which sired Ohgan and brought victory to the Gurubashi Empire.\"", -- 
+	["18245"] = "\"Prized by Orgrimmar guards for their keen sense of smell.\"", -- 
+	["18247"] = "\"Bred for their aggressive, unpredictable demeanor by the Kor'kron stablemasters, the Black War Kodos' trumpeting call signifies that blood will soon be shed.\"", -- 
+	["34129"] = "\"You watch what happens when their master is attacked and you will see those birds in a whole new light.\"\n - Raider Bork",
+
+	--Dark Talbuks
+	["28915"] = "\"The orcs once hunted these graceful herd animals as part of the om'riggor rite of passage ceremony.\"", -- 
+	["29228"] = "\"Despite their docile nature, talbuks have been known to gore seasoned warriors to death when threatened.\"", -- 
+
+	--BC Dungeon Mounts
+	["32768"] = "\"The rest be forgotten to walk upon the ground, clipped wings and shame.\"\n - Word of the Raven",
+	["35513"] = "\"I may question Prince Kael'thas's loyalties, but never his style.\"\n - Elrodan",
+	["33809"] = "\"Only the swiftest heroes venturing into the troll temple of Zul'Aman were able to subdue these rare battle mounts.\"",
+
+	--BC Raid Mounts
+	--["32458"] = "\"\"", -- has flavour text
+	["30480"] = "\"Was one of the most vicious steeds stabled in Karazhan.\"",
+
+	--BC Holiday Mounts
+	["37012"] = "\"Be it into the flood, or into the fire, this one will go where you require.\"",
+	["37828"] = "\"Coren Direbrew won this prize after drinking a Tauren druid under the table - and the druid was in bear form. It was one of Direbrew's proudest moments.\"",
+	["33977"] = "\"Dwarves attribute this breed's even temperament to rigorous training, but other races argue that a daily diet of strong ale has something to do with it.\"",
+	["33976"] = "\"Brewers retired this mount from active advertising service after complaints that the beasts were 'too temperamental' to control in major cities.\"",
+	--["37011"] = "\"\"", -- not a true learnable mount
+
+	--BC Profession Mounts
+	["34060"] = "\"The backbone of the Alliance air force is comprised predominantly of gnomish flying machines due to their maneuverability and speed.\"",
+	["34061"] = "\"Only the most talented engineers have the courage and the mental stamina to create a flying machine that boasts stability and safety. Turbo-charging one is just crazy!\"",
+
+	--BC Reputation Mounts
+	--Cenarion
+	["33999"] = "\"Members of the Cenarion Circle have shared a long and prosperous partnership with their hippogryph allies. When conflict is unavoidable, the Cenarion War Hippogryph is called into service.\"",
+
+	--Netherwing
+	["32858"] = "\"After promising to fly you to the ends of Outland, the netherwing drake was eventually drawn to the blue skies of Azeroth as well.\"",
+	["32857"] = "\"After promising to fly you to the ends of Outland, the netherwing drake was eventually drawn to the blue skies of Azeroth as well.\"",
+	["32862"] = "\"After promising to fly you to the ends of Outland, the netherwing drake was eventually drawn to the blue skies of Azeroth as well.\"",
+	["32860"] = "\"After promising to fly you to the ends of Outland, the netherwing drake was eventually drawn to the blue skies of Azeroth as well.\"",
+	["32861"] = "\"After promising to fly you to the ends of Outland, the netherwing drake was eventually drawn to the blue skies of Azeroth as well.\"",
+	["32859"] = "\"After promising to fly you to the ends of Outland, the netherwing drake was eventually drawn to the blue skies of Azeroth as well.\"",
+
+	--Talbuks
+	["31830"] = "\"The orcs once hunted these graceful herd animals as part of the om'riggor rite of passage ceremony.\"",
+	["31835"] = "\"The orcs once hunted these graceful herd animals as part of the om'riggor rite of passage ceremony.\"",
+	["31833"] = "\"The orcs once hunted these graceful herd animals as part of the om'riggor rite of passage ceremony.\"",
+	["31832"] = "\"The orcs once hunted these graceful herd animals as part of the om'riggor rite of passage ceremony.\"",
+	["29227"] = "\"Despite their docile nature, talbuks have been known to gore seasoned warriors to death when threatened.\"",
+	["29103"] = "\"Despite their docile nature, talbuks have been known to gore seasoned warriors to death when threatened.\"",
+	["29105"] = "\"Despite their docile nature, talbuks have been known to gore seasoned warriors to death when threatened.\"",
+	["29229"] = "\"Despite their docile nature, talbuks have been known to gore seasoned warriors to death when threatened.\"",
+
+	--Sha'tari Skyguard
+	["32319"] = "\"Nether Rays are among the most trusted, versatile mounts in all of Outland and beyond.\"",
+	["32317"] = "\"Nether Rays are among the most trusted, versatile mounts in all of Outland and beyond.\"",
+	["32314"] = "\"Nether Rays are among the most trusted, versatile mounts in all of Outland and beyond.\"",
+	["32318"] = "\"Nether Rays are among the most trusted, versatile mounts in all of Outland and beyond.\"",
+	["32316"] = "\"Nether Rays are among the most trusted, versatile mounts in all of Outland and beyond.\"",
+
+	--BC PvP Gladiator
+	["30609"] = "\"The most aggressive nether drakes were awarded those heroes who showed significant prowess and commitment in the gladiatorial arena.\"",
+	["37676"] = "\"The most aggressive nether drakes were awarded those heroes who showed significant prowess and commitment in the gladiatorial arena.\"",
+	["34092"] = "\"The most aggressive nether drakes were awarded those heroes who showed significant prowess and commitment in the gladiatorial arena.\"",
+	--["43516"] = "\"The most aggressive nether drakes were awarded those heroes who showed significant prowess and commitment in the gladiatorial arena.\"", -- Unavailable or not showing up in data?
+
+	--Swift Gryphons
+	["25473"] = "\"The Horde had dragons, we had the gryphons. We won that war.\"\n - Ilsa Blusterbrew",
+	["25528"] = "\"The Horde had dragons, we had the gryphons. We won that war.\"\n - Ilsa Blusterbrew",
+	["25529"] = "\"The Horde had dragons, we had the gryphons. We won that war.\"\n - Ilsa Blusterbrew",
+	["25527"] = "\"The Horde had dragons, we had the gryphons. We won that war.\"\n - Ilsa Blusterbrew",
+
+	--Gryphons
+	["25471"] = "\"They love lions in Stormwind, and the gryphon is half lion. Of course they might not like which half.\"\n - Gryphon Master Talonaxe",
+	["25470"] = "\"They love lions in Stormwind, and the gryphon is half lion. Of course they might not like which half.\"\n - Gryphon Master Talonaxe",
+	["25472"] = "\"They love lions in Stormwind, and the gryphon is half lion. Of course they might not like which half.\"\n - Gryphon Master Talonaxe",
+
+	--Swift Windriders
+	["25477"] = "\"I still don't get why they fly faster when you put armor on them.\"\n -Drakma",
+	["25531"] = "\"I still don't get why they fly faster when you put armor on them.\"\n -Drakma",
+	["25532"] = "\"I still don't get why they fly faster when you put armor on them.\"\n -Drakma",
+	["25533"] = "\"I still don't get why they fly faster when you put armor on them.\"\n - Drakma",
+
+	--Windriders
+	["25476"] = "\"After being freed from vicious harpies by Cairne and Thrall, many of these creatures became valuable companions of the Horde.\"",
+	["25474"] = "\"After being freed from vicious harpies by Cairne and Thrall, many of these creatures became valuable companions of the Horde.\"",
+	["25475"] = "\"After being freed from vicious harpies by Cairne and Thrall, many of these creatures became valuable companions of the Horde.\"",
+
+	--Unobtainable
+	["23720"] = "\"Slow and steady might not always win you the race but it'll get you there... eventually.\"",
+	["43599"] = "\"Whenever you ride this mount, you feel the urge to shout, 'Cry havoc and let slip the murlocs of war!'\"",
+	["37719"] = "\"Zhevras are rarely used as mounts in Azeroth due to their stubborn nature and tendency to bite.\"",
 };
 
 
---this is horrible and I hate it but idk here we go
-if litR == nil then
-	litR = 1
-end
-if litG == nil then
-	litG = .82
-end
-if litB == nil then
-	litB = 0
-end
-
-function ShowColorPicker(r, g, b, a, changedCallback)
+local function ShowColorPicker(r, g, b, a, changedCallback)
 	ColorPickerFrame.hasOpacity, ColorPickerFrame.opacity = (a ~= nil), a;
 	ColorPickerFrame.previousValues = {r,g,b,a};
 	ColorPickerFrame.func, ColorPickerFrame.opacityFunc, ColorPickerFrame.cancelFunc = changedCallback, changedCallback, changedCallback;
@@ -236,7 +764,7 @@ function ShowColorPicker(r, g, b, a, changedCallback)
 	ColorPickerFrame:Show();
 end
 
-local defR,defG,defB = 1,.82,0;
+local defR,defG,defB = 1,0.82,0;
 
 local function myColorCallback(restore)
 	local newR, newG, newB, newA;
@@ -249,8 +777,8 @@ local function myColorCallback(restore)
 	end
 
  -- Update our internal storage.
-r, g, b, a = newR, newG, newB, newA;
-litR, litG, litB = r, g, b;
+local r, g, b = newR, newG, newB;
+LitDB.R, LitDB.G, LitDB.B = r, g, b;
  -- And update any UI elements that use this color...
 end
 
@@ -280,15 +808,15 @@ local function GameTooltip_OnTooltipSetItem(tooltip)
 	end
 
 	if itemText then
-		tooltip:AddLine(itemText , litR,litG,litB, 1)
+		tooltip:AddLine(itemText , LitDB.R, LitDB.G, LitDB.B, 1)
 	end
 end
 
 SLASH_LIT_SCP1 = "/lit"
 SLASH_LIT_SCP2 = "/loreitemtooltips"
 SLASH_LIT_SCP3 = "/loreitemtooltip"
-SlashCmdList["LIT_SCP"] = function(msg)
-	ShowColorPicker(litR,litG,litB,nil, myColorCallback);
+SlashCmdList["LIT_SCP"] = function()
+	ShowColorPicker(LitDB.R, LitDB.G, LitDB.B, nil, myColorCallback);
 end
 
 local resetText = "|cffffd100Lore Item Tooltips|r: colours have been reset! Previous values were:"
@@ -300,10 +828,10 @@ end
 SLASH_LIT_RESET1 = "/litreset"
 SLASH_LIT_RESET2 = "/loreitemtooltipsreset"
 SLASH_LIT_RESET3 = "/loreitemtooltipreset"
-SlashCmdList["LIT_RESET"] = function(msg)
-	print(resetText .. "\nRGB(0-1) - |cffff7f7f" .. round(litR,2) .. "|r, |cff7fff7f" .. round(litG,2) .. "|r, |cff7f7fff" .. round(litB,2) .. "|r\nRBG(0-255) - |cffff7f7f" .. round(litR*255) .. "|r, |cff7fff7f" .. round(litG*255) .. "|r, |cff7f7fff" .. round(litB*255) .. "|r")
-	litR,litG,litB = defR,defG,defB
-	 r, g, b, a = defR,defG,defB,nil
+SlashCmdList["LIT_RESET"] = function()
+	print(resetText .. "\nRGB(0-1) - |cffff7f7f" .. round(LitDB.R,2) .. "|r, |cff7fff7f" .. round(LitDB.G,2) .. "|r, |cff7f7fff" .. round(LitDB.B,2) .. "|r\nRGB(0-255) - |cffff7f7f" .. round(LitDB.R*255) .. "|r, |cff7fff7f" .. round(LitDB.G*255) .. "|r, |cff7f7fff" .. round(LitDB.B*255) .. "|r")
+	LitDB.R,LitDB.G,LitDB.B = defR,defG,defB
+	--local r, g, b = defR,defG,defB
 end
 
 GameTooltip:HookScript("OnTooltipSetItem", GameTooltip_OnTooltipSetItem)
