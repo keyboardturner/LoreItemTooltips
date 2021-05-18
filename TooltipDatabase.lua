@@ -560,6 +560,19 @@ LIT.ItemIdTable = {
 	["1971"] = "\"Details of property rights in Westfall.\"", -- Furlbrow's Deed
 	["16115"] = "\"Filled with armor and supplies for Smith Argus.\"", -- Osric's Crate
 
+	--Westfall
+	["915"] = "\"Woven of fine silk and dyed red, these bandannas indicate a Defias member of higher stature.\"", -- Red Silk Bandana
+	["841"] = "\"The watch seems lovingly cared for, with few signs of long term damage or wear.\"", -- Furlbrow's Pocket Watch
+	["829"] = "\"Crafted of rough leather and slightly misshapen, these bandanas are from the lower ranking Defias gang members.\"", -- Red Leather Bandana
+	["725"] = "\"These sharpened claws shall not be used to tear through any more wayward travelers.\"", -- Gnoll Paw
+	["1528"] = "\"You are sure Old Blanchy will appreciate these oats, though they may not be the most fresh.\"", -- Handful of Oats
+	["3636"] = "\"The scale is slimy and withered.\"", -- Scale of Old Murk Eye
+	["5669"] = "\"The dust seems to still swirl and dance in your hands, as if a light breeze is around it at all times.\"", -- Dust Devil Debris
+	["8046"] = "\"Kearnen's journal bears the the standard insignia of the SI:7. It is well-kept, not a single creased page.\"", -- Kearnen's Journal
+	["7923"] = "\"A small iron key, etched into is the insignia of the Defias.\"", -- Defias Tower Key
+	["7908"] = "\"This journal has clearly been through a lot. Its spine is stretched and a few loose pages fall out when you pick it up.\"", -- Klaven Mortwake's Journal
+
+
 --Dwarf
 	--Dun Morogh
 	["750"] = "\"Good for a nice wolf steak.\"", -- Tough Wolf Meat
@@ -587,6 +600,18 @@ LIT.ItemIdTable = {
 	["3627"] = "\"Your trophy still drips with blood and seems as sharp as ever.\"", -- Fang of Vagash
 	["3083"] = "\"These small copper cogs seems to fit neatly in place with one another.\"", -- Restabilization Cog
 	["3084"] = "\"These iron gears are a bit larger than the cogs.\"", -- Gyromechanic Gear
+
+	--Loch Modan
+	["2561"] = "\"Battered and bloody, the now severed head of Chok'Sul isn't as terrifying as when it was previously attached.\"", -- Chok'sul's Head
+	["2640"] = "\"Who knew standard issue mining tools included Thunderbrew Ale?\"", -- Miner's Gear
+	["7249"] = "\"These colorful gems radiate with magical energy.\"", -- Charged Rift Gem
+	["2536"] = "\"Most trog teeth are crooked and full of cavities.\"", -- Trogg Stone Tooth
+	["2606"] = "\"Carefully collected so as not to make yourself ill.\"", -- Lurker Venom
+	["2607"] = "\"The crystal shimmers and gleams in the sunlight in an enchanting way.\"", -- Mo'grosh Crystal
+	["2939"] = "\"Truly the tears of grief from these sincere, kind-heartred creatures. Just pay no attention to their diet.\"", -- Crocolisk Tear
+	["2636"] = "\"These strange relics make you feel a bit on edge. Just how fragile are these?\"", -- Carved Stone Idol
+	["2713"] = "\"A grisly trophy meant to teach a lesson.\"", -- Ol' Sooty's Head 
+	--[""] = "\"\"", -- 
 	
 	--Wetlands
 	["3340"] = "\"Carefully now...\"", -- Incendicite Ore
