@@ -41,6 +41,7 @@ local function GameTooltip_OnTooltipSetItem(tooltip)
 	if not link then return; end
 	
 	local itemString = match(link, "item[%-?%d:]+")
+	if not itemString then return end
 	local _, itemId = strsplit(":", itemString)
 
 	if itemId == "0" and TradeSkillFrame ~= nil and TradeSkillFrame:IsVisible() then
@@ -90,7 +91,7 @@ core.commands = {
 	end,
 
 	["credits"] = function()
-		print(LitText .. "Special thanks to the following people who helped contribute to this project!" .. "\n|cffffe880Rheä-WyrmrestAccord(US)|r")
+		print(LitText .. "Special thanks to the following people who helped contribute to this project!" .. "\n|cffffe880Rheä-WyrmrestAccord(US)|r - 62 items")
 	end,
 
 	["credit"] = function()

@@ -562,21 +562,41 @@ LIT.ItemIdTable = {
 
 --Dwarf
 	--Dun Morogh
-	--["750"] = "\"\"", -- Tough Wolf Meat
-	--["2004"] = "\"\"", -- Grelin Whitebeard's Journal
-	--["2187"] = "\"\"", -- A Stack of Letters
-	--["2188"] = "\"\"", --  A Letter to Grelin Whitebeard
-	--["16313"] = "\"\"", -- Felix's Chest
-	--["16314"] = "\"\"", -- Felix's Bucket of Bolts
-	--["10438"] = "\"\"", -- Felix's Box
-	--["10439"] = "\"\"", -- Durnan's Scalding Mornbrew
-	--["10440"] = "\"\"", -- Nori's Mug
-	--["9566"] = "\"\"", -- Etched Rune
-	--["2619"] = "\"\"", -- Grelin's Report
-	--["7646"] = "\"\"", -- Crate of Inn Supplies
-	--["2999"] = "\"\"", -- Steelgrill's Tools
-	--["15911"] = "\"\"", -- Taming Rod
+	["750"] = "\"Good for a nice wolf steak.\"", -- Tough Wolf Meat
+	["2004"] = "\"The journal is sewn together with fine thread and bound by worn out boar leather. Its pages have yellowed a bit and it seems to have been heavily used.\"", -- Grelin Whitebeard's Journal
+	["2187"] = "\"Most of them appear to be for Talin Keeneye. Most of them.\"", -- A Stack of Letters
+	["2188"] = "\"This one is not for Talin Keeneye.\"", --  A Letter to Grelin Whitebeard
+	["16313"] = "\"The chest is neatly kept and locked tight.\"", -- Felix's Chest
+	["16314"] = "\"Bolts of all size and shape make their home in this slightly grease covered bucket.\"", -- Felix's Bucket of Bolts
+	["10438"] = "\"An odd assortment of gnomish gizmos and gadgets seems to stuff this box to the brim.\"", -- Felix's Box
+	["10439"] = "\"Don't spill it!\"", -- Durnan's Scalding Mornbrew
+	["10440"] = "\"The delightful smell of Mornbrew still lingers. The mug seems well taken care for despite its heavy use.\"", -- Nori's Mug
+	["9566"] = "\"A message from Thorgas Grimson, a local hunter trainer.\"", -- Etched Rune
+	["2619"] = "\"A Report on the State of the Frostmane Trolls in the General Area of Coldridge Valley.\"", -- Grelin's Report
+	["7646"] = "\"For a crate full of just a couple mugs, cheeses, and stews, it's rather heavy.\"", -- Crate of Inn Supplies
+	["2999"] = "\"Filled to the brim with an assortment of spanners, wrenches, ratchets, hammers...\"", -- Steelgrill's Tools
+	["15911"] = "\"Given to novice hunters to help focus natural magics in order to tame beasts.\"", -- Taming Rod
+	["15913"] = "\"Given to novice hunters to help focus natural magics in order to tame beasts.\"", -- Taming Rod
+	["15908"] = "\"Given to novice hunters to help focus natural magics in order to tame beasts.\"", -- Taming Rod
 	--[""] = "\"already has quest text\"", -- Empty Leaden Collection Phial
+	["2886"] = "\"Perfect for being beer basted!\"", -- Crag Boar Rib
+	["2894"] = "\"Perfect for basting boar!\"", -- Rhapsody Malt
+	["769"] = "\"Roasted, stews, pies... all decent uses of boar meat!\"", -- Chunk of Boar Meat
+	["6952"] = "\"Somewhat rugged, yet thick and sure to keep one warm in the cold of the mountains.\"", -- Thick Bear Fur
+	["2667"] = "\"Enough to last a month, maybe two if you're not a dwarf.\"", -- MacGrann's Dried Meats
+	["3627"] = "\"Your trophy still drips with blood and seems as sharp as ever.\"", -- Fang of Vagash
+	["3083"] = "\"These small copper cogs seems to fit neatly in place with one another.\"", -- Restabilization Cog
+	["3084"] = "\"These iron gears are a bit larger than the cogs.\"", -- Gyromechanic Gear
+	
+	--Wetlands
+	["3340"] = "\"Carefully now...\"", -- Incendicite Ore
+
+	--[""] = "\"\"", -- 
+
+--Undead
+	--Tirisfal
+	["2885"] = "\"The red wax seal bearing the insignia of the Scarlet Crusade still seems fresh.\"", -- Scarlet Crusade Documents
+	["11127"] = "\"The box is a bit worse for wear the contents inside should be fine enough for the newly raised Forsaken.\"", -- Scavenged Goods
 
 
 --Lordaeron
