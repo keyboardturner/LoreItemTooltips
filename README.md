@@ -1,4 +1,3 @@
-# LoreItemTooltips
 <h3>This is still a work in progress addon.</h3>
 <p>This effects the following type of items: Quest items, items that start quests, some cooking recipes, and learnable mounts. Many of these items can be found / filtered&nbsp;<a href="https://www.wowhead.com/items?filter=7:5:166:16;2:1:2:6455;0:0:0:0#items;0+1+18" rel="nofollow">here</a>.</p>
 <p>It's just meant to add a little bit of immersion into the game without a vast negative impact.</p>
@@ -28,6 +27,8 @@
 <li>Teldrassil</li>
 <li>Darkshore</li>
 <li>Elwynn Forest</li>
+<li>Mulgore</li>
+<li>Durotar</li>
 </ul>
 <p>&nbsp;</p>
 <p>Burning Crusade:</p>
@@ -64,12 +65,10 @@
 <div class="spoiler">
 <p>Racial Starting Zones:</p>
 <ul>
-<li>Dun Morogh</li>
-<li>Loch Modan</li>
-<li>Westfall</li>
+<li>Dun Morogh (Partly Done)</li>
+<li>Loch Modan (Partly Done)</li>
+<li>Westfall (Partly Done)</li>
 <li>Tirisfal</li>
-<li>Mulgore</li>
-<li>Durotar</li>
 <li>The Barrens</li>
 </ul>
 </div>
@@ -92,5 +91,6 @@
 </ul>
 </div>
 <p>&nbsp;</p>
-<p>&nbsp;</p>
+<p><strong>&nbsp;Other notable mentions:</strong></p>
+<p>I recommend using <a href="https://www.curseforge.com/wow/addons/colorpickerplus">ColorPickerPlus</a> to enter exact values into your color picker.</p>
 <p>&nbsp;</p>
