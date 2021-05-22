@@ -648,7 +648,6 @@ LIT.ItemIdTable = {
 	["4862"] = "\"Delicately handled.\"", -- Scorpid Worker Tail
 	["791"] = "\"Bits of canvas salvaged from the humans of Kul'Tiras\"", -- Carry Your Weight
 	["4888"] = "\"Viscous and a sickly yellow-green color.\"", -- Crawler Mucus
-	["11584"] = "\"It gets mighty hot out in the Valley of Trials, but thankfully, Galgar has shared his own special take on the Cactus Apple Surprise. An inventive reimagining of the refreshing treat, this wonderfully cooling beverage is the perfect reward after a long day of raiding.\"", -- 
 	["11583"] = "\"An invigorating fruit to help on a hot day.\"", -- Cactus Apple
 	["16114"] = "\"Work work!\"", -- Foreman's Blackjack
 	["7629"] = "\"Filled to the brim with foodstuffs.\"", -- Ukor's Burden
@@ -1115,7 +1114,7 @@ LIT.ItemIdTable = {
 
 
 	--World Drops
-	--["29960"] = "\"\"",
+	--["29960"] = "\"\"", -- 
 
 	--Dungeon & Raid Drops
 	["35504"] = "\"A child of phoenix god Al'ar, the hatchling takes flight immediately after birth.\"",
@@ -1134,6 +1133,122 @@ LIT.ItemIdTable = {
 	--["23713"] = "\"\"",
 	["37298"] = "\"Only heroes who have proven their valor through great acts are gifted one of these mystical serpentine creatures.\"",
 
-	--[""] = "\"\"",
+	--[""] = "\"\"", -- 
+
+--Cooking (Warcraft Cookbook)
+	--Spices and Basics
+	["17194"] = "\"With all the warmth and flavor imbued by these spices, an ordinary dish gets a little boost of holiday cheer for the feast of Winter Veil. You'll need these spices to whip up Greatfather Winter's favorite treats for his yearly visit.\"", -- Holiday Spices
+	["43007"] = "\"This aromatic blend of spices will not only increase the flavor of any given recipe but also add a warming element to dishes. That warmth is a welcome addition in the chilly region of Northrend, from which these delicious spices are traditionally gathered.\"", -- Northern Spices
+	
+	--Sides
+	["5525"] = "\"Don't be fooled by the simplicity of this dish. Its bites of tender clam meat will bring the delightful flavors of the Westfall coast right to your home table.\"", -- Boiled Clams
+	--["27684"] = "\"Buzzard Bites Recipe Test\"", -- Recipe: Buzzard Bites
+	["27651"] = "\"Bam! The sweet and tangy sauce that covers these bite-sized morsels will make you pucker up and take notice. Combine that with the savory bacon bits scattered throughout, and you've got yourself a snack that goes down smooth as butter.\"", -- Buzzard Bites
+	["44839"] = "\"With little clouds of maple-sweetened marshmallow meringue dotting the top, this dish is sure to be a crowd-pleaser. Savory and just the right amount of sweet, this hearty side is a favorite of the Pilgrim's Bounty meal.\"", -- Candied Sweet Potatoes
+	["116406"] = "\"With little clouds of maple-sweetened marshmallow meringue dotting the top, this dish is sure to be a crowd-pleaser. Savory and just the right amount of sweet, this hearty side is a favorite of the Pilgrim's Bounty meal.\"", -- Twice-Baked Sweet Potatoes
+	["2250"] = "\"With such a wide variety of crawler species on the coasts, it's no wonder that some of them end up being served by innkeepers around the world.\"", -- Dusky Crab Cakes
+	["116405"] = "\"With a nice balance between the sweetness of the honey and the tart pop of the berries, this versatile and simple-to-make condiment will please family, guests, and partygoers alike.\"", -- Congealed Cranberry Chutney
+	["44840"] = "\"With a nice balance between the sweetness of the honey and the tart pop of the berries, this versatile and simple-to-make condiment will please family, guests, and partygoers alike.\"", -- Cranberry Chutney
+	["12224"] = "\"Based on Abigail Shiel's famous recipe, this Undercity snack is a favorite among the Horde. Every tend bite of this crispy, flavorful dish will satisfy any adventurer's cravings.\"", -- Crispy Bat Wings
+	["6888"] = "\"Quick, fairly easy, and a great practice for chefs looking to increase their skill in cooking. This recipe produces a delicious breakfast that will have you fed and ready to face whatever adventures, quests, or battles come your way.\"", -- Herb Baked Egg
+	["33452"] = "\"With just a dash of sweetness, these crunchy lichen crisps are a tasy way to enjoy daily greens. Often peddled by fungus vendors, these highly nutritious snacks of the Undercity undead are now easy to make yourself.\"", -- Honey-Spiced Lichen
+	["74643"] = "\"This might be the simplest of the closely guarded recipes taught by Anthea Ironpaw, Master of the Wok, but it's no less delicious than the others. Tender carrots are coated with a sweet and savory glaze, topped with just a slight zing of ginger.\"", -- Sauteed Carrots
+	["115354"] = "\"Traditionally crafted using thin shavings of the enormous fungi of Zangarmarsh, this savory dish is a flavorful accompaniment to any main course.\"", -- Sliced Zangar Buttons
+	["33443"] = "\"Nothing beats a nice tart, creamy goat cheese, and you'll hear no argument about that from Jaina Proudmoore, who considers this one of her favorite snacks. Delicious on its own or with savory herbs mixed in, it's just the thing to enjoy while curled up with a good scroll.\"", -- Sour Goat Cheese 
+	["44837"] = "\"What better accompaniment to a fine celebration of the season's bounty than a heapipng helping of stuffing alongside a generous slice of turkey?\"", -- Spice Bread Stuffing
+	["116408"] = "\"What better accompaniment to a fine celebration of the season's bounty than a heapipng helping of stuffing alongside a generous slice of turkey?\"", -- Herb-Infused Stuffing
+	["19304"] = "\"The Darkmoon Faire-goer's snack of choice, this jerky is a great pick-me-up for a boisterous afternoon.\"", -- Spiced Beef Jerky
+	["86074"] = "\"This pandaren staple is a healther and more flavorful alternative to ordinary potato chips. With bursts of fiery spice, you'll love each crunchy bite.\"", -- Spicy Vegetable Chips
+	["43001"] = "\"The delicious smell emanating from a hot plate of Tracker Snacks will definitely help you find wayward house pets, but be careful that you don't attract unwanted attention from other beasts.\"", -- Tracker Snacks
+	["128845"] = "\"Made in the north of Kalimdor according to a traditional night elf recipe, these rice cakes showcase all the healthy, earthy goodness of natural ingredients.\"", -- Sweet Rice Cakes
+	--Breads
+	--["58261"] = "\"has flavor text\"", -- Buttery Wheat Roll
+	["22019"] = "\"These flaky, buttery crescents all but melt in your mouth. They are showy rolls for breakfast, tea, or special occasions, and are sure to impress even the grumpiest orc. Make sure to summon extras for hungry and under-prepared adventurers.\"", -- Conjured Croissant
+	["82450"] = "\"Once merely a staple food among the tauren tribes in Mulgore, these simple little nuggets of cheesy, buttery flavor have travelled along various trade routes and are now enjoyed in many regions across Azeroth. Enjoy these delicious gems on their own, warm from the oven, or alongside a steaming bowl of chili.\"", -- Cornmeal Biscuit
+	["33449"] = "\"Adventuring in Northrend is serious business and requires serious sustenance. Perfect for travel, these crisp little pieces of flatbread have just a hint of herbs and a satisfying crunch.\"", -- Crusty Flatbread
+	["33043"] = "\"Soft and perfectly snackable, these golden pretzels are best enjoyed in the autumn with cheese and booze!\"", -- The Essential Brewfest Pretzel
+	["82451"] = "\"This fast and easy recipe creates a tasty bread that is equally delicious with savory or sweet toppings. Each soft bite entices you to take another, making it a filling side for any meal.\"", -- Frybread
+	["20857"] = "\"Shaped like the hives of the wild bees domesticated in Eversong Woods, this blood elven bread does not disappoint. Enjoy it with jam or more honey - because you can't have too much honey.\"", -- Honey Bread
+	["4544"] = "\"Whether you're enjoying this bread on its own, fresh from the oven, or with a dollop of your favorite tauren jam, you'll know right away this is no ordinary spice bread.\"", -- Mulgore Spice Bread
+	["81408"] = "\"These unusual little buns aren't just a pretty addition to a table setting; they're also delicious, packed with a soft, sweet bean filling that makes them difficult to stop eating. No wonder they are Li Li Stormstout's favorite snack!\"", -- Red Bean Bun
+	["4601"] = "\"The sweetest treat ever found in Scholomance, and just the thing to help you face whatever trials lie ahead. But pace yourself: Too much Soft Banana Bread is known to be unkind to a necromancer's figure.\"", -- Soft Banana bread
+	["35950"] = "\"Moist, dense, and richly flavored with an array of spices, this popular Northrend bread would be tasty on its own. But topped with caramel and crunchy nuts, it's absolutely decadent.\"", -- Sweet Potato Bread
+	
+	--Soups and Stews
+	["16166"] = "\"A popular dish among the night elves of Kalimdor, this thick and hearty soup will sustain adventurers and innkeepers alike.\"", -- Bean Soup
+	["5526"] = "\"When it comes to a tasty Clam Chowder, it's hard to find one better than this classic dish that originated with the human fishermen of Westfall. The salt pork provides a richness that complements the clsasic seafood aroma and flavor, so the balance is just right.\"", -- Clam Chowder
+	["12217"] = "\"Thick and flavorful, with just enough of a bite to satisfy, the original recipe comes from the swampland of Dustwallow Marsh.\"", -- Dragonbreath Chili
+	["74636"] = "\"Quick to make, this soup is flavorful and just the right amount of filling.\"", -- Golden Carp Consomme
+	["120293"] = "\"Previously enjoyed only by those who had climbed to Kun-Lai Summit, this flavorful, fortifying soup can be made by those with the skill to combine its simple yet complementary ingredients.\"", -- Lukewarm Yak Roast Broth
+	--["101748"] = "\"has flavor text\"", -- Spiced Blossom Soup
+	--["42779"] = "\"has flavor text\"", -- Steaming Chicken Soup
+	--["104341"] = "\"has flavor text\"", -- Steaming Goat Noodles
+	["733"] = "\"This nourishing stew has been made many different ways over the years. In lean times, with the people of Westfall under attack by bandits and gnoll raiders, murloc eyes and buzzard meat were commonly used.\"", -- Westfall Stew
+	["57988"] = "\"This nourishing stew has been made many different ways over the years. In lean times, with the people of Westfall under attack by bandits and gnoll raiders, murloc eyes and buzzard meat were commonly used.\"", -- Westfall Stew
+	["57991"] = "\"This nourishing stew has been made many different ways over the years. In lean times, with the people of Westfall under attack by bandits and gnoll raiders, murloc eyes and buzzard meat were commonly used.\"", -- Westfall Stew
+	["86070"] = "\"This aromatic broth, rich with hearty noodles and topped with juicy duck meat, is lent a peppery bite by the ginger and chili. With just enough complexity to transcend rustic, this Valley of the Four Winds specialty is a warm and satisfying meal.\"", -- Wildfowl Ginseng Soup
+	["79870"] = "\"This fish-apple soup may sound like an acquired taste, but it's a rather delectable and filling meal after a nice long hike through the lush green mountains of Pandaria. A word of warning though: Never touch a hozen's Yu-Ping Soup!\"", -- Yu-Ping Soup
+	
+	--Mains
+	["2888"] = "\"The secret's in the malt! Ragnar Thunderbrew has been drawing patrons to his tavern for decades with the savory smell of his famous ribs.\"", -- Beer Basted Boar Ribs
+	["22645"] = "\"The surprise comes when, with a look of delighted satisfaction, happy customers ask you what it is. Designed by a master chef tasked with feeding blood elf royalty on a budget, this recipe will surprise and delight those with even the most discerning palates.\"", -- Crunchy Spider Surprise
+	["21023"] = "\"Do not disturb Prince Lakma.\"", -- Dirge's Kickin' Chimaerok Chops
+	["34767"] = "\"The warmth of the spices battles for dominance with the cool bite of the juniper, like the meeting of the cold glacial salmon and the fiery oven. Northrend food has never tasted so good.\"", -- Firecracker Salmon
+	["33254"] = "\"These drumsticks... they're huge! There's nothing quite like Forest Strider Drumsticks to power you through a full round of games and exotic delights offered at the Darkmoon Faire.\"", -- Forest Strider Drumsticks
+	["17407"] = "\"Smokywood Pastures brings all th ebest flavors of the holiday season to a market near you. Nothing will warm you to the bone during the Feast of Winter Veil like a slice of this delicious, meaty pie.\"", -- Graccu's Homemade Meat Pie
+	--["69981"] = "\"has flavor text\"", -- Ironforge Rations
+	--["32685"] = "\"has flavor text\"", -- Ogri'la Chicken Fingers
+	["8952"] = "\"A much-loved meal around the south of the Eastern Kingdoms, these sweet and savory morsels are well worth the effort of making them. While ogres enjoy this dish as a light snack, polishing off a whole quail in a single crunchy bite, smaller races will find it's most easily eaten with one's hands.\"", -- Roasted Quail
+	["6657"] = "\"Somebody stole a recipe from a pirate named Stinkbraid, and strange things started happening to those who made the delicious dish. When you try Savory Deviate Delight, beware of flipping out. Or turning into a pirate.\"", -- Savory Deviate Delight
+	["81413"] = "\"This Pandaren specialty features tender, flavorful chicken, doused in a rich, creamy peanut sauce. Served over a bed of rice, and garnished with fresh tomatoes and snap peas, who could want more?\"", -- Skewed Peanut Chicken
+	["44838"] = "\"What better way to give thanks for a bountiful harvest than with this showpiece of Pilgrim's Bounty? This tender and flavorful bird will satisfy everyone in your party, but don't be surprised if it also lures a few strangers who are eager for a serving!\"", -- Slow-Roasted Turkey
+	["116407"] = "\"What better way to give thanks for a bountiful harvest than with this showpiece of Pilgrim's Bounty? This tender and flavorful bird will satisfy everyone in your party, but don't be surprised if it also lures a few strangers who are eager for a serving!\"", -- Slow-Smoked Turkey
+	["34755"] = "\"This steak is beloved by magic users, who claim it gives them just a bit of an edge in casting their spells.\"", -- Tender Shoveltusk Steak
+	["21235"] = "\"The rich sauce is imbued with the familiar smells and flavors of the merry Winter Veil season, which will remind you of holidays past whenever you enjoy this dish.\"", -- Winter Veil Roast
+	
+	--Desserts
+	--["98124"] = "\"has flavor text\"", -- Bloodberry Tart
+	--["60375"] = "\"has flavor text\"", -- Cheery Cherry Pie
+	["42436"] = "\"There's surely no better way to mark a special occasion than with a cake like this one. Each bite bursts with warming spices, while the smooth nuttiness of the whipped cream manages to keep it feeling light. Go ahead, have another slice. You're celebrating!\"", -- Chocolate Ceberation Cake
+	["62680"] = "\"There's nothing like a cookie to make you feel a little better when you're down. With their dark chocolaty zip and peppery punch, these crispy morsels will help you get through even the worst cataclysms.\"", -- Chocolate Cookies
+	["113509"] = "\"Neither the glaze nor the filling is overly sweet, which means you can sneak at least one extra to power you through your next adventure.\"", -- Conjured Mana Buns
+	["43523"] = "\"Not just any mage can conjure up this mana strudel - but with some dedication and time spent on mastering your magical skills, this delicious treat can be yours.\"", -- Conjured Mana Strudel
+	["42431"] = "\"Make sure you're seated while you enjoy this delicious baked good; it will take all your concentration to navigate each gooey, decadent bite. Oozing with a chocolate glaze and dusted with cocoa and spice, these are the brownies to beat all brownies. But don't set a bad example - bring enough to share!\"", -- Dalaran Brownie
+	["8953"] = "\"This sweet treat is Tyrande Whisperwind's guilty pleasure. Fried to the point of just shy of too soft, this recipe brings out the best flavors of all its ingredients.\"", -- Deep-Fried Plantains
+	["33924"] = "\"Although it's a bit tricky to make, there are few desserts as famous throughout Azeroth as this Delicious Chocolate Cake. With a dash of mageroyal water, and fortified with a splash of port, this recipe is like fireworks of flavor for your mouth.\"", -- Delicious Chocolate Cake
+	["17197"] = "\"There's no recipe more beloved by Greatfather Winter than these scrumptious Gingerbread Cookies. If you don't have time to visit him in person or don't want to face the crowds, leave a plate out overnight with a glass of ice-cold milk.\"", -- Gingerbread Cookies
+	["49600"] = "\"The goblins of the Bilgewater Cartel once thrived on the Isle of Kezan. Although the goblins were forced to flee, this recipe made the journey with them to Kalimdor. They've added some more tropical ingredients since then, but these simple shortbread cookies will always remind goblins of their old home.\"", -- Goblin Shortbread
+	--["21215"] = "\"has flavor text\"", -- Graccu's Mincemeat Fruitcake
+	["101745"] = "\"This light, fruity, and refreshing dessert is thought to have been a favorite among the ancient mogu of Pandaria.\"", -- Mango Ice
+	["28486"] = "\"Yea, yea, I'm the Muffin Man. You know why? Because I sell muffins, that's why.\"\n - Muffin Man Moser", -- Moser's Magnificent Muffins
+	--["101746"] = "\"has flavor text\"", -- Pomfruit Slices
+	["44836"] = "\"What Pilgrim's Bounty celebration could be complete without a wonderful slice of Pumpkin Pie? Right from the Bountiful Cookbook, the soft creamy texture and earthy spiced flavors are offset by a dollop of sweetened whipped cream - the crowning touch to a delicious dessert.\"", -- Pumpkin Pie
+	["116409"] = "\"What Pilgrim's Bounty celebration could be complete without a wonderful slice of Pumpkin Pie? Right from the Bountiful Cookbook, the soft creamy texture and earthy spiced flavors are offset by a dollop of sweetened whipped cream - the crowning touch to a delicious dessert.\"", -- Gourmet Pumpkin Pie
+	["86069"] = "\"A rich and creaming texture, with slight hints of exotic spices, it's just the right thing for dessert or even breakfast.\"", -- Rice Pudding
+	["115351"] = "\"This pastry is infinitely preferable to being on the business end of a rylak. Filled with a sweet, flavorful layer, each flaky 'claw' is melt-in-your-mouth delicious, not to mention an impressive treat for guests!\"", -- Rylak Claws
+	["117469"] = "\"Soft and airy, these delicate-looking pastries conceal a dollop of flavorful whipped cream. Be sure to grab a few the next time you are in Stormshield of Lunarfall.\"", -- Sugar-Dusted Choux Twists
+	["16167"] = "\"Crunchy and swirled with crimson, this sweet, beautiful treat is made and sold only by the night elves of Kalimdor, so it's a much sought-after dessert for visitors from other parts of Azeroth. One bite and you'll understand why.\"", -- Versicolor Treat
+
+	--Drinks
+	["11584"] = "\"It gets mighty hot out in the Valley of Trials, but thankfully, Galgar has shared his own special take on the Cactus Apple Surprise. This wonderfully cooling beverage is the perfect reward after a long day of raiding.\"", -- Cactus Apple Surprise
+	["4600"] = "\"An adventurer's health is important, whether they're exploring old ruins or forested wilderness. Sweet, tart, strong, and spicy, this beverage is a tasy way to overcome enemies.\"", -- Cherry Grog
+	["61382"] = "\"Enjoyed by swashbuckling pirates looking to prevent scurvy, this basil-infused limeade is a must for both seasoned sailors and green ones!\"", -- Garr's Limeade
+	["17402"] = "\"The Feast of Winter Veil isn't complete without a tall mug of this warming delight.\"", -- Greatfather's Winter Ale
+	["82344"] = "\"Perfect for chilly autumn evenings or cold winter days, this warming nectar comes recommended by Tirion Fordring and the Argent Crusade. Even paladins need to put up their boots and unwind!\"", -- Hearthglen Ambrosia
+	["33445"] = "\"This tea bursts with minty flavor and just a touch of natural sweetness from the honey. Served warm, it's a popular drink in the cold weather of Northrend; chilled, it proves a refreshing way to beat the heat of summer.\"", -- Honeymint Tea
+	["34411"] = "\"Steaming hot and flavored with an array of warm spices, a mug of this apple cider will take the chill out of your bones with just a sip.\"", -- Hot Apple Cider
+	["4595"] = "\"Fruity, fragrant, and irresistible to ogres, this strong Booty Bay wine is as dangerous as it is delicious. Plus, it makes enough to satisfy a small ship's crew, so everybody wins!\"", -- Junglevine Wine
+	["39520"] = "\"If you are the type to climb the highest mountains or cross scorching deserts in search of a delicious drink, this drink will reward your brave adventuring.\"", -- Kungaloosh
+	["144429"] = "\"If you are the type to climb the highest mountains or cross scorching deserts in search of a delicious drink, this drink will reward your brave adventuring.\"", -- Kungaloosh
+	["21721"] = "\"The druids of Moonglade know how to party. This sweet, easy-to-mix drink is a must-have for those looking to celebrate the Lunar Festival.\"", -- Moonglow
+	["81415"] = "\"The fruit! The fizz! Drink too much of this shtuff and even Jogu the Drunk will start to sound shober to you.\"", -- Pandaren Plum Wine
+	["81414"] = "\"Lightly sweetened milk tea is the base mixture in this refreshing beverage. With chewy, honey-flavored pearls at the bottom, it's halfway to a meal for a human, although it's just a satisfying snack for somone with the appetite of a pandaren.\"", -- Pearl Milk Tea
+	["81406"] = "\"When pandaren aren't using barley to brew beer, they make this delicious tea! Roasted barley tea is a simple yet refreshing beverage that is unique and easy to make. Its reputed health benefits are numerous, and as it can be enjoyed warm or cold, it suits any season.\"", -- Roasted Barley Tea
+	["62672"] = "\"Sad about the Cataclysm? Not after one of these. The pineapple puts a joyful spin on an old classic.\"", -- South Island Iced Tea
+	["21241"] = "\"This lightly spiked concoction is Greatfather Winter's favorite beverage to help wash down all those Gingerbread Cookies.\"", -- Winter Veil Eggnog
+	--[""] = "\"\"", -- 
 
 };
+
+
+
