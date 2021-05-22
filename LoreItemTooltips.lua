@@ -67,7 +67,7 @@ local function GameTooltip_OnTooltipSetItem(tooltip)
 	end
 end
 
-local LitText = "|T" .. logoImage .. ":14|t" .. "|TlogoImage|t" .. "|cffffd100Lore Item Tooltips|r: "
+local LitText = "|T" .. logoImage .. ":14|t" .. "|cffffd100Lore Item Tooltips|r: "
 
 local function round(number, decimals)
 	return (("%%.%df"):format(decimals)):format(number)

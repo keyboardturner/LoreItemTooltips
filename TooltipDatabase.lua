@@ -99,7 +99,7 @@ LIT.ItemIdTable = {
 	["22778"] = "\"Side effects may include temporary joint stiffness.\"", -- Scourgebane Infusion
 	["22779"] = "\"Enough to really make the undead feel your slap.\"", -- Scourgebane Draught
 	["22675"] = "\"Worn by the denizons of Suncrown Village to subjugate the water elementals.\"", -- Bundle of Medallions
-	["22706"] = "\"There are many details about powerful artifacts, mysterious places, and details of the Scourge and Necromancy within.\"", -- Dar'Khan's Journal
+	["22706"] = "\"There are many details about powerful artifacts, mysterious places, and of the Scourge and Necromancy within the journal.\"", -- Dar'Khan's Journal
 	["22628"] = "\"Capable of ridding most forms of alchemically induced stupor.\nSide effects may include: confusion, nausea, and temporary blindness.\"", -- Janeda's Restorative Draught
 	["23929"] = "\"Pertaining to the news of Dar'Khan Drathir.\"", -- Letter from Lor'themar Theron
 	["23930"] = "\"Pertaining to the news of Dar'Khan Drathir.\"", -- Letter Sealed by Sylvanas
@@ -588,9 +588,6 @@ LIT.ItemIdTable = {
 	["2619"] = "\"A Report on the State of the Frostmane Trolls in the General Area of Coldridge Valley.\"", -- Grelin's Report
 	["7646"] = "\"For a crate full of just a couple mugs, cheeses, and stews, it's rather heavy.\"", -- Crate of Inn Supplies
 	["2999"] = "\"Filled to the brim with an assortment of spanners, wrenches, ratchets, hammers...\"", -- Steelgrill's Tools
-	["15911"] = "\"Given to novice hunters to help focus natural magics in order to tame beasts.\"", -- Taming Rod
-	["15913"] = "\"Given to novice hunters to help focus natural magics in order to tame beasts.\"", -- Taming Rod
-	["15908"] = "\"Given to novice hunters to help focus natural magics in order to tame beasts.\"", -- Taming Rod
 	--[""] = "\"already has quest text\"", -- Empty Leaden Collection Phial
 	["2886"] = "\"Perfect for being beer basted!\"", -- Crag Boar Rib
 	["2894"] = "\"Perfect for basting boar!\"", -- Rhapsody Malt
@@ -618,11 +615,117 @@ LIT.ItemIdTable = {
 
 	--[""] = "\"\"", -- 
 
+--Orc
+	--Durotar
+	["4869"] = "\"The goblin's hand has been mutated into a hideous clawed appendage by dark magic.\"", -- Fizzle's Claw
+	["4859"] = "\"The medallion radiates with a strong magical energy.\"", -- Burning Blade Medallion
+	["4886"] = "\"A fleshy sack filled with the vile poison of the scorpids of Durotar.\"", -- Venomtail Poison Sac
+	["4904"] = "\"The life-saving cure Rhinag needs. The antidote smells horrid and glows green.\"", -- Venomtail Antidote
+	["4891"] = "\"After wiping off some digestive juices you can make out the name, 'Kron Tor'kren,' carved into the backside of the amulet.\"", -- Kron's Amulet
+	["6487"] = "\"The face is still contorted into the toothy sneer of an imp.\"", -- Vile Familiar Heaed
+	["16332"] = "\"The pick shines in the darkness illuminating its surroundings in a bright light.\"", -- Thazzril's Pick
+	["4864"] = "\"Cleaned and treated for a dark ritual. Your efforts have saved the soul this skull once belonged to.\"", -- Minshina's Skull
+	["6655"] = "\"Visions of fire dance in the emblem and you hear the faintest of whispers echoing through you.\"", -- Glowing Ember
+	["6653"] = "\"Though dormant for now, this torch is soon to bear witness to your great potential.\"", -- Torch of the Dormant Flame
+	["6654"] = "\"Burns brightly and ferociously.You can feel the anger of the elements through the flame.\"", -- Torch of the Eternal Flame
+	["6652"] = "\"Crafted of red leather and tied tightly to hold valuable reagents.\"", -- Reagent Pouch
+	["5026"] = "\"Coal black and incredibly thick.\"", -- Fire Tar
+	["6636"] = "\"The liquid inside the flask bubbles and churns. Bottoms up.\"", -- Fire Sapta
+	["4887"] = "\"Finding eyes is easy, finding them intact less so.\"", -- Intact Makrura Eye
+	["4918"] = "\"Hefty brown sacks filled with various supplies intended for the goblins.\"", -- Sack of Supplies
+	["6486"] = "\"The scales are singed from the strong magical lightning that courses deep within each Thunder Lizard.\"", -- Singed Scale
+	["4905"] = "\"Twisted from a hefty blow by Hana'zua.\"", -- Sar'koth's Mangled Claw
+	["6535"] = "\"Shadowy runes are etched into this tablet, telling the mysteries of the void.\"", -- Tablet of Verga
+	["7464"] = "\"Dark Glyphs intended for use of summoning a Voidwalker.\"", -- Glyphs of Summoning
+	["4863"] = "\"Advanced gnomish technology meant to expedite the process of any technological work.\"", -- Gnomish Tool
+	["4892"] = "\"Lush soft fur, ready to be crafted into fine goods.\"", -- Durotar Tiger Fur
+	["4866"] = "\"Zalazane will torment the Darkspear tribe no more.\"", -- Zalazane's Head
+	["4871"] = "\"Warm to the touch and teeming with dark energy.\"", -- Searing Collar
+	["4890"] = "\"Brightly colored eggs guarded closely by the Bloodtalon raptors of Durotar.\"", -- Taillasher Egg
+	["6640"] = "\"Sharp, clawed hooves. The fur is coarse and the hooves are rough to the touch.\"", -- Felstalker Hoof
+	["6635"] = "\"A light brown hue and the liquid smells surprisingly okay.\"", -- Earth Sapta
+	["6656"] = "\"This tiny rough gem holds much potential power.\"", -- Rough Quartz
+	["4862"] = "\"Delicately handled.\"", -- Scorpid Worker Tail
+	["791"] = "\"Bits of canvas salvaged from the humans of Kul'Tiras\"", -- Carry Your Weight
+	["4888"] = "\"Viscous and a sickly yellow-green color.\"", -- Crawler Mucus
+	["11584"] = "\"It gets mighty hot out in the Valley of Trials, but thankfully, Galgar has shared his own special take on the Cactus Apple Surprise. An inventive reimagining of the refreshing treat, this wonderfully cooling beverage is the perfect reward after a long day of raiding.\"", -- 
+	["11583"] = "\"An invigorating fruit to help on a hot day.\"", -- Cactus Apple
+	["16114"] = "\"Work work!\"", -- Foreman's Blackjack
+	["7629"] = "\"Filled to the brim with foodstuffs.\"", -- Ukor's Burden
+	["4881"] = "\"The seal of Admiral Proudmoore is stained on the document.\"", -- Aged Envelope
+	["4883"] = "\"The seal of Admiral Proudmoore is stained on the document.\"", -- Admiral Proudmoore's Orders
+	["4870"] = "\"A leather material common to humans and centaurs.\"", -- Canvas Scraps
+	["11845"] = "\"Made from the scraps of canvas material, fashioned together by Furl Scornbrow.\"", -- Handmade Leather Bag
+	["6658"] = "\"Warm to the touch and teeming with dark energy.\"", -- Example Collar
+	--[""] = "\"\"", -- 
+
+--Tauren
+	--Mulgore
+	["4740"] = "\"Great for clothing made by the tauren of Camp Narache.\"", -- Plainstrider Feather
+	["4739"] = "\"A staple food for the tauren of Thunder Bluff.\"", -- Plainstrider Meat
+	["4755"] = "\"Beautifully crafted with patterns of blocky red, white, and green shapes.\"", -- Water Pitcher
+	["4742"] = "\"Sleek and short. It almost blends in with the surrounding gravel and rock of the mountains.\"", -- Mountain Cougar Pelt
+	["4849"] = "\"Perfect for a stew to feed the young.\"", -- Battleboar Flank
+	["4848"] = "\"It oinks no longer.\"", -- Battleboar Snout
+	["4770"] = "\"Proof of your strength over one of the Bristleback foes.\"", -- Bristleback Belt
+	["4851"] = "\"Attack plans on the nearby Camp Narache.\"", -- Dirt-stained Map
+	["4850"] = "\"Attack plans on the nearby Camp Narache.\"", -- Bristleback Attack Plans
+	["10459"] = "\"Hopefully for the time being, the Bristleback forces will be in disarray.\"", -- Chief Sharptusk Thornmantle's Head
+	["4783"] = "\"Specific carvings are etched into this totem by Chief Hawkwind.\"", -- Totem of Hawkwind
+	["7627"] = "\"Comfortable and warm.\"", -- Bundle of Furs
+	["4809"] = "\"Found below many of the trees native to Mulgore, these deep orange-brown seeds contain magics which can be extracted for the Rite of Vision.\"", -- Ambercorn
+	["4808"] = "\"They don't look particularly magical, but there do appear to be peculiar swirling ridges on its surface.\"", -- Well Stone
+	["4823"] = "\"It seems to almost swirl on its own.\"", -- Water of the Seers
+	["5203"] = "\"The claws are kept sharp, ready to pounce on Mulgore wildlife at a moment's notice.\"", -- Flatland Prowler Claw
+	["4769"] = "\"A collection of these is indicative of the determination and cleverness of a hunter.\"", -- Trophy Swoop Quill
+	["4805"] = "\"Used in combination with various reagents to make a disinfectant salve.\"", -- Flatland Cougar Femur
+	["4806"] = "\"Used in combination with various reagents to make a disinfectant salve.\"", -- Plainstrider Scale
+	["4807"] = "\"Used in combination with various reagents to make a disinfectant salve.\"", -- Swoop Gizzard
+	["4808"] = "\"Used in combination with various reagents to make a disinfectant salve.\"", -- Prairie Wolf Heart
+	["4702"] = "\"Responsible for enraging the beasts of the land.\"", -- Prospectors Pick
+	["4703"] = "\"Dig no more!\"", -- Broken Tools
+	["4752"] = "\"Blue as the daytime sky with flecks as dark as night, a perfect addition to a tauren's ceremonial headdress.\"", -- Azure Feather
+	["4753"] = "\"Reflective and tinted with yellows and dusky browns, this would help accentuate the appearance of a tauren's ceremonial headdress.\"", -- Bronze Feather
+	["4841"] = "\"A fierce, yet worn-down horn. Despite its bulky appearance, it weighs rather light.\"", -- Horn of Arra'chea
+	["4854"] = "\"A respected beast among the tauren, Ghost Howl was wounded in battle against the Burning Legion and turned hostile towards the people he once protected. May his spirit finally find peace.\"", -- Demon Scarred Cloak
+	["4834"] = "\"A list of supplies, ledgers, and a letter to Supervisor Fizsprocket.\"", -- Venture Co. Documents
+	["4819"] = "\"Scribbled with various devious notes and a lot of money symbols.\"", -- Fizsprocket's Clipboard
+	--[""] = "\"\"", -- 
+
 --Undead
 	--Tirisfal
 	["2885"] = "\"The red wax seal bearing the insignia of the Scarlet Crusade still seems fresh.\"", -- Scarlet Crusade Documents
 	["11127"] = "\"The box is a bit worse for wear the contents inside should be fine enough for the newly raised Forsaken.\"", -- Scavenged Goods
 
+
+--Class Quests
+	--Hunter
+	["15911"] = "\"Given to novice hunters to help focus natural magics in order to tame beasts.\"", -- Taming Rod
+	["15913"] = "\"Given to novice hunters to help focus natural magics in order to tame beasts.\"", -- Taming Rod
+	["15908"] = "\"Given to novice hunters to help focus natural magics in order to tame beasts.\"", -- Taming Rod
+	["23697"] = "\"Given to novice hunters to help focus natural magics in order to tame beasts.\"", -- Taming Rod
+	["15922"] = "\"Given to novice hunters to help focus natural magics in order to tame beasts.\"", -- Taming Rod
+	["15923"] = "\"Given to novice hunters to help focus natural magics in order to tame beasts.\"", -- Taming Rod
+	["23702"] = "\"Given to novice hunters to help focus natural magics in order to tame beasts.\"", -- Taming Rod
+	["15914"] = "\"Given to novice hunters to help focus natural magics in order to tame beasts.\"", -- Taming Rod
+	["23703"] = "\"Given to novice hunters to help focus natural magics in order to tame beasts.\"", -- Taming Rod
+	["15915"] = "\"Given to novice hunters to help focus natural magics in order to tame beasts.\"", -- Taming Rod
+	["15916"] = "\"Given to novice hunters to help focus natural magics in order to tame beasts.\"", -- Taming Rod
+	["15917"] = "\"Given to novice hunters to help focus natural magics in order to tame beasts.\"", -- Taming Rod
+	["15919"] = "\"Given to novice hunters to help focus natural magics in order to tame beasts.\"", -- Taming Rod
+	["15920"] = "\"Given to novice hunters to help focus natural magics in order to tame beasts.\"", -- Taming Rod
+	["15921"] = "\"Given to novice hunters to help focus natural magics in order to tame beasts.\"", -- Taming Rod
+
+	--[""] = "\"\"", -- 
+
+--Dungeon Quests
+	--Ragefire Chasm
+	["14381"] = "\"Relatively undamaged, embroidered with with various red, blue, and black patterns.\"", -- Grimtotem Satchel
+	["14540"] = "\"Is it still beating...?!\"", -- Taragaman the Hungerer's Heart
+
+--Seasonal
+	--Darkmoon Faire
+	["19338"] = "\"Redeemable for 5 prize tickets at the Darkmoon Faire.\"", -- Free Ticket Voucher
 
 --Lordaeron
 	--Arathi Highlands
