@@ -578,7 +578,7 @@ LIT.ItemIdTable = {
 	["750"] = "\"Good for a nice wolf steak.\"", -- Tough Wolf Meat
 	["2004"] = "\"The journal is sewn together with fine thread and bound by worn out boar leather. Its pages have yellowed a bit and it seems to have been heavily used.\"", -- Grelin Whitebeard's Journal
 	["2187"] = "\"Most of them appear to be for Talin Keeneye. Most of them.\"", -- A Stack of Letters
-	["2188"] = "\"This one is not for Talin Keeneye.\"", --  A Letter to Grelin Whitebeard
+	["2188"] = "\"This one is not for Talin Keeneye.\"", -- A Letter to Grelin Whitebeard
 	["16313"] = "\"The chest is neatly kept and locked tight.\"", -- Felix's Chest
 	["16314"] = "\"Bolts of all size and shape make their home in this slightly grease covered bucket.\"", -- Felix's Bucket of Bolts
 	["10438"] = "\"An odd assortment of gnomish gizmos and gadgets seems to stuff this box to the brim.\"", -- Felix's Box
@@ -691,10 +691,86 @@ LIT.ItemIdTable = {
 	["4819"] = "\"Scribbled with various devious notes and a lot of money symbols.\"", -- Fizsprocket's Clipboard
 	--[""] = "\"\"", -- 
 
+--Kalimdor
+	--The Barrens
+	["4926"] = "\"Chen Sotmrsout - May your spirits be raised and always raise your spirits.\"", -- Chen's Empty Keg
+	["5087"] = "\"Only the most pristine and undamaged of beaks.\"", -- Plainstrider Beak
+	["4995"] = "\"The stamp of Kargal Battlescar is placed upon this letter.\"", -- Signed Recruitment Letter
+	["6462"] = "\"Filled to the brim with alchemical supplies, and sealed shut.\"", -- Secure Crate
+	["5059"] = "\"Perfect for finding those good old bugs in the sand!\"", -- Digging Claw
+	["5084"] = "\"The bearded man is no more.\"", -- Baron Longshore's Head
+	["5078"] = "\"Shiny and detailed with blue and gold inscriptions.\"", -- Theramore Medal
+	["5080"] = "\"A list of supplies from Booty Bay to Ratchet.\"", -- Gazlowe's Ledger
+	["5077"] = "\"To complete Gazlowe's observatory.\"", -- Telescopic Lens
+	["5076"] = "\"Some pretty fine boots.\"", -- Shipment of Boots
+	["5097"] = "\"Large and sparkly, sure to yield a lot of moolah.\"", -- Cats Eye Emerald
+	["4893"] = "\"Long, pointed, and sturdy enough to create a gash in any of the fauna of the Barrens.\"", -- Savannah Lion Tusk
+	["5062"] = "\"The eyes feel as though they stare into your soul.\"", -- Raptor Head
+	["12708"] = "\"Full of foodstuffs and grub. Mostly meat.\"", -- Crossroads' Supply Crates
+	["5055"] = "\"Not such a clever girl aanymore.\"", -- Intact Raptor Horn
+	["4894"] = "\"Filled with juicy goodness!\"", -- Plainstrider Kidney
+	["5012"] = "\"Try not to sneeze...\"", -- Fungal Spores
+	["4895"] = "\"It still crackles with lightning, sure to give the stormstout brew a kick to it.\"", -- Thunder lizard Horn
+	["5086"] = "\"Pristine and perfect quality, not a single crack.\"", -- Zhevra Hooves
+	["5030"] = "\"Rough and crude, belonging to the centaur of the Barrens.\"", -- Centaur Bracers
+	["5022"] = "\"Stinks about as bad as he looks.\"", -- Kodobane's Head
+	["4896"] = "\"Hefty, bulky, yet squishy.\"", -- Kodo Liver
+	["5064"] = "\"You probably couldnt' tell if this was a large bird's talon if you knew better...\"", -- Witchwing Talon
+	["5063"] = "\"Bent and twisted, however painted with faded warpaints.\"", -- Kreenig Snarlsnout's Tusk
+	["5068"] = "\"Not a single drop of water inside.\"", -- Dried Seeds
+	["5098"] = "\"Mutated by odd magics.\"", -- Altered Snapjaw Shell
+	["10414"] = "\"Mutated by odd magics.\"", -- Sample Snapjaw Shell
+	["5065"] = "\"Only lieutenants of the harpies wear rings.\"", -- Harpy Lieutenant Ring
+	["5096"] = "\"Pointy, yet effective.\"", -- Prowler Claw
+	["5067"] = "\"Leader of the Witchwing Harpies, Serena sought to attack the Horde caravans after the death of her sister, Bloodfeather.\"", -- Serena's Head
+	["5089"] = "\"Able to unlock the control console.\"", -- Console Key
+	["5054"] = "\"Keep your foot off of it.\"", -- Samophlange
+	["5050"] = "\"It seems to be a standard design.\"", -- Ignition Key
+	["5100"] = "\"As you touch the hide, you feel a burst of spiritual power course through your body.\"", -- Echeyakee's Hide
+	["5027"] = "\"The bag emits a faint fume of fungal spores.\"", -- Rendered Spores
+	["5165"] = "\"Vibrant in color, it changes ever so slightly whether it's held up to the ground or shining in the light.\"", -- Sunscale Feather
+	["5061"] = "\"A hefty bag of payment meant for the Crossroads guards.\"", -- Stolen Silver
+	["5099"] = "\"As you pick up the old and worn hoof, you feel a rush of some sort of spiritual power pass through you.\"", -- Hoof of Lakota'mani
+	["5023"] = "\"You're not sure what he ate, but you are sure that it didn't agree with him.\"", -- Verog's Head
+	["11142"] = "\"No longer does the thing it was supposed to be doing.\"", -- Broken Samophlange
+	["11143"] = "\"Seventeen-point-five gauge!\"", -- Nugget Slug
+	["11146"] = "\"A few more dents added to whatever it was supposed to be doing.\"", -- Broken and Battered Samophlange
+	["5025"] = "\"Once the leader of the Kolkar forces in the Barrens.\"", -- Hezrul's Head
+	["11227"] = "\"The tattered, painted banner of the centaur invaders and proof of your defense.\"", -- Piece of Krom'zar's Banner
+	["5102"] = "\"Electricity crackles off of the spike.\"", -- Owatanka's Tailspike
+	["5101"] = "\"A fierce spiritual power flows through your body as you pick up the fang.\"", -- Ishamuhale's Fang
+	["5143"] = "\"A jolt of static pops every time you touch it.\"", -- Thunder Lizard Blood
+	["10621"] = "\"Bound with elven ribbon.\"", -- Runed Scroll
+	["5164"] = "\"Despite its delicate-looking appearance, they're quite sturdy.\"", -- Thunderhawk Wings
+	["5058"] = "\"Every so often it twitches.\"", -- Silithid Egg
+	["5085"] = "\"Light, pale, and often painted and cracked.\"", -- Bristleback Quilboar Tusk
+	["5075"] = "\"Can be exchanged with Mangletooth in Camp Taurajo.\"", -- Blood Shard
+	["4897"] = "\"Who wouldn't want thunderhawk saliva in their brew?\"", -- Thunderhawk Saliva Gland
+	["4898"] = "\"Absolutely shocking!\"", -- Lightning Gland
+	["5093"] = "\"Curved and sharp, despite its crude fashioned hilt.\"", -- Razormane Backstabber
+	["5092"] = "\"The wood itself appears to be burnt to a crisp, yet it remains sturdy.\"", -- Charred Razormane Wand
+	["5094"] = "\"It appears as though its a standard shield, but closer inspection shows it's covered in thorns.\"", -- Razormane War Shield
+	["5072"] = "\"It's vaguely pig-shaped.\"", -- Lok's Skull
+	["5074"] = "\"It's vaguely pig-shaped.\"", -- Luz's Skull
+	["5073"] = "\"It's vaguely pig-shaped.\"", -- Nak's Skull
+	["5104"] = "\"As you touch the heart, a spiritual power cascades through you.\"", -- Heart of Isha Awak
+	["11149"] = "\"Lots of instructions on a lot of technical details.\"", -- Samophlange Manual
+	["5103"] = "\"When touching it, your hand radiates with pain as spiritual power rushes through your body.\"", -- Washte Pawne's Feather
+	["5006"] = "\"Details various things, including notes on how their explosives work.\"", -- Khazgorm's Journal
+	["5038"] = "\"An odd aura emanates from this object. It's best to keep it wrapped up with some cloth.\"", -- Tear of the Moons
+	["5017"] = "\"It's actually a rather colorless fluid. Makes sure not to drop it!\"", -- Nitroglycerin
+	["5018"] = "\"The mixed chunky appearance almost makes it appear soft.\"", -- Wood Pulp
+	["5019"] = "\"A great food additive, not to be confused with sodium nitrite, also a food additive!\"", -- Sodium Nitrate
+	--["5021"] = "\"\"", -- Explosive Stick of Gann
+
+
+	--[""] = "\"\"", -- 
+
 --Undead
 	--Tirisfal
 	["2885"] = "\"The red wax seal bearing the insignia of the Scarlet Crusade still seems fresh.\"", -- Scarlet Crusade Documents
 	["11127"] = "\"The box is a bit worse for wear the contents inside should be fine enough for the newly raised Forsaken.\"", -- Scavenged Goods
+	--[""] = "\"\"", -- 
 
 
 --Class Quests
@@ -721,10 +797,172 @@ LIT.ItemIdTable = {
 	--Ragefire Chasm
 	["14381"] = "\"Relatively undamaged, embroidered with with various red, blue, and black patterns.\"", -- Grimtotem Satchel
 	["14540"] = "\"Is it still beating...?!\"", -- Taragaman the Hungerer's Heart
+	
+	--Wailing Caverns
+	["6443"] = "\"The hides are unlike anything you felt before. They carry an unusual energy touched by the waking nightmare.\"", -- Deviate Hide
+	["5334"] = "\"Bottle still unopened, but its strong aroma wafts towards your nose when you pick it up.\"", -- 99 Year Old Port
+	["5339"] = "\"Snakes make their homes in these peculiar flowers.\"", -- Serpentbloom
+	["6464"] = "\"The essence swirls with unusual energy and you hear the faintest scream.\"", -- Wailing Essence
+	["9738"] = "\"A bright green gem, it glows with a dreamlike quality.\"", -- Gem of Cobrahn
+	["9739"] = "\"A bright green gem, it glows with a dreamlike quality.\"", -- Gem of Anacondra
+	["9740"] = "\"A bright green gem, it glows with a dreamlike quality.\"", -- Gem of Pythas
+	["9741"] = "\"A bright green gem, it glows with a dreamlike quality.\"", -- Gem of Serpentis
+	["10441"] = "\"A smoky red essence twirls beneath the shards surface. A strange presence from deep within the gem makes your hair stand on end.\"", -- Glowing Shard
+	["10649"] = "\"A smoky red essence twirls beneath the shards surface. A strange presence from deep within the gem makes your hair stand on end.\"", -- Nightmare Shard
+	
+	
+	--Blackfathom Deeps
+	["5359"] = "\"The Lorgalis Manuscript details some of the legends of the Old Gods.\"", -- Lorgalis Manuscript
+	["5881"] = "\"The head of one of the sinister leaders of the Twilight Cult who seek to bring the Old Gods destruction to the world.\"", -- Head of Kelris
+	["5879"] = "\"These darkly colored pendants are carried by members of the Twilight Hammer's cult.\"", -- Twilight Pendant
+	["16784"] = "\"Elemental energy radiates from deep within the crystalline structures.\"", -- Sapphire of Akumai
+	["5952"] = "\"These brain stems have been twisted by dark and foul magic.\"", -- Corrupted Brain Stem
+	["16762"] = "\"Inscribed on the stone are elemental runes that are meant to detail the ongoing elemental powers at work within the Depths.\"", -- Fathom Core
+	["16782"] = "\"A putrid murky water sloshes about within this unusual blue globe.\"", -- Strange Water Globe
+	
+	--Razorfen Kraul
+	["5793"] = "\"The meaty heart of Charlga Razorflank.\"", -- Razorflank's Heart
+	["5801"] = "\"Absolutely disgusting, you can't believe you are putting this inside your pack.\"", -- Kraul Guano
+	["5790"] = "\"The journal details what the captured Lonebrow experienced within the Kraul and seeing of its corruption.\"", -- Lonebrow's Journal
+	["5792"] = "\"The sinister medallion of Charlga Razorflank who will lead the quillboar no more.\"", -- Razorflank's Medallion
+	["5825"] = "\"A beautiful and lovingly crafted piece of jewelry. It is golden and encrusted with green gems.\"", -- Treshala's Pendant
+	["5880"] = "\"You hear the skittering noises of eager gophers inside.\"", -- Crate With Holes
+	["5897"] = "\"Detailing on the care and control of a Snufflenose Gopher.\"", -- Snufflenose Owner's Manual
+	["6684"] = "\"Long, thin wooden stick. It doesn't seem that much different from a normal stick.\"", -- Snufflenose Command Stick
+	["5876"] = "\"A rare delicacy that hides itself deep within the earth. Thick yet surprisingly a little fragile.\"", -- Blueleaf Tuber
+	
+	--Razorfen Downs
+	["17009"] = "\"The head of Malcin who was working with the Razorfen Quillboar to spread the Plague.\"", -- Ambassador Malcin's Head
+	["10420"] = "\"The skull of a powerful Lich. It's ice cold to the touch and you feel that if you held it in your hands for too long you would get frostbite.\"", -- Skull of the Coldbringer
+	
+	--Zul'Farrak
+	["8707"] = "\"Strong electrical energy emanates from the slimy scale of Gahz'rilla.\"", -- Gazhrilla's Electrified Scale
+	["8548"] = "\"A strange rod meant to find sources of water in the vast deserts of Tanaris.\"", -- Divino-matic Rod
+	["9234"] = "\"A radiant and beautiful piece of golden jewelry. Embedded within are numerous bright blue gems. It shines with magical energy.\"", -- Tiara of the Deep
+	["9238"] = "\"Exceptionally sturdy.\"", -- Uncracked Scarab Shell
+	["9523"] = "\"Strange liquids kept in small bottles that the trolls carry.\"", -- Troll Temper
+	["9471"] = "\"This medallion seemed to provide its wearer with an unnaturally long life, but at the very dark cost.\"", -- Nekrum's Medallion
+	
+	--Maraudon
+	["17781"] = "\"The centaur Pariah details what you must do to create the Amulet of Union.\"", -- The Pariah's Instructions
+	["17684"] = "\"Ancient relics related to the old gods.\"", -- Theradric Crystal Carving
+	["17702"] = "\"This dark rod was found at the core of Noxxion once he was vanquished.\"", -- Celebrian Rod
+	["17703"] = "\"A shining diamond in possession of the corrupted satyr Lord Vyletongue.\"", -- Celebrian Diamond
+	["17756"] = "\"A deep dark purple gem harvested from the earthen elementals that roam the caverns of Maraudon.\"", -- Shadowshard Fragments
+	["17191"] = "\"Now fully put back together, you can appreciate the full beauty of this powerful magic scepter.\"", -- Scepter of Celebras
+	["17760"] = "\"A small seed that makes you feel overcome with warm energy and makes your body feel at ease.\"", -- Seed of Life
+	
+	--Dire Maul
+	["18240"] = "\"A dark brown substance to be used in crafting a convincing guise to fool the ogres.\"", -- Ogre Tannin
+	["18426"] = "\"A powerful magic web intended to ensnare any and all magical energies that come in contact with it. You are very careful with handing such an object.\"", -- Lethtendris's Web
+	["18261"] = "\"A book filled with many ancient and magical spells written in old runes.\"", -- Book of Incantations
+	["18299"] = "\"A crystal clear blue and pure watery essence.\"", -- Hydrospawn Essence
+	["22201"] = "\"An object meant to seal any foul and twisted items placed within.\"", -- Reliquary of Purity
+	["18501"] = "\"A sinister shard glowing with deep red corrupted magic.\"", -- Felvine Shard
+	
+	--Deadmines
+	["1894"] = "\"The name of a dwarven miner is inscribed on one of each of these cards, denoting his status and place within the union.\"", -- Miners' Union Card
+	["7365"] = "\"A powerful power supply meant to power to a gnomish invention.\"", -- Gnoam Sprecklesprocket
+	["3637"] = "\"With their leaders dead head now in your possession, the Defias will no longer be able to easily organize and cause havoc to the greater human lands and its people.\"", -- Head of VanCleef
+	
+	--Shadowfang Keep
+	["6283"] = "\"The book of Ur contains details of the dark creatures known as the Worgen.\"", -- The Book of Ur
+	["5442"] = "\"You are sure Arugal's lifeless head will bring you great favor with the Forsaken.\"", -- Head of Arugal
+	
+	--The Stockade
+	["3630"] = "\"Targorr will tortue no more innocents.\"", -- The Stockade
+	["3640"] = "\"The head of a co-conspirator of the dark iron attacks in the Wetlands.\"", -- Head of Deepfury
+	["2909"] = "\"Dyed red and ragged, these make-shift bandannas will bring a small bit of peace to Nikova Raskol.\"", -- Red Wool Bandana
+	["3628"] = "\"Thin and bony.\"", -- Hand of Dextren Ward
+	["2926"] = "\"One of the second in command for the Defias. He was causing havoc within the prison cells of the city, inciting numerous riots.\"", -- Head of Bazil Thredd
+	
+	--Scarlet Monastery
+	["5861"] = "\"The scarlet crusades words, detailing the History of the undead.\"", -- Beginnings of the Undead Threat
+	["5805"] = "\"The deep red hearts of the scarlet crusade match their organizations colors.\"", -- Hearts of Zeal
+	["5535"] = "\"The compendium contains some of the teachings of the Scarlet Crusade and may yet prove to have some use amidst their inane ramblings.\"", -- Compendium of the Fallen
+	["5538"] = "\"A small golden band.\"", -- Vorrel's Wedding Ring
+	["5536"] = "\"Locked within the pages of this book are some of the mysteries of the Titans.\"", -- Mythology of the Titans
+
+	--Gnomeregan
+	["9326"] = "\"A hidden treasure hides deep within the grime... if only you could get it off somehow.\"", -- Grime-Encrusted Ring
+	["9277"] = "\"Deep within the boards of this core Techbot may yet live on as its true self.\"", -- Techbot's Memory Core
+	["9309"] = "\"Various bits and bobs harvested from the machines of Gnomergan.\"", -- Robo-mechanical Guts
+	["9278"] = "\"Invaluable to the engineers and smiths of gnomish kind.\"", -- Essential Artificial
+	["9153"] = "\"The blueprints detail of an advanced gnomish mech.\"", -- Rig Blueprints
+	["9299"] = "\"Written down so his leper addled brain may not forget.\"", -- Thermaplugg's Safe Combination
+	--[""] = "\"\"", --
+
+	--Uldaman
+	["4631"] = "\"An ancient tablet engraved with strange markings.\"", -- Tablet of Ryun'eh
+	["8052"] = "\"An unusual stone dug up by the Shadowforge dwarves that could be used to power many great things.\"", -- Analleum Power Stone
+	["8009"] = "\"This stone could be a source of power for numerous bits of dwarven technology if implemented correctly.\"", -- Dentrium Power Stone
+	["8027"] = "\"Looks like any old mug to you.\"", -- Krom Soutarm's Treasure
+	["8026"] = "\"You're unsure how a broom can really be considered a 'treasure.'\"", -- Garret Family Treasure
+	["4610"] = "\"Incredibly ancient and fragile, these urns depict artwork from eras beyond recorded history.\"", -- Carved Stone Urn
+	["4635"] = "\"A powerful magical amulet that once belonged to Hammertoe.\"", -- Hammertoe's Amulet
+	["5824"] = "\"An ancient and legendary tablet supposedly created by the Titans themselves, used to imbue creations with the life and will of their own.\"", -- Tablet of Will
+	["7672"] = "\"The power source harvested from a very powerful titan stone creation.\"", -- Shattered Necklace Power Source
+	["8047"] = "\"These large lavender-hued mushrooms grow deep within Uldaman.\"", -- Magenta Fungus Cap
+	["8053"] = "\"A core hums with strong energy harvested from the Obsidian Sentinel.\"", -- Obsidian Power Source
+	["6064"] = "\"Just holding these ancient titanic discs makes your heart race. They flash memories of the ancient history of the Earthen, the Dwarves, and Troggs.\"", -- Miniature Platinum Discs
+
+	--Temple of Atal'Hakkar
+	["6212"] = "\"This troll's ancient prophecies were leading the Atal'ai tribe to ruin, chasing old gods and their powers.\"", -- Head of Jammal'an
+	["10465"] = "\"The egg teems with energy and something seems to stir slightly within. Have you really done the right thing?\"", -- Egg of Hakkar
+	["10663"] = "\"Pulsates with an unknown magical power.\"", -- Essence of Hakkar
+	["12402"] = "\"Covered in mold and cold to the touch, this egg remains dormant of whatever was supposed to hatch from it.\"", -- Ancient Egg
+	["6288"] = "\"Ancient tablets belonging to the Atal'ai. They are sturdy and inscribed with a language you don't recognize.\"", -- Atal'ai Tablet
+	["11318"] = "\"A disgusting substance harvested from the elemental oozes and monsters within the Sunken Temple.\"", -- Atal'ai Haze
+	["6181"] = "\"Troll fetishes constructed by the Atal'ai and imbued with magical powers meant to help with rituals associated to the old god. \"", -- Fetish of Hakkar
+
+	--Blackrock Depths
+	["11313"] = "\"A scammer of schemers that won't be scamming or scheming anymore.\"", -- Ribbly's Head
+	["11309"] = "\"The gem glows a radiant and deep red. It possesses an almost magical quality to it and draws your gaze just glancing at it.\"", -- The Heart of the Mountain
+	["18412"] = "\"A hot core from deep within the mountain, intended to be used to attune the mind and body to the deepest and most cataclysmic parts of Blackrock Mountain, The Molten Core.\"", -- Core Fragment
+	["11312"] = "\"A legendary thunderbrew recipe for Thunderbrew Lager. The drink will knock even the most seasoned non-dwarven drinkers off their feet.\"", -- Lost Thunderbrew Recipe
+	["11468"] = "\"These dingy little packs surely can't hold much good in them.\"", -- Dark Iron Fanny Pack
+	["11129"] = "\"Elemental essences harvested from powerful elementals within Blackrock Mountain.\"", -- Essence of the Elements
+	["11413"] = "\"Filled with fresh, hot water from the purest springs of Un'Goro crater.\"", -- Nagmara's Filled Vial
+	["11405"] = "\"Gathered from powerful earthen giants that roam the hills of Azshara.\"", -- Giant Silver Vein
+
+	--Blackrock Spire
+	["12923"] = "\"A little blue dragon scale taken from the whelp trapped within Blackrock Spire.\"", -- Awbee's Scale
+	["12352"] = "\"This clasp is covered with tons of beautiful and rare gems.\"", -- Doomrigger's Clasp
+	["12358"] = "\"Inscribed with alchemical compounds you don't comprehend.\"", -- Darkstone Tablet
+	["17322"] = "\"A fiery hot core harvested from a powerful elemental that resides in the Spire.\"", -- Eye of the Emberseer
+	["12847"] = "\"Trapped with powerful fel magic.\"", -- Soul Stained Pike
+	["12530"] = "\"Webbed, soft eggs that house spiders from the spire.\"", -- Spire Spider Egg
+	["12562"] = "\"Detailing important documents from high upon the command chain of the Blackrock orcs.\"", -- Important Blackrock Documents
+	["12345"] = "\"A leather satchel, still seems in good condition and everything inside is safe.\"", -- Bijou's Belongings
+	["12780"] = "\"The document contains protocols and assignments from the high commands of the Spire.\"", -- General Drakkisath's Command
+
+	--Stratholme
+	["12845"] = "\"A powerful medallion imbued with the goodness of the holy light.\"", -- Medallion of Faith
+	["13174"] = "\"A disgusty fleshy  sample taken from the plagued undead within the city of Stratholme.\"", -- Plagued Flesh Sample
+	["13251"] = "\"A sinister leader of the scourge that has slain countless innocents. He will torment the world of the living no more.\"", -- Head of Baron Rivendare
+	["15880"] = "\"The head of a massive flesh golem. It seeps and oozes with disgusting liquids and smells horrid.\"", -- Head of Ramstein the Gorger
+
+	--Scholomance
+	["13920"] = "\"This small scale seems to have avoided being plagued and harmed by the dark magic of scholomance.\"", -- Healthy Dragon Scale
+	["13725"] = "\"A bag containing many unusual and dark items, among them though seems to be vials of blood.\"", -- Krastinov's Bag of Horrors
+	["13752"] = "\"This book has the power to make the lich Ras Frostwhisper mortal once more.\"", -- Soulbound Keepsake
+	["13626"] = "\"The head of the former lich carries a harsh gaze.\"", -- Human Head of Ras Frostwhisper
+
 
 --Seasonal
 	--Darkmoon Faire
 	["19338"] = "\"Redeemable for 5 prize tickets at the Darkmoon Faire.\"", -- Free Ticket Voucher
+	--["5134"] = "\"5 of these can be redeemed a limited number of times for a prize ticket at the Darkmoon Faire.\"", -- Small Furry Paw
+	--[""] = "\"\"", -- 
+
+--Quest Chains
+	--The Mosh'aru Tablets & Hakkar
+	["10660"] = "\"The first piece of the legend of the ancient and powerful god Hakkar.\"", -- First Mosh'aru Tablet
+	["10661"] = "\"The second piece of the legend of the ancient and powerful god Hakkar.\"", -- Second Mosh'aru Tablet
+	["12411"] = "\"The third piece of the legend of the ancient and powerful god Hakkar.\"", -- Third Mosh'aru Tablet
+	["12412"] = "\"The fourth piece of the legend of the ancient and powerful god Hakkar.\"", -- Fourth Mosh'aru Tablet
+	["12740"] = "\"The fifth piece of the legend of the ancient and powerful god Hakkar.\"", -- Fifth Mosh'aru Tablet
+	["12741"] = "\"The sixth piece of the legend of the ancient and powerful god Hakkar.\"", -- Sixth Mosh'aru Tablet
 
 --Lordaeron
 	--Arathi Highlands
@@ -732,6 +970,11 @@ LIT.ItemIdTable = {
 	["4435"] = "\"Used to power crystal clusters.\"", -- Mote of Myzrael
 	["4503"] = "\"Apparently very valuable and used as some sort of reagent.\"", -- Witherbark Tusk
 	["4522"] = "\"Full of alchemical and other magical reagents.\"", -- Witherbark Medicine Pouch
+	--[""] = "\"\"", -- 
+
+	--The Hinterlands
+	["9321"] = "\"A dark green and rancid venom.\"", -- Venom Bottle
+	--[""] = "\"\"", -- 
 
 --Shadowlands
 	--Bastion
