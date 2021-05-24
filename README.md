@@ -29,6 +29,34 @@
 <li>Elwynn Forest</li>
 <li>Mulgore</li>
 <li>Durotar</li>
+<li>The Barrens</li>
+</ul>
+<p>&nbsp;</p>
+<p>Dungeons:</p>
+<ul>
+<li>Wailing Caverns</li>
+<li>Blackfathom Deeps</li>
+<li>Razorfen Kraul</li>
+<li>Razorfen Downs</li>
+<li>Zul''Farrak</li>
+<li>Maraudon</li>
+<li>Dire Maul</li>
+<li>Deadmines</li>
+<li>Shadowfang Keep</li>
+<li>The Stockade</li>
+<li>Scarlet Monastery</li>
+<li>Gnomeregan</li>
+<li>Uldaman</li>
+<li>Temple of Atal'Hakkar</li>
+<li>Blackrock Depths</li>
+<li>Blackrock Spire</li>
+<li>Stratholme</li>
+<li>Scholomance</li>
+</ul>
+<p>&nbsp;</p>
+<p>Quest Chains:</p>
+<ul>
+<li>Mosh'aru Tablets &amp; Hakkar</li>
 </ul>
 <p>&nbsp;</p>
 <p>Burning Crusade:</p>
@@ -69,7 +97,6 @@
 <li>Loch Modan (Partly Done)</li>
 <li>Westfall (Partly Done)</li>
 <li>Tirisfal</li>
-<li>The Barrens</li>
 </ul>
 </div>
 <p>&nbsp;</p>
