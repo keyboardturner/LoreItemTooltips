@@ -1,8 +1,8 @@
-## Interface: 20501
+## Interface: 20503
 ## Title: Lore Item Tooltips
 ## Notes: Adds lore to various quest items around the world.
 ## Author: Keyboardturner
-## Version: 0.0.3
+## Version: 0.0.4
 ## SavedVariables: LitDB
 
 TooltipDatabase.lua
