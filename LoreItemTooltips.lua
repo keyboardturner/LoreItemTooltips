@@ -91,7 +91,7 @@ core.commands = {
 	end,
 
 	["credits"] = function()
-		print(LitText .. "Special thanks to the following people who helped contribute to this project!" .. "\n|cffffe880Rheä-WyrmrestAccord(US)|r - 229 items")
+		print(LitText .. "Special thanks to the following people who helped contribute to this project!" .. "\n|cffffe880Rheä-WyrmrestAccord(US)|r - 229 items" .. "\n|cffffe880Komboloi-WyrmrestAccord/BloodsailBuccaneers(US)|r - 3 items")
 	end,
 
 	["credit"] = function()
