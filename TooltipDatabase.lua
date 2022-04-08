@@ -572,6 +572,10 @@ LIT.ItemIdTable = {
 	["7923"] = "\"A small iron key, etched into is the insignia of the Defias.\"", -- Defias Tower Key
 	["7908"] = "\"This journal has clearly been through a lot. Its spine is stretched and a few loose pages fall out when you pick it up.\"", -- Klaven Mortwake's Journal
 
+	--Duskwood
+	["1130"] = "\"The vile toxin that comes from the fangs of the spiders of Duskwood. The dark magics pervading the land make this venom even more agonizing for its victims.\"", -- Vial of Spider Venom [Classic]
+	["2378"] = "\"These skeletal fingers have long since been detached from their owners, but it is still cold to the touch from necromantic magics.\"", -- Skeleton Finger [Classic]
+	["1129"] = "\"This chipped fang is encrusted in black ichor and dried blood. The fact that it has been blunted with rot does nothing to stop ghouls from biting through bone.\"", -- Ghoul Fang [Classic]
 
 --Dwarf
 	--Dun Morogh
