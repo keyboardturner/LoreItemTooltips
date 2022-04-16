@@ -256,6 +256,8 @@ LIT.ItemIdTable = {
 	["34868"] = "\"Fat from eating so much bait with a notable scar on the side of the body.\"", -- World's Largest Mudfish
 
 	-- does not show up in zone filter
+	["24504"] = "\"Kalimag whispers emanate faintly from this substance.\"", -- Howling Wind
+
 	--[""] = "\"\"", -- 
 
 	--Blade's Edge Mountains
@@ -447,6 +449,7 @@ LIT.ItemIdTable = {
 
 	-- does not show up in zone filter
 	["29801"] = "\"Only the best furs in all of Netherstorm!\"", -- Ripfang Lynx Pelt
+	["33849"] = "\"Residing within the few havens of Netherstorm, these berries are ripeto the same color as the very eco-domes which protect them.\"", -- Mana Berry
 
 	--[""] = "\"\"", -- 
 	
@@ -560,6 +563,11 @@ LIT.ItemIdTable = {
 	["1971"] = "\"Details of property rights in Westfall.\"", -- Furlbrow's Deed
 	["16115"] = "\"Filled with armor and supplies for Smith Argus.\"", -- Osric's Crate
 
+	--Stormwind
+	["2722"] = "\"Good for one free bottle of Dalaran Noir at the Gallina Winery.\"", -- Wine Ticket
+	["2760"] = "\"Filled with needles, shears, various threads, dyes, and buttons.\"", -- Thurman's Sewing Kit
+	["2806"] = "\"Packaged wtih an axe befitting a dwarf.\"", -- Package for Stormpike
+
 	--Westfall
 	["915"] = "\"Woven of fine silk and dyed red, these bandannas indicate a Defias member of higher stature.\"", -- Red Silk Bandana
 	["841"] = "\"The watch seems lovingly cared for, with few signs of long term damage or wear.\"", -- Furlbrow's Pocket Watch
@@ -594,6 +602,7 @@ LIT.ItemIdTable = {
 	["2999"] = "\"Filled to the brim with an assortment of spanners, wrenches, ratchets, hammers...\"", -- Steelgrill's Tools
 	--[""] = "\"already has quest text\"", -- Empty Leaden Collection Phial
 	["2886"] = "\"Perfect for being beer basted!\"", -- Crag Boar Rib
+	["60496"] = "\"Perfect for being beer basted!\"", -- Tender Boar Ribs [Retail]
 	["2894"] = "\"Perfect for basting boar!\"", -- Rhapsody Malt
 	["769"] = "\"Roasted, stews, pies... all decent uses of boar meat!\"", -- Chunk of Boar Meat
 	["6952"] = "\"Somewhat rugged, yet thick and sure to keep one warm in the cold of the mountains.\"", -- Thick Bear Fur
