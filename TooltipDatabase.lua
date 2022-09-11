@@ -314,7 +314,7 @@ LIT.ItemIdTable = {
 	--[""] = "\"\"", -- 
 
 	--Netherstorm
-	["29331"] = "\"\"", -- Annals of Kirin'Var
+	["29331"] = "\"A registry of the residents of Kirin'Var Village.\"", -- Annals of Kirin'Var
 	["29411"] = "\"The crystal hums with a resonating magic and seems quite cool to the touch.\"", -- Ara Access Crystal [Rheä-WyrmrestAccord]
 	["29366"] = "\"The glowing crystal is quite cool to the touch.\"", -- B'naar Access Crystal
 	["28769"] = "\"The stone glows with a vibrant deep blue magic.\"", -- The Keystone
@@ -494,7 +494,14 @@ LIT.ItemIdTable = {
 	["8136"] = "\"This thing is enormous!\"", -- Gargantuan Tumor
 	["5645"] = "\"Filled with some of the water from the Pools of Arlithrien moonwell.\"", -- Filled Tourmaline Phial
 	["5188"] = "\"The pure waters gathered from all moonwells of Teldrassil contained in one phial. It radiates with powerful magic.\"", -- Filled Vessel
-	
+	["10639"] = "\"Feeding off the roots of nearby trees, these mushrooms are often collected by the Grell.\"", -- Hyacinth Mushroom
+	["5166"] = "\"The source of the venom, capable of being studied for its likeness to other variety of spider.\"", -- Webwood Venom Sac
+	["10640"] = "\"A potent, viscious fluid pigmented in a sickly green color.\"", -- Webwood Ichor
+	["10642"] = "\"The antidote almost seems to glint and change color the longer you look at it. Better get this to Iverron quickly!\"", -- Iverron's Antidote
+	["5167"] = "\"Inside you can feel it occasionally twitch and stir.\"", -- Webwood Egg
+	["5170"] = "\"A bloated and unnatural root from one of the timberlings.\"", -- Mossy Tumor
+	--[""] = "\"\"", -- 
+
 	--Darkshore
 	["44864"] = "\"The muscles leak a substance which can be used to heal dire wounds.\"", -- Encrusted Clam Muscle
 	["44863"] = "\"It seems stinky.\"", -- Corrupted Tide Crawler Flesh
@@ -528,6 +535,25 @@ LIT.ItemIdTable = {
 	["44886"] = "\"Can be used to bless the bear's paw to complete it.\"", -- Fleetfoot's Tailfeathers
 	["44887"] = "\"Now blessed, it can be used to heal the sickly and perhaps set the furbolg free from the satyr's influence.\"", -- Blessed Herb Bundle
 	["44889"] = "\"Now blessed, it can be used to heal the sickly and perhaps set the furbolg free from the satyr's influence.\"", -- Blessed Herb Bundle
+	["6717"] = "\"Fished from the coastline of Darkshore. You're not exactly sure what these do.\"", -- Gaffer Jack
+	["12242"] = "\"The remains of a sea creature of the deep oceans.\"", -- Sea Creature Bones
+	["5385"] = "\"Plump and round, ready to be definitely be consumed by the Buzzbox 827.\"", -- Crawler Leg
+	["15851"] = "\"Often found in caves, these fungi are used for their potent properties to enhance other herbs.\"", -- Lunar Fungus
+	["12289"] = "\"A creature from the deeper waters towards the Veiled Sea, now deceased.\"", -- Sea Turtle Remains
+	["5412"] = "\"Somehow used to repair the Buzzbox 411\"", -- Thresher Eye
+	["5271"] = "\"Only known to grow in the Cliffspring Falls cave, this fungus has a rough texture. It's probably not safe to eat this.\"", -- Scaber Stalk
+	["5336"] = "\"Nothing seems out of the ordinary with these earrings.\"", -- Grell Earring
+	["5338"] = "\"A magical artifact keeping Asterion imprisoned within the shrine.\"", -- Ancient Moonstone Seal
+	["5360"] = "\"Ancient relics from the past, these date back to before the Well of Eternity's sundering of the world.\"", -- Highborne Relic
+	["5413"] = "\"Pristine, sharp, and perfect for a Buzzbox 323.\"", -- Moonstalker Fang
+	["12292"] = "\"Found within a carriage on top of a deceased sea turtle.\"", -- Strangely Marked Box
+	["12237"] = "\"Perfect for Gubber Blump to make any of his many variations of crab-related foods.\"", -- Fine Crab Chunks
+	["7498"] = "\"Sliced into three parts, this is the top part of Gelkak's Key.\"", -- Top of Gelkak's Key
+	["7500"] = "\"Sliced into three parts, this is the bottom part of Gelkak's Key.\"", -- Bottom of Gelkak's Key
+	["7499"] = "\"Sliced into three parts, this is the middle part of Gelkak's Key.\"", -- Middle of Gelkak's Key
+	["7442"] = "\"Combined into one key, this is to be used to bring the First Mate back to Gelkak Gyromast.\"", -- Gyromast's Key
+	["12349"] = "\"A sickly sample from the water of the Cliffspring River.\"", -- Cliffspring River Sample
+	["6718"] = "\"Mechanical gizmos from the Cliffspring River, very important for something.\"", -- Electropeller
 
 	--Feralas
 	["53135"] = "\"Enriched in ancient mana, long forgotten.\"", -- Glowing Soil
@@ -562,6 +588,9 @@ LIT.ItemIdTable = {
 	["782"] = "\"Coarse and rudimentary, the paint peels off easily.\"", -- Painted Gnoll Armband
 	["1971"] = "\"Details of property rights in Westfall.\"", -- Furlbrow's Deed
 	["16115"] = "\"Filled with armor and supplies for Smith Argus.\"", -- Osric's Crate
+	["50432"] = "\"The fur is torn and ragged, oozing fluids that indicate infection.\"", -- Diseased Wolf Pelt
+	["752"] = "\"The lowest quality of cloth, these bandanas signify an equally shallow rank.\"", -- Package for Stormpike
+	["11119"] = "\"A bunch of ripe grapes, perfect for wine and consumption.\"", -- Milly's Harvest
 
 	--Stormwind
 	["2722"] = "\"Good for one free bottle of Dalaran Noir at the Gallina Winery.\"", -- Wine Ticket
@@ -1696,5 +1725,9 @@ LIT.ItemIdTable = {
 
 };
 
-
-
+local classic = LIT.ItemIdTable
+--classic corrections, because sometimes blizz kept the same ID but changed the item, or because cataclysm happened
+if select(4, GetBuildInfo()) < 40000 then
+	classic["10641"] = "\"Often this plant grows along the roots supple in water.\"" -- Moonpetal Lily
+	classic["16262"] = "\"A rather large collection fish bones, some even as long as your forearm.\"" -- Nessa's Collection (was Dolanaar Recipe Book)
+end
