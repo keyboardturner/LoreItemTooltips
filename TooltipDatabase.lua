@@ -570,7 +570,7 @@ LIT.ItemIdTable = {
 	["46356"] = "\"The sounds of the ocean periodically blow within.\"", -- Seed of the Sea
 
 	--Ashenvale
-	["5388"] = "\"Once the knig of all Ashenvale furbolg, a dark power permeates the skull.\"", -- Ran Bloodtooth's Skull
+	["5388"] = "\"Once the king of all Ashenvale furbolg, a dark power permeates the skull.\"", -- Ran Bloodtooth's Skull
 
 	--Stonetalon Mountains
 	["55174"] = "\"A bright sky blue, small flakes of it seem to crumble off.\"", -- Azure Iron Ore
