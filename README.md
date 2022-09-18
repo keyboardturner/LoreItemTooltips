@@ -26,6 +26,8 @@
 <ul>
 <li>Teldrassil</li>
 <li>Darkshore</li>
+<li>Ashenvale</li>
+<li>Stonetalon Mountains</li>
 <li>Elwynn Forest</li>
 <li>Mulgore</li>
 <li>Durotar</li>
@@ -38,7 +40,7 @@
 <li>Blackfathom Deeps</li>
 <li>Razorfen Kraul</li>
 <li>Razorfen Downs</li>
-<li>Zul''Farrak</li>
+<li>Zul'Farrak</li>
 <li>Maraudon</li>
 <li>Dire Maul</li>
 <li>Deadmines</li>
