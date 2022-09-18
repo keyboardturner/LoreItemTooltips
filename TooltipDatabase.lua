@@ -496,10 +496,13 @@ LIT.ItemIdTable = {
 	["5188"] = "\"The pure waters gathered from all moonwells of Teldrassil contained in one phial. It radiates with powerful magic.\"", -- Filled Vessel
 	["10639"] = "\"Feeding off the roots of nearby trees, these mushrooms are often collected by the Grell.\"", -- Hyacinth Mushroom
 	["5166"] = "\"The source of the venom, capable of being studied for its likeness to other variety of spider.\"", -- Webwood Venom Sac
-	["10640"] = "\"A potent, viscious fluid pigmented in a sickly green color.\"", -- Webwood Ichor
+	["10640"] = "\"A potent, viscous fluid pigmented in a sickly green color.\"", -- Webwood Ichor
 	["10642"] = "\"The antidote almost seems to glint and change color the longer you look at it. Better get this to Iverron quickly!\"", -- Iverron's Antidote
 	["5167"] = "\"Inside you can feel it occasionally twitch and stir.\"", -- Webwood Egg
 	["5170"] = "\"A bloated and unnatural root from one of the timberlings.\"", -- Mossy Tumor
+	["69915"] = "\"A bit slippery and they ignore all fishing bait, but they're also slow.\"", -- Baby Octopus
+	["69912"] = "\"Typically fished from the lake of Darnassus, these fish have a long shelf life when dried.\"", -- Lake Whitefish
+
 	--[""] = "\"\"", -- 
 
 	--Darkshore
@@ -554,6 +557,47 @@ LIT.ItemIdTable = {
 	["7442"] = "\"Combined into one key, this is to be used to bring the First Mate back to Gelkak Gyromast.\"", -- Gyromast's Key
 	["12349"] = "\"A sickly sample from the water of the Cliffspring River.\"", -- Cliffspring River Sample
 	["6718"] = "\"Mechanical gizmos from the Cliffspring River, very important for something.\"", -- Electropeller
+	["12355"] = "\"The source of corruption of the Blackwood Furbolg.\"", -- Talisman of Corruption
+	["5270"] = "\"Considering its name, it's probably best not to eat this one either.\"", -- Death Cap
+	["5348"] = "\"One part of a larger scheme, the writings seem nonsensical.\"", -- Worn Parchment
+	["12191"] = "\"Ship logs and personal keepsakes of night elven captains are stored within.\"", -- Silver Dawning's Lockbox
+	["12192"] = "\"Ship logs and personal keepsakes of night elven captains are stored within.\"", -- Mist Veil's Lockbox
+	["14339"] = "\"Purified water from the Auberdine Moonwell, it glows a faint blue hue.\"", -- Moonwell Water Tube
+	["5414"] = "\"A coarse pelt of bear fur.\"", -- Grizzled Scalp
+	["5386"] = "\"The stripe-patterned fur is svelte and smooth to the touch.\"", -- Fine Moonstalker Pelt
+	["46354"] = "\"A small acorn concentrated with powerful Life magic.\"", -- Seed of the Earth
+	["46355"] = "\"A faint humming chirrups from the wisp seed.\"", -- Seed of the Sky
+	["46356"] = "\"The sounds of the ocean periodically blow within.\"", -- Seed of the Sea
+
+	--Ashenvale
+	["5388"] = "\"Once the knig of all Ashenvale furbolg, a dark power permeates the skull.\"", -- Ran Bloodtooth's Skull
+
+	--Stonetalon Mountains
+	["55174"] = "\"A bright sky blue, small flakes of it seem to crumble off.\"", -- Azure Iron Ore
+	["55181"] = "\"Could be nothing, could be diabolical plans. Also it smells bad.\"", -- Illegible Orc Letter
+	["67437"] = "\"Could be nothing, could be diabolical plans. Also it smells bad.\"", -- Illegible Orc Letter
+	["55182"] = "\"The actual translation, detailing obtaining 'azure iron flake' with explosives to blow up Windshear Hold. Also it smells bad.\"", -- Translated Orc Letter
+	["55221"] = "\"Some kind of contraption containing elemental fire.\"", -- Mechanized Fire
+	["55222"] = "\"Some kind of contraption containing elemental water.\"", -- Mechanized Ice
+	["55223"] = "\"Some kind of contraption containing elemental air.\"", -- Mechanized Air
+	["55227"] = "\"A large mechanical head that looks like a diving helmet.\"", -- BD-816 War Apparatus
+	["55239"] = "\"Proof of the kill of Cragjaw.\"", -- Cragjaw's Huge Tooth
+	["55280"] = "\"A viscous orange fluid sloshes around inside.\"", -- Deepmoss Venom Sac
+	["55971"] = "\"Often made of metal and stone, these artifacts range from statuettes to goblets.\"", -- Eldre'thar Relic
+	["56091"] = "\"Various past events, and future planned events including a test to blow up Thal'darah Grove.\"", -- Krom'gar Log Book
+	["56186"] = "\"An assortment of drawings sure to bring back happy memories.\"", -- Elder Sareth'na's Sketch Book
+	["56223"] = "\"Small and tender, perfect for the hungry dogs.\"", -- Black Dragon Whelp Filet
+	["56224"] = "\"A fairly rare reagent from newly-formed fire elementals.\"", -- Blazing Heart of Fire
+	["56040"] = "\"One of the key ingredients for the 'ramlette'.\"", -- Ram Haunch
+	["56041"] = "\"One of the key ingredients for the 'ramlette'.\"", -- Kalimdor Eagle Egg
+	["56042"] = "\"One of the key ingredients for the 'ramlette'.\"", -- Boulderslide Cheese
+	["56059"] = "\"The combination of ram haunch, kalimdor eagle eggs, and boulderslide cheese into Cookie's Special Ramlette.\"", -- Meaty Offering
+	["56060"] = "\"A list of demands for weapons competing that of the Horde's firepower.\"", -- Grimtotem Terms of Service
+	["56010"] = "\"Weaponry either not yet discovered by the Horde, or simply discarded.\"", -- Alliance Weapon Crate
+	["56061"] = "\"Enough to supply nearly one hundred Grimtotem.\"", -- Alliance Weapon Crates
+	["56080"] = "\"The horde symbol is emblazoned upon the insignia, proof of your deed against the Horde.\"", -- Insignia of the Horde General
+	["52073"] = "\"This short staff groans and creaks in your hand, as if the wood is alive and still growing.\"", -- Bramblestaff
+	["49815"] = "\"It almost appears to be mutating before your eyes.\"", -- Unusual Flower Bud
 
 	--Feralas
 	["53135"] = "\"Enriched in ancient mana, long forgotten.\"", -- Glowing Soil
