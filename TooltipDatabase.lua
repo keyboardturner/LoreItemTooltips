@@ -599,6 +599,34 @@ LIT.ItemIdTable = {
 	["52073"] = "\"This short staff groans and creaks in your hand, as if the wood is alive and still growing.\"", -- Bramblestaff
 	["49815"] = "\"It almost appears to be mutating before your eyes.\"", -- Unusual Flower Bud
 
+	--Desolace
+	["49032"] = "\"Oily and decent for arrow fletching.\"", -- Dread Swoop Feather
+	["49026"] = "\"Full of venom that should fetch a fair price to buyers.\"", -- Scorpion Stinger
+	["49030"] = "\"The scales are as hard as some of the best mail armor.\"", -- Aged Basilisk Tail
+	["49008"] = "\"Proof of demise against the Burning Blade of Thunder Axe Fortress.\"", -- Burning Blade Ear
+	["49203"] = "\"Proof of demise against the Burning Blade of Thunder Axe Fortress.\"", -- Burning Blade Ear
+	["48951"] = "\"Details of a powerful summoning ritual.\"", -- Ancient Summoning Ritual
+	["49060"] = "\"A webbed skin is durable, allowing for easy maneuverability in the water.\"", -- Slitherblade Fin
+	["49056"] = "\"A cross between ophidian and humanoid bones.\"", -- Slitherblade Bones
+	["49058"] = "\"Tough, yet smooth.\"", -- Slitherblade Scale
+	["49088"] = "\"A pristine pronged spear, crafted specificially for naga.\"", -- Slitherblade Trident
+	["49104"] = "\"Written in Kalimag, likely describing how to get into the plane of water.\"", -- Ancient Engravings of Neptulon
+	["49134"] = "\"Detailed notes on the movement of the Naga along the western coast of Desolace.\"", -- Korrah's Report
+	["6245"] = "\"Stuffed full of priceless valuables belonging to a noble.\"", -- Karnitol's Satchel
+	["49140"] = "\"The edges of each leaf are lined with prickly teeth.\"", -- Aloe Thistle
+	["49136"] = "\"Juicy!\"", -- Blood-Filled Leech
+	["49164"] = "\"A variety of foods, plants, and reagents for growing the land and healing the sick.\"", -- Cenarion Supply Crate
+	["49170"] = "\"Lean and layered, if cooked correctly they make for excellent food.\"", -- Basilisk Flank
+	["13703"] = "\"Picked clean and sanded down by the erosion of Desolace, these large bones are used in a variety of furniture and crafting professions.\"", -- Kodo Bone
+	["14547"] = "\"Spooky and crispy.\"", -- Hand of Iruxos
+	["49220"] = "\"Dangerous and rarely understood energies weave in and out of its surface.\"", -- Infernal Power Core
+	["49199"] = "\"Dangerous and rarely understood energies weave in and out of its surface.\"", -- Infernal Power Core
+	["15849"] = "\"The ghost has been busted.\"", -- Ghost-o-Plasm
+	["49222"] = "\"Squishy and plump, perfect for a meal.\"", -- Tender Lobstrock Tail
+	["49221"] = "\"Has only a few objects, with some kind of hollow horn inside.\"", -- Brendol's Satchel
+	["49226"] = "\"A hollow kodo horn with a putrid deadly mixture inside.\"", -- Mysterious Concoction
+	["38567"] = "\"A list of prisoner locations of the Maraudine.\"", -- Maraudine Prisoner Manifest
+
 	--Feralas
 	["53135"] = "\"Enriched in ancient mana, long forgotten.\"", -- Glowing Soil
 
@@ -683,7 +711,7 @@ LIT.ItemIdTable = {
 	["3627"] = "\"Your trophy still drips with blood and seems as sharp as ever.\"", -- Fang of Vagash
 	["3083"] = "\"These small copper cogs seems to fit neatly in place with one another.\"", -- Restabilization Cog
 	["3084"] = "\"These iron gears are a bit larger than the cogs.\"", -- Gyromechanic Gear
-	["58271"] = "\"A smaller keg of a new mysterious ale from the Short and Sout Brewery of Brewnall Village.\"", -- Sample Casks
+	["58271"] = "\"A smaller keg of a new mysterious ale from the Short and Stout Brewery of Brewnall Village.\"", -- Sample Casks
 	["2676"] = "\"Used in dwarven beer-making, though it's rumored to have other uses. Stories from across the seas tell of its use in potions and base for meat roasts.\"", -- Shimmerweed
 	["55151"] = "\"Raided from dwarven supply wagons, the wendigos stash these boxes in the Grizzled Den.\"", -- Pilfered Supplies
 	["56009"] = "\"A shamanistic stone capable of dispelling the magic of Frostmane constriction totems.\"", -- Rune of Fire
@@ -719,6 +747,7 @@ LIT.ItemIdTable = {
 	["57259"] = "\"Full of medical herbs, food, and most importantly ale.\"", -- Ferilon's Care Package
 	["56082"] = "\"Full of spades, brushes, sieves, and shoves.\"", -- Archaeologist's Tools
 	["56085"] = "\"A bunch of mechanical parts that surely fit to something.\"", -- Swiftgear Gizmo
+	["56087"] = "\"A tough, decent quality leather that should fetch some coin.\"", -- Marshy Crocolisk Hide
 
 	--[""] = "\"\"", -- 
 
@@ -869,7 +898,9 @@ LIT.ItemIdTable = {
 	["5018"] = "\"The mixed chunky appearance almost makes it appear soft.\"", -- Wood Pulp
 	["5019"] = "\"A great food additive, not to be confused with sodium nitrite, also a food additive!\"", -- Sodium Nitrate
 	--["5021"] = "\"\"", -- Explosive Stick of Gann
-
+	["49876"] = "\"Concentrated with immense primal nature magic.\"", -- Writhing Seed
+	["49934"] = "\"Carved and smoothed down into roughly the shape of a boar.\"", -- Blood Shard Trinket
+	["46850"] = "\"Definitely the thing that contains intelligence in raptors.\"", -- King Reaperclaw's Horn
 
 	--[""] = "\"\"", -- 
 
@@ -1077,6 +1108,18 @@ LIT.ItemIdTable = {
 	["4435"] = "\"Used to power crystal clusters.\"", -- Mote of Myzrael
 	["4503"] = "\"Apparently very valuable and used as some sort of reagent.\"", -- Witherbark Tusk
 	["4522"] = "\"Full of alchemical and other magical reagents.\"", -- Witherbark Medicine Pouch
+	["4506"] = "\"A stolen symbol of one of the original Seven Kingdoms.\"", -- Stromgarde Badge
+	["4510"] = "\"Infused with a terrible demonic power.\"", -- Befouled Bloodstone Orb
+	["4515"] = "\"A twisted warlock now put to rest.\"", -- Marez's Head
+	["4516"] = "\"A shiny, bald, and angry man.\"", -- Otto's Head
+	["4517"] = "\"Complete with an orange bandana.\"", -- Falconcrest's Head
+	["4525"] = "\"A frosty touch emanates from the wand.\"", -- Trelane's Wand of Invocation
+	["4527"] = "\"Used to defend against the mage tower in Stromgarde.\"", -- Azure Agate
+	["4530"] = "\"The amulet is intricately designed for spellcasting.\"", -- Trelane's Phylactery
+	["4531"] = "\"Something to ponder.\"", -- Trelane's Orb
+	["4532"] = "\"Effective for fiery invocation.\"", -- Trelane's Ember Agate
+	["4492"] = "\"Valuable treasure from time immemorial.\"", -- Elven Gem
+	["4493"] = "\"Valuable treasures from time immemorial\"", -- Elven Gems
 	--[""] = "\"\"", -- 
 
 	--The Hinterlands
