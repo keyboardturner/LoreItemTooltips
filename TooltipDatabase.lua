@@ -708,7 +708,7 @@ LIT.ItemIdTable = {
 	--Duskwood
 	["1130"] = "\"The vile toxin that comes from the fangs of the spiders of Duskwood. The dark magics pervading the land make this venom even more agonizing for its victims.\"", -- Vial of Spider Venom [Classic]
 	["2378"] = "\"These skeletal fingers have long since been detached from their owners, but it is still cold to the touch from necromantic magics.\"", -- Skeleton Finger [Classic]
-	["1129"] = "\"This chipped fang is encrusted in black ichor and dried blood. The fact that it has been blunted with rot does nothing to stop ghouls from biting through bone. The seal of the Stormwind Library is clearly stamped on the book's first page.\"", -- Ghoul Fang [Classic]
+	["1129"] = "\"This chipped fang is encrusted in black ichor and dried blood. The fact that it has been blunted with rot does nothing to stop ghouls from biting through bone.\"", -- Ghoul Fang [Classic]
 	--["1453"] = "\"[PH]\"", -- Spectral Comb
 	--["1946"] = "\"[PH]\"", -- Mary's Looking Glass
 	--["1596"] = "\"[PH]\"", -- Ghost Hair Thread
