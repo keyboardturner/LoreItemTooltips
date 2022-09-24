@@ -654,7 +654,7 @@ LIT.ItemIdTable = {
 	["2239"] = "\"Engraved with the words 'For years of service: -EVC.\"", -- The Collector's Ring
 	["1019"] = "\"Seemingly better than average linen.\"", -- Linen Scrap
 	["780"] = "\"Proof of your deeds to present to Guard Thomas.\"", -- Torn Murloc Fin
-	["13872"] = "\"Already chopped, but aabandoned out of fear of the bears and wolves.\"", -- Bundle of Wood
+	["13872"] = "\"Already chopped, but abandoned out of fear of the bears and wolves.\"", -- Bundle of Wood
 	["735"] = "\"Identification of two guards lost to the murlocs.\"", -- Rolf and Malakai's Medallions
 	["748"] = "\"A verified note to redeem armor.\"", -- Stormwind Armor Marker
 	["782"] = "\"Coarse and rudimentary, the paint peels off easily.\"", -- Painted Gnoll Armband
@@ -680,11 +680,46 @@ LIT.ItemIdTable = {
 	["8046"] = "\"Kearnen's journal bears the the standard insignia of the SI:7. It is well-kept, not a single creased page.\"", -- Kearnen's Journal
 	["7923"] = "\"A small iron key, etched into is the insignia of the Defias.\"", -- Defias Tower Key
 	["7908"] = "\"This journal has clearly been through a lot. Its spine is stretched and a few loose pages fall out when you pick it up.\"", -- Klaven Mortwake's Journal
+	["57911"] = "\"Used in the creation of Westfall Stew.\"", -- Okra
+	["57786"] = "\"Used in the creation of Westfall Stew.\"", -- Stringy Fleshripper Meat
+	["57788"] = "\"Used in the creation of Westfall Stew.\"", -- Goretusk Flank
+	--["58118"] = "\"[PH]\"", -- Red Bandana
+	--["58204"] = "\"[PH]\"", -- Chasm Ooze
+
+	--Redridge Mountains
+	--["58892"] = "\"[PH]\"", -- Condor Giblets
+	--["58891"] = "\"[PH]\"", -- Tarantula Eyes
+	--["58893"] = "\"[PH]\"", -- Goretusk Kidney
+	--["3631"] = "\"[PH]\"", -- Bellygrub's Tusk
+	--["10958"] = "\"[PH]\"", -- Nida's Necklace
+	--["58896"] = "\"[PH]\"", -- Redridge Supply Crate
+	--["58897"] = "\"[PH]\"", -- Redridge Gnoll Collar
+	--["58950"] = "\"[PH]\"", -- Messner's Cage Key
+	--["58953"] = "\"[PH]\"", -- Keeshan's Bow
+	--["58952"] = "\"[PH]\"", -- Blackrock Spyglass
+	--["58969"] = "\"[PH]\"", -- Jorgensen's Cage Key
+	--["58956"] = "\"[PH]\"", -- Keeshan's Red Headband
+	--["58957"] = "\"[PH]\"", -- Keeshan's Jade Amulet
+	--["59061"] = "\"[PH]\"", -- Keeshan's Possessions
+	--["59153"] = "\"[PH]\"", -- Fox Poop
+	--["59152"] = "\"[PH]\"", -- Pile of Leaves
+	--["59156"] = "\"[PH]\"", -- Muckdweller Gland
 
 	--Duskwood
 	["1130"] = "\"The vile toxin that comes from the fangs of the spiders of Duskwood. The dark magics pervading the land make this venom even more agonizing for its victims.\"", -- Vial of Spider Venom [Classic]
 	["2378"] = "\"These skeletal fingers have long since been detached from their owners, but it is still cold to the touch from necromantic magics.\"", -- Skeleton Finger [Classic]
-	["1129"] = "\"This chipped fang is encrusted in black ichor and dried blood. The fact that it has been blunted with rot does nothing to stop ghouls from biting through bone.\"", -- Ghoul Fang [Classic]
+	["1129"] = "\"This chipped fang is encrusted in black ichor and dried blood. The fact that it has been blunted with rot does nothing to stop ghouls from biting through bone. The seal of the Stormwind Library is clearly stamped on the book's first page.\"", -- Ghoul Fang [Classic]
+	--["1453"] = "\"[PH]\"", -- Spectral Comb
+	--["1946"] = "\"[PH]\"", -- Mary's Looking Glass
+	--["1596"] = "\"[PH]\"", -- Ghost Hair Thread
+	--["59345"] = "\"[PH]\"", -- Rot Blossom
+	["2794"] = "\"The words 'The History of Stormwind' can be read along its spine. The seal of the Stormwind Library is clearly stamped on the book's first page, but the rest of the book is too damaged and can safely be discarded.\"", -- An Old History Book
+	--["3629"] = "\"[PH]\"", -- Mistmantle Family Ring
+	--["60207"] = "\"[PH]\"", -- Widow Venom Sac
+	--["1968"] = "\"[PH]\"", -- Ogre's Monocle
+	--["884"] = "\"[PH]\"", -- Ghoul Rib
+	--["3514"] = "\"[PH]\"", -- Mor'Ladim's Skull
+
 
 --Dwarf
 	--Dun Morogh
@@ -1006,7 +1041,10 @@ LIT.ItemIdTable = {
 	--Shadowfang Keep
 	["6283"] = "\"The book of Ur contains details of the dark creatures known as the Worgen.\"", -- The Book of Ur
 	["5442"] = "\"You are sure Arugal's lifeless head will bring you great favor with the Forsaken.\"", -- Head of Arugal
-	
+	["60874"] = "\"Strands of a tough, leathery material.\"", -- Deathless Sinew
+	["60871"] = "\"A faint magic emanates from within. You're unsure if it's Arcane, Light, or Nature.\"", -- Moontouched Wood
+	["60877"] = "\"Fashioned from one of the pistols Lord Godfrey used, it's clean and particularly decent quality.\"", --Godfrey's Crystal Scope
+
 	--The Stockade
 	["3630"] = "\"Targorr will tortue no more innocents.\"", -- The Stockade
 	["3640"] = "\"The head of a co-conspirator of the dark iron attacks in the Wetlands.\"", -- Head of Deepfury
@@ -1120,31 +1158,46 @@ LIT.ItemIdTable = {
 	["4532"] = "\"Effective for fiery invocation.\"", -- Trelane's Ember Agate
 	["4492"] = "\"Valuable treasure from time immemorial.\"", -- Elven Gem
 	["4493"] = "\"Valuable treasures from time immemorial\"", -- Elven Gems
+	["4483"] = "\"A fiery key used to unlock the Stone of Inner Binding.\"", -- Burning Key
+	["4484"] = "\"A watery key used to unlock the Stone of Inner Binding.\"", -- Cresting Key
+	["4485"] = "\"An electrifying key used to unlock the Stone of Inner Binding.\"", -- Thundering Key
+	["4469"] = "\"Used to unlock the keystone that will release Myzrael.\"", -- Rod of Order
+	["4473"] = "\"An ancient evil recedes from the bindings as Myzrael is banished from the corporel plane. It's a wonder how old these bindings truly are.\"", -- Eldritch Shackles
 	--[""] = "\"\"", -- 
+
+	--Hillsbrad Foothills/Alterac Mountains
+	--["3684"] = "\"[PH]\"", -- Perenolde Tiara
 
 	--The Hinterlands
 	["9321"] = "\"A dark green and rancid venom.\"", -- Venom Bottle
+	--["58867"] = "\"[PH]\"", -- Snapjaw Gizzard
+	["3900"] = "\"A decent batch of brew washed ashore.\"", -- Pupellyverbos Port
+	--["19071"] = "\"[PH]\"", -- Vessel of Tainted Blood
+	["58241"] = "\"Elortha no Shadra. God of Spiders, Mother of Venom, Silk Dancer, Death's Love.\"", -- Tablet of Shadra
+	--["58252"] = "\"[PH]\"", -- Shadraspawn Egg
+	--["58282"] = "\"[PH]\"", -- Eye of Shadra
+	--["58281"] = "\"[PH]\"", -- Fang of Shadra
 	--[""] = "\"\"", -- 
 
 --Shadowlands
 	--Bastion
-	--["178891"] = "\"\"", -- Elysian Thread
-	--["178885"] = "\"\"", -- Cloudstrider Pelt
-	--["178890"] = "\"\"", -- Larion Plume
-	--["178043"] = "\"\"", -- Anima Conflux	
-	--["178042"] = "\"\"", -- Eternity Plating
-	--["178041"] = "\"\"", -- Archonic Resonator
-	--["178683"] = "\"\"", -- Gorgebeak's Bill
-	--["178790"] = "\"\"", -- Umbral Plume
-	--["173691"] = "\"\"", -- Anima Drainer
+	--["178891"] = "\"[PH]\"", -- Elysian Thread
+	--["178885"] = "\"[PH]\"", -- Cloudstrider Pelt
+	--["178890"] = "\"[PH]\"", -- Larion Plume
+	--["178043"] = "\"[PH]\"", -- Anima Conflux	
+	--["178042"] = "\"[PH]\"", -- Eternity Plating
+	--["178041"] = "\"[PH]\"", -- Archonic Resonator
+	--["178683"] = "\"[PH]\"", -- Gorgebeak's Bill
+	--["178790"] = "\"[PH]\"", -- Umbral Plume
+	--["173691"] = "\"[PH]\"", -- Anima Drainer
 
 	--Maldraxxus
-	--["173536"] = "\"\"", -- Laboratory Equipment
-	--["180235"] = "\"\"", -- Marileth's Journal - Page One
-	--["180236"] = "\"\"", -- Marileth's Journal - Page Two
-	--["180237"] = "\"\"", -- Marileth's Journal - Page Three
-	--["177837"] = "\"\"", -- Bloodtusk Skull
-	--["174324"] = "\"\"", -- Weapons of the Fallen
+	--["173536"] = "\"[PH]\"", -- Laboratory Equipment
+	--["180235"] = "\"[PH]\"", -- Marileth's Journal - Page One
+	--["180236"] = "\"[PH]\"", -- Marileth's Journal - Page Two
+	--["180237"] = "\"[PH]\"", -- Marileth's Journal - Page Three
+	--["177837"] = "\"[PH]\"", -- Bloodtusk Skull
+	--["174324"] = "\"[PH]\"", -- Weapons of the Fallen
 
 
 	--[""] = "\"\"", -- 
@@ -1817,4 +1870,5 @@ local classic = LIT.ItemIdTable
 if select(4, GetBuildInfo()) < 40000 then
 	classic["10641"] = "\"Often this plant grows along the roots supple in water.\"" -- Moonpetal Lily
 	classic["16262"] = "\"A rather large collection fish bones, some even as long as your forearm.\"" -- Nessa's Collection (was Dolanaar Recipe Book)
+	classic["2794"] = "\"Although the cover of this book is marred by scratches and caked with mud, the words 'The History of Stormwind' can still be read along its spine. The seal of the Stormwind Library is clearly stamped on the book's first page.\"" -- An Old History Book
 end
