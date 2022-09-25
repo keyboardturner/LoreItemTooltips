@@ -945,6 +945,39 @@ LIT.ItemIdTable = {
 	["11127"] = "\"The box is a bit worse for wear the contents inside should be fine enough for the newly raised Forsaken.\"", -- Scavenged Goods
 	--[""] = "\"\"", -- 
 
+-- Azeroth
+	--Stranglethorn Vale
+	--north
+	["2633"] = "\"It has a suspiciously sweet odor to it. Flecks of a glinting substance shift inside.\"", -- Jungle Remedy
+	["4053"] = "\"Used to shape Excelsior-line boots.\"", -- Large River Crocolisk Skin
+	["4104"] = "\"Used to fill Excelsior-line boots.\"", -- Snapjaw Crocolisk Skin
+	["4105"] = "\"A pristine skin for the outer later of Excelsior-line boots.\"", -- Elder Crocolisk Skin
+	["4106"] = "\"Smoothed and shiny.\"", -- Tumbled Crystal
+	["3863"] = "\"Plumed and fluffy.\"", -- Jungle Stalker Feather
+	["3876"] = "\"The largest panther fang you've ever seen.\"", -- Fang of Bhag'thera
+	["3877"] = "\"Stained by blood and blueberries.\"", -- Talon of Tethis
+	["3879"] = "\"A rather hefty, yet soft paw.\"", -- Paw of Sin'Dall
+	["3880"] = "\"A large and ferocious striped black and white head of a tiger.\"", -- Head of Bangalash
+	["3616"] = "\"Helps to amplify latent magics in the air.\"", -- Mind's Eye
+	["3923"] = "\"An elemental power is tied to these bracers tying it to the corporeal world.\"", -- Water Elemental Bracers
+	["60213"] = "\"Almost identical to the Jungle Remedy, but without the sparkles.\"", -- Crystal Spine Basilisk Blood
+	["57990"] = "\"Ajeck and Sir Erlgadin were anxious to learn how to hunt effectively with a Dwarven Rifle. I had the two humans leave their primitive range weapons at base camp. Barnil and I outfitted them with some of Ironforge's finest firearms.\"", -- Green Hills of Stranglethorn - Page 14
+	--south
+	["58813"] = "\"Soft and dark.\"", -- Velvety Panther Fur
+	["58812"] = "\"Fluffy and bright.\"", -- Supple Tigress Fur
+	["4029"] = "\"Used in a wide variety of applications.\"", -- Akiris Reed
+	["4016"] = "\"It'd be best not to drink the zombie juice.\"", -- Zanzil's Mixture
+	["3932"] = "\"Not the actual reward.\"", -- Smotts' Chest
+	["3919"] = "\"Who'd know the difference if it came from a gorilla?\"", -- Mistvale Giblets
+	["2797"] = "\"Surely eating this will cure Stranglethorn Fever.\"", -- Heart of Mokk
+	["3922"] = "\"The sack jingles full of gold.\"", -- Shaky's Payment
+	["3920"] = "\"Plans on an attack upon Booty Bay.\"", -- Bloodsail Charts
+	["3910"] = "\"The almost cinnamon appearance is better left un-sniffed.\"", -- Snuff
+	["59034"] = "\"Property of Juntz Fiztittle... once.\"", -- Fitztittle's Ratcheting Torque Wrench
+	["59035"] = "\"A perfect reflection of yourself!\"", -- Ephram's Jeweled Mirror
+	["3897"] = "\"A sphere of glass, carved and enchanted to function as an eye.\"", -- Dizzy's Eye
+	["59150"] = "\"That's a lot of limes.\"", -- Bushel of Limes
+	["59524"] = "\"They seem rather small, hopefully they pack a punch!\"", -- Narkk's Handbombs
 
 --Class Quests
 	--Hunter
