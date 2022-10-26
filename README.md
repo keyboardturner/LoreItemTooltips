@@ -1,6 +1,8 @@
 <h3>This is still a work in progress addon.</h3>
 <p>This effects the following type of items: Quest items, items that start quests, some cooking recipes, and learnable mounts. Many of these items can be found / filtered&nbsp;<a href="https://www.wowhead.com/items?filter=7:5:166:16;2:1:2:6455;0:0:0:0#items;0+1+18" rel="nofollow">here</a>.</p>
 <p>It's just meant to add a little bit of immersion into the game without a vast negative impact.</p>
+<p>If you've found a quest item missing flavour text, you can send it <a href="https://forms.gle/zpaspqNeWLucpQEb7">here</a>.</p>
+<p>If there's a grammar or lore mistake, you can send it <a href="https://forms.gle/qX29MHE9nTNCmAzn8">here</a>.</p>
 <p>&nbsp;</p>
 <h3><strong><span style="text-decoration: underline;">Slash Commands</span></strong></h3>
 <p>There's 3 main slash commands:</p>
@@ -13,7 +15,8 @@
 <pre class="codeStyle">/lit credits</pre>
 <p>&nbsp;This will bring up a list of people who've helped contribute to this project:</p>
 <div class="spoiler">
-<p>Rhe&auml;-WyrmrestAccord</p>
+<p>Rhe&auml;-WyrmrestAccord(US)</p>
+<p>Komboloi-WyrmrestAccord/BloodsailBuccaneers(US)</p>
 </div>
 <p>&nbsp;</p>
 <p>If you've found a quest item missing flavour text, you can send it <a href="https://forms.gle/zpaspqNeWLucpQEb7">here</a>.</p>
@@ -40,7 +43,7 @@
 <li>Blackfathom Deeps</li>
 <li>Razorfen Kraul</li>
 <li>Razorfen Downs</li>
-<li>Zul'Farrak</li>
+<li>Zul''Farrak</li>
 <li>Maraudon</li>
 <li>Dire Maul</li>
 <li>Deadmines</li>
@@ -85,7 +88,13 @@
 <p>Companion Pets:</p>
 <ul>
 <li>All Classic Era</li>
-<li>All Burning Crusade</li>
+<li>All Burning Crusade
+<p>&nbsp;</p>
+<p>Archaeology:</p>
+<ul>
+<li>Most items that can't be crated, as the crated items have existing flavor text. May see about removing such to add in a proper archaeology description</li>
+</ul>
+</li>
 </ul>
 </div>
 <p>&nbsp;</p>
@@ -117,6 +126,7 @@
 <li>Legion Content</li>
 <li>BFA Content</li>
 <li>Shadowlands Content</li>
+<li>Potentially gathering reagents with hints to their location.</li>
 </ul>
 </div>
 <p>&nbsp;</p>
