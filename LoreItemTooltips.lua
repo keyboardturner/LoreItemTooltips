@@ -1,4 +1,5 @@
 local LoreItemTooltips, LIT = ...
+local _dummy, core = ...; -- handles slash commands
 local match = string.match
 local strsplit = strsplit
 local logoImage = "Interface/AddOns/LoreItemTooltips/LITImage.blp"
@@ -36,7 +37,7 @@ LitDB.R, LitDB.G, LitDB.B = r, g, b;
  -- And update any UI elements that use this color...
 end
 
-local function GameTooltip_OnTooltipSetItem(tooltip)
+local function GameTooltip_OnTooltipSetItem(tooltip, data)
 	local _, link = tooltip:GetItem()
 	if not link then return; end
 	
@@ -72,8 +73,6 @@ local LitText = "|T" .. logoImage .. ":14|t" .. "|cffffd100Lore Item Tooltips|r:
 local function round(number, decimals)
 	return (("%%.%df"):format(decimals)):format(number)
 end
-
-local _dummy, core = ...; -- handles slash commands
 
 core.commands = {
 	["reset"] = function()

@@ -196,7 +196,7 @@ LIT.ItemIdTable = {
 	["24245"] = "\"Can be exchanged for goods and reputation at Sporeggar.\"", -- Glowcap
 	["24449"] = "\"Can be exchanged for reputation at Sporeggar.\"", -- Fertile Spores
 	["24290"] = "\"You think you can see a small creature inside.\"", -- Mature Spore Sac
-	["24291"] = "\"Proof of the slaying a bog lord.\"", -- Bog Lord Tendril
+	["24291"] = "\"Proof of slaying a bog lord.\"", -- Bog Lord Tendril
 
 	--Terokkar Forest
 	["34865"] = "\"Often eating fishing bait before fully taking a bite, this one is especially fat.\"", -- Blackfin Darter
@@ -455,6 +455,24 @@ LIT.ItemIdTable = {
 	
 
 	--[""] = "\"\"", -- 
+
+--Northrend
+	--Borean Tundra
+	["35119"] = "\"An antidote created for the cryptfiend venom.\"", -- Hawthorn's Anti-Venom
+	["34695"] = "\"Marked with the name William Allerton.\"", -- Enlistment Card
+	["35481"] = "\"An instruction manualon the wiring and assembly for operating a harvest golem.\"", -- Fields, Factories and Workshops
+	["34714"] = "\"Known for their tidesages, it's a wonder if this Kul Tiran bottle was blessed to avoid becoming waterlogged.\"", -- Kul Tiras Wine
+	["35774"] = "\"Golden and surprisingly shiny.\"", -- Trident of Naz'jan
+	--["35705"] = "\"[PH]\"", -- Cart Release Key
+	--["35706"] = "\"[PH]\"", -- Crate of Farshire Ore
+	--["34713"] = "\"[PH]\"", -- Tuskarr Ritual Object
+	--["35711"] = "\"[PH]\"", -- Kaskala Supplies
+	--["35701"] = "\"[PH]\"", -- issliruk's Totem
+	--["35687"] = "\"[PH]\"", -- Tanathal's Philactery
+	--["35492"] = "\"[PH]\"", -- Frotberry
+	--["35685"] = "\"[PH]\"", -- Crystllized Mana Shard
+	--["35493"] = "\"[PH]\"", -- Nexus Mana Essence
+	
 
 --Night Elf
 	--Teldrassil
@@ -1651,7 +1669,122 @@ LIT.ItemIdTable = {
 	["20221"] = "\"Only Foror knows.\"",
 	["8630"] = "\"Legends tell of this tiger hailing from the jungles of Stranglethorn Vale.\"",
 
+	--Wrath Classic Mounts
+	--Preorders
+	["192455"] = "\"The Tuskarr learned long ago that some of the bones of the sea creatures they hunted were light and buoyant, making for effective glider materials.\"",
 
+	--3.3
+	["50250"] = "\"Apothecary Hummel painted this masterpiece bright pink for an unrequited love.\"", -- 
+	["52200"] = "\"Stabled in the Icecrown Citadel to serve the Lich King's most favored minions.\"", -- 
+	["54797"] = "\"I remember my first flying carpet... yeti hair and burlap. Not nearly as nice as this one here.\"\n - Frozo the Renowned", -- 
+	["51955"] = "\"Raised from the chilling depths of Icecrown, Frostbrood Vanquishers are considered among the fiercest and most relentless of all frost wyrms.\"", -- 
+	["50818"] = "\"The famous steed of Arthas Menethil, who serves its master in life and in death. Riding him is truly a feat of strength.\"", -- 
+	["47840"] = "\"In life, it could not be tamed, but necromancy and esoteric binding rituals have now combined to bend this indomitable creature to its rider's will.\"", -- 
+	["50435"] = "\"Many believe that during their early lives, these wyrms were forced to fight their own kind for the amusement of others. Perhaps that is why they possess a particularly combative temperament.\"", -- 
+	["54068"] = "\"Captured by Toby \"Mother Goose\" Ironbolt on the Borean Tundra, this shaggy beast carries an enormous grudge after being bridled by a gnome.\"", -- 
+	["54069"] = "\"Hippogryphs are highly intelligent, sentient beings; far more than mere 'mounts.'\"", -- 
+	["54811"] = "\"A beacon of hope; a guiding light in the darkness.\"", -- 
+	["54860"] = "\"Riding a giant cylinder filled with highly explosive goblin rocket fuel all by yourself is just crazy...so bring a friend.\"", -- 
+	["51954"] = "\"Bloodbathed Vanquishers are so named when it is determined that a reanimated frost wyrm died a particularly gruesome and bloody death.\"", -- 
+
+
+	--3.2
+	["49636"] = "\"She has a lot in common with her mother, except for the being killed and reanimated. But she is young still. -Maloriak\"", -- 
+	["49046"] = "\"A few of the Argent Crusade's swiftest mounts were awarded to those members of the Horde who performed exceptionally during the tournament in Icecrown.\"", -- 
+	["47100"] = "\"Night elves once believed that seeing this light colored saber breed in the wild was an ill omen.\"", -- 
+	["47101"] = "\"When fallen heroes are raised into undeath, so too are their horses.\"", -- 
+	["46708"] = "\"These reanimated vessels of destruction do not fear death; they dispense it.\"", -- 
+	["49285"] = "\"First designed as a booster for a much larger rocket, the X-51 was determined to give the perfect thrust capacity for a single rider payload.\"", -- 
+	["49282"] = "\"He's big, he's ready for battle, and he's a bear. What more could you want in a mount?\"", -- 
+	["49286"] = "\"What it lacks in safety features it more than makes up for in speed and style. Not for the faint of heart.\"", -- 
+	["49290"] = "\"Magic in the hands of a genius can do wonderful, miraculous things. Magic in the hands of an idiot can make a giant rooster.\"", -- 
+	["49283"] = "\"In true goblin fashion, Landro Longshot has put a stranglehold on the distribution of these mysterious incorporeal mounts.\"", -- 
+	["49284"] = "\"Historians claim that these incorporeal beasts were created when Draenor exploded, unleashing energies that warped the world's flora and fauna.\"", -- 
+	["46102"] = "\"You raised this thing from a scaly pup - Mor'vek would be so proud. But he'd still make you clean up the mess it made in the corner.\"", -- 
+	["44177"] = "\"I cannot help but wonder if things would have turned out different if the titans had elevated even one more dragonflight.\"\n - Alexstrasza", -- 
+
+	--argent tournament
+	["46816"] = "\"I demand speed, grace and discipline on the battlefield. This one will serve nicely.\"\n - Eressea Dawnsinger", -- 
+	["49044"] = "\"A few of the Argent Crusade's swiftest mounts were awarded to those members of the Alliance who performed exceptionally during the tournament in Icecrown.\"", -- 
+	["49096"] = "\"Awarded to only the most skilled champions from the Trial of the Crusader, these steeds were chosen for Alliance members from Tirion Fordring's own personal stable.\"", -- 
+	["46813"] = "\"Silver Covenant Hippogryphs are fiercely loyal, both to their riding partners, and to the Alliance.\"", -- 
+	["46815"] = "\"Comes from a lineage of fine horses that once grazed near the shores of the Well of Eternity.\"", -- 
+	["49098"] = "\"Awarded to only the most skilled champions from the Trial of the Crusader, these steeds were chosen for Horde members from Tirion Fordring's own personal stable.\"", -- 
+	["47180"] = "\"Given only to those who prove themselves a champion in the Argent Tournament.\"", -- 
+	["46814"] = "\"The Sunreavers of Dalaran select only the swiftest and most formidable of dragonhawks as their mounts.\"", -- 
+	["47179"] = "\"Trained to accept only champions of the Light as a rider.\"", -- 
+	["46746"] = "\"When fallen heroes are raised into undeath, so too are their horses.\"", -- 
+	["46744"] = "\"Many night elves revere these proud mounts because their shimmering coats symbolize the goddess of the moon, Elune.\"", -- 
+	["46750"] = "\"An alpha member of the herd, this kodo is a prime example of the mighty creatures which thunder through the Southern Barrens.\"", -- 
+	["46748"] = "\"The Barak Tor'ol ram's thick bony skull and massive horns make it the ideal mount for charging through groups of armored enemies.\"", -- 
+	["46745"] = "\"Never seen in Nagrand, the first red elekk calves were born in Azeroth after the Exodar's arrival. Some breeders theorize that the unique coloration is somehow caused by the same radiation which ravaged Bloodmyst Isle.\"", -- 
+	["46743"] = "\"Longtime allies of the trolls, these jungle hunters form a special bond with their masters. They become mount, guardian, and friend.\"", -- 
+	["46752"] = "\"A veteran of some of the toughest battles fought by the Argent Crusade.\"", -- 
+	["46749"] = "\"The wolves of the Horde are befriended, not domesticated.\"", -- 
+	["46751"] = "\"What do you mean is it dyed? Oh, the bird. We did touch up the red just a little.\"\n - Trellis Morningsun", -- 
+	["46747"] = "\"The mirror's not so you can look back, but so your foes can see something besides your tailpipes.\"\n - Rillie Spindlenut", -- 
+	["46100"] = "\"The kodo is the backbone of our people. Wherever the Horde goes - in trade, settlement, or war - there you will find the mighty kodo.\"\n - Harb Clawhoof", -- 
+	["45593"] = "\"This raptor breed was originally cultivated by the Drakkari, but has since been adopted by the Darkspear tribe in Northrend.\"", -- 
+	["46099"] = "\"Can howl loudly enough to be heard for miles.\"", -- 
+	["45589"] = "\"When you absolutely, positively have to be there right now.\"\n - Rillie Spindlenut", -- 
+	["46308"] = "\"The Forsaken believe that without a purpose, even beasts of burden suffer in undeath.\"", -- 
+	["45596"] = "\"So I says I feel like chicken tonight. Next thing, I am flat out and that thing is trying to see what my eyes taste like.\"\n - Bozzle Blastbolt", -- 
+	["45595"] = "\"For a brief time, many orcs would declare themselves 'hungry like an Orgrimmar wolf.' Some blood elves still use the phrase ironically.\"", -- 
+	["45590"] = "\"Exodar Elekk are elekk which have been anointed by O'ros, the Naaru who journeyed from Draenor to Azeroth with Velen and his followers.\"", -- 
+	["45586"] = "\"Wildhammer Fact Checker claims that this specific breed was the first type of ram domesticated by the dwarves when they settled in Dun Morogh.\"", -- 
+	["45597"] = "\"When fallen heroes are raised into undeath, so too are their horses.\"", -- 
+	["45592"] = "\"An alpha member of the herd, this kodo is a prime example of the mighty creatures which thunder through Mulgore.\"", -- 
+	["45125"] = "\"Although raised in Stormwind, this breed showed unusual aptitude for the cold weather in Icecrown.\"", -- 
+	["45591"] = "\"When a night elf's mount perishes, it is custom for the rider to keep one of the saber's great fangs as a token of remembrance.\"", -- 
+	["45725"] = "\"Argent Hippogryphs will partner with only the bravest and most battle-tested champions.\"", -- 
+
+	--3.1
+	["45801"] = "\"His skin more hard than brass was found, that sword nor spear could pierce nor wound.\"", -- 
+	["45802"] = "\"Not as shiny as the other one, but it's still a great find lads.\"\n - Brann Bronzebeard", -- 
+	["46171"] = "\"Some of Azeroth's mightiest dragons have been summoned across the veil between life and death to serve new masters with undying loyalty.\"", -- 
+	["44843"] = "\"Dragonhawks are among the deadliest known predators. They are able to spot prey from great distances, rush in, and rend with both talon and beak.\"", -- 
+	["44842"] = "\"Dragonhawks are among the deadliest known predators. They are able to spot prey from great distances, rush in, and rend with both talon and beak.\"", -- 
+	["45693"] = "\"A token of titan craftsmanship hoarded by the Old God, Yogg-Saron. Currently the single largest mechanical gnome head in Azeroth.\"", -- 
+	["46109"] = "\"Often caught by fishermen at a young age, these mounts are much more comfortable in the water than they are on land.\"", -- 
+
+	--3.0
+	["44164"] = "\"Bred specifically to honor those heroes who showed exceptional resilience and fortitude facing the dangers in Northrend.\"", -- 
+	["44083"] = "\"Rarely, a war mammoth is born stronger and more tractable than its peers. These mammoths are dubbed 'grand' and carry more than one rider to the front lines.\"", -- 
+	["44175"] = "\"Bred specifically to honor those heroes who showed significant courage and persistence facing the dangers in Northrend.\"", -- 
+	["44707"] = "\"The vrykul were the first to recognize their potential. Or maybe the second, depending on how you look at it.\"", -- 
+	["44160"] = "\"The vrykul were the first to recognize their potential. Or maybe the second, depending on how you look at it.\"", -- 
+	["43959"] = "\"Once used by giants to carry heavily armored warriors, these grand war mammoths can easily bear more than one rider of less-than-giant stature.\"", -- 
+	["44226"] = "\"Your cries of 'For the Horde!' will be much more menacing from atop a heavily armored bear that's barreling down on Alliance at top speed.\"", -- 
+	["44231"] = "\"This wild variant of the mammoth is not bred for riding. Most wooly mammoths are captured in the wild and tamed by their riders, resulting in a fierce, cunning mount.\"", -- 
+	["44690"] = "\"They are not native to Northrend, but they have adapted extremely well to the cold.\"\n - Mei Francis", -- 
+	["44224"] = "\"This formidable mount is bought with the blood of Alliance leaders, but you would have killed them for free.\"", -- 
+	["44080"] = "\"The Sons of Hodir believe that riding an ice-white mammoth will protect the rider from frostbite and snow blindness.\"", -- 
+	["44086"] = "\"At home on the narrow, icy trails of the Storm Peaks, these mammoths are the only mounts the ice giants trust to carry large loads and multiple riders.\"", -- 
+	["44077"] = "\"Sure-footed and unflappable, these dark-furred mammoths are prized for their steady temperament going into battle.\"", -- 
+	["44234"] = "\"Riders and merchants alike trust only this strong and steadfast mammoth to carry them safely across the frigid tundra.\"", -- 
+	["44230"] = "\"Directly descended from the original progenitor of the mammoth race, wooly mammoths are considered more feral and primal than their shorter-haired cousins.\"", -- 
+	["44225"] = "\"This ursine mount's swiftness is enhanced by its heavy armor, imbued with magic from Kirin Tor magi.\"", -- 
+	["44689"] = "\"The nice thing is that when they attack, blood almost never stains their feathers.\"\n - Mei Francis", -- 
+	["44223"] = "\"Killing leaders of the Horde is its own reward, but this intimidating beast is an excellent memento.\"", -- 
+	["43958"] = "\"Many ice giants claim that they have trained their favored white mammoths to trigger avalanches with their trumpeting calls.\"", -- 
+	["43961"] = "\"Due to high winds and avalanches, the Sons of Hodir recommend bringing at least two companions if venturing into the dangerous Storm Peaks.\"", -- 
+	["43956"] = "\"Normally placid beasts, these intelligent animals form a strong bond with their riders, making them loyal and fearless in battle.\"", -- 
+	["44235"] = "\"Ancient manuscripts depict merchants traveling across the frozen tundra with these colossal beasts, leading scholars to believe they are the first domesticated mounts.\"", -- 
+	["44413"] = "\"Sporting superb engineering craftsmanship, this chopper is one of the few personal vehicles on Azeroth built for two.\"", -- 
+	["44554"] = "\"Hop aboard this flying carpet to see the shining, shimmering, and splendid world of Azeroth, wonder by wonder.\"", -- 
+	["44178"] = "\"Even the Draconic Native Association tests proved inconclusive in determining if the albino drake is related to a known dragonflight.\"\n - Breanni", -- 
+	["44558"] = "\"Standard features include a sturdy imbued frostweave frame and real iceweb spider silk threading. Spare head pillow sold separately.\"", -- 
+	["43955"] = "\"You should never listen to minstrels' fancies. A dragon would never hurt a soul, unless they tried to hurt him first.\"", -- 
+	["43986"] = "\"It never pays to leave a live dragon out of the equation.\"", -- 
+	["43951"] = "\"Lost time is never found again. Oh, never mind I found it.\"\n - Chronormu", -- 
+	["43954"] = "\"But the most important rule, the rule you can never forget, no matter how much he cries, no matter how much he begs, never feed him after midnight.\"", -- 
+	["43953"] = "\"Come not between the dragon and his wrath.\"", -- 
+	["43952"] = "\"Always speak politely to an enraged dragon.\"", -- 
+	["43962"] = "\"The frost vrykul believe that wearing a necklace of polar bear claws will grant them otherworldly strength.\"", -- 
+	["44151"] = "\"The Storm Peaks! There we will find the beast strong enough to bear me into battle.\"\n Skadi the Ruthless", -- 
+	["44168"] = "\"The only reason for time is so that everything doesn't happen at once.\"", -- 
+	["40775"] = "\"Dead or alive, you're coming with me.\"", -- 
+	["41508"] = "\"Difficult to build and to maintain, these hogs more than make up for their expense through sheer cool factor.\"", -- 
 
 --Companion Pets
 	--"classic era" pets
@@ -1783,6 +1916,78 @@ LIT.ItemIdTable = {
 
 	--[""] = "\"\"", -- 
 
+	--Wrath
+	["40653"] = "\"Stinker uses his aroma to repel predators and attract cats. He's much more successful with the former than the latter.\"", -- 
+	["43698"] = "\"You wouldn't want to meet this rat in a dark alley. Or anywhere else, for that matter.\"", -- 
+	["44721"] = "\"These voracious whelps grow at an incredible rate and can devour nearly twice their weight in raw meat per day.\"", -- 
+	["44723"] = "\"Notable for its wide eyes and sassy slide.\"", -- 
+	["39973"] = "\"When it senses the impending death of a nearby creature, the skull will emit an ear-piercing cackle.\"", -- 
+	["39896"] = "\"Unlike most of Geen the gorloc's 'mysterious eggs,' this one actually contained a living thing.\"", -- 
+	["39899"] = "\"The rare albino tickbird is revered amongst the Oracles. It is seen as a sign of heavy rainstorms, good grub harvests, and hibernating wolvar.\"", -- 
+	["38658"] = "\"Vampire bats have been trained as scouts and mounts by the Forsaken of the Undercity and the Amani trolls of Zul'Aman.\"", -- 
+	["44738"] = "\"To prevent apprentices from secretly using the familiar to complete their chores, the archmagi placed the ritual required to summon the creature across the pages of several spellbooks hidden throughout Dalaran.\"", -- 
+	["39898"] = "\"The cobras of Azeroth are renowned for their fast-acting venom and swift strikes.\"", -- 
+	["44819"] = "\"This rare bear is bred for its small size and perpetually youthful appearance.\"", -- 
+	["39286"] = "\"Accidentally created when the Lich King's deathly powers raised Rimefang from undeath.\"", -- 
+	["44841"] = "\"She likes the company of friends. Seventy-five of them, to be precise.\"", -- 
+	["44983"] = "\"The strand crawler has adapted to the northern cold by hibernating under the island beaches.\"", -- 
+	["44822"] = "\"A favored companion of Kirin Tor magi, this reptile makes one wonder whether it's truly a snake or something else altogether.\"", -- 
+	["45180"] = "\"Murkimus is the most fearsome of all murloc arena warriors. And for a time, the only one.\"", -- 
+	["44794"] = "\"Spring rabbits symbolize fertility, and they love to demonstrate why.\"", -- 
+	["46767"] = "\"A fighting robot fueled by delicious red or blue electrolytes.\"", -- 
+	["48116"] = "\"This crafty raptor was born in the icy wastes of Northrend. Its harsh upbringing gives it strength when many others would perish.\"", -- 
+	["48126"] = "\"Razzashi raptors are among the cleverest predators in the jungle, making them favored by the Gurubashi trolls.\"", -- 
+	["48118"] = "\"This offspring of Takk the Leaper is incredibly agile and can maneuver through difficult environments with ease.\"", -- 
+	["48114"] = "\"The demand for this purple-skinned breed has drastically reduced the raptor population near the Wailing Caverns.\"", -- 
+	["48122"] = "\"Larger than other raptor infants, these hatchlings grow into towering reptilian beasts capable of massive devastation.\"", -- 
+	["48112"] = "\"Rarely leaves nest until maturity. Enjoys conducting pranks on the nearby Razormaw nest.\"", -- 
+	["48124"] = "\"Razormaw eggs are protected fiercely by their mothers. Their cuteness belies their inherited ferocity.\"", -- 
+	["46707"] = "\"A shy creature, the pink elekk will only make its presence known to those that have befriended it, or to anyone too intoxicated to harm it.\"", -- 
+	["48120"] = "\"This hatchling is coveted for its unique coloration. Despite Breanni's loving care, the raptor's feral nature cannot be restrained.\"", -- 
+	["46544"] = "\"Despite their smaller stature, the wolvar are some of the most aggressive creatures in Northrend. This often makes their curious nature intimidating.\"", -- 
+	["46545"] = "\"The bouncy gurloc is a distant cousin of the murloc.\"", -- 
+	["46802"] = "\"Only the rarest of murlocs is able to successfully cross dimensional barriers. Fewer still return with the kind of advanced armor and weaponry possessed by Grunty.\"", -- 
+	["49343"] = "\"Affectionate and curious, these kittens seem to find the most peculiar hiding places.\"", -- 
+	["46831"] = "\"These possessed puppets are given a semblance of life by whimsical spirits of the departed.\"", -- 
+	["49287"] = "\"Seeing these kites soaring above Northrend's shores is a clear sign that tuskarr are nearby.\"", -- 
+	["41133"] = "\"Mr. Chilly's appearance evokes a more civilized era, when duelists battled in tuxedos.\"", -- 
+	["49362"] = "\"Spawn of Onyxia, this young dragon has decided that it doesn't want to follow in its grandfathers' cataclysmic footsteps.\"", -- 
+	["44810"] = "\"He's humble, clairvoyant, and delicious with cranberry sauce.\"", -- 
+	["49665"] = "\"The pandaren monk is a fearless traveling companion, constantly training in his art... unless you offer him a drink. He considers it rude to refuse.\"", -- 
+	["49693"] = "\"In life, Kel'Thuzad betrayed the Kirin Tor and created the Cult of the Damned. In death, he serves the Scourge as the Archlich Lord of Naxxramas.\"", -- 
+	["49912"] = "\"Although small, pugs are very dangerous when provoked.\"", -- 
+	["46398"] = "\"Many have mocked this cat before battle. Their last words are usually, 'Here, kitty, kitty.'\"", -- 
+	["49646"] = "\"Found in the Firelands and the Molten Core, core hounds can trace their lineage back to the alpha male, Magmadar.\"", -- 
+	["22781"] = "\"This cub shares many traits with its relatives, but it's in a league of its own with its singing ability.\"", -- 
+	["37298"] = "\"Only heroes who have proven their valor through great acts are gifted one of these mystical serpentine creatures.\"", -- 
+	["34519"] = "\"Druids think silver pigs have a special bond with golden pigs, as both breeds appeared on Azeroth at the same time.\"", -- 
+	["34518"] = "\"This golden pig honors its ancestors by giving its allies good fortune.\"", -- 
+	["50446"] = "\"This, um, 'adorable' little guy likes to play with critters. Just don't let them get too close.\"", -- 
+	["49663"] = "\"Thorg No-Legs never paid heed to the old orc saying, 'Don't pull a wyvern's tail.'\"", -- 
+	["49662"] = "\"A gift from the Wildhammer dwarves to the heroes of the Alliance, these hatchlings are descendants of the same gryphons ridden by Falstad and his entourage into Grim Batol.\"", -- 
+	["54847"] = "\"Modeled after the huge titan prototype in Ulduar, this volatile little construct plays hard with its toys.\"", -- 
+	["54436"] = "\"Jepetto's top-selling toy this season, the bot's new blue chassis has children across Azeroth scrambling for this feisty battle bot.\"", -- 
+	["53641"] = "\"While not nearly as destructive as its original master, the Ice Lord Ahune, the frostling has been known to lob chilly snowballs at unsuspecting adventurers.\"", -- 
+	["56806"] = "\"Powerful artillery of the Terran army. The Thor is always the first one in and the last one out!\"", -- 
+	
+	--Argent Tournament
+	["44998"] = "\"Many of Stormwind's youth joined the Argent Crusade as squires, hoping to one day serve the Holy Light in battle.\"", -- 
+	["44982"] = "\"Created by a blood elf apprentice, this broom would be extremely useful if anyone could figure out how to make it stop.\"", -- 
+	["45002"] = "\"Used as a training mount for young gnomes, the Mechanopeep has none of the speed but all of the charm of its bigger brothers.\"", -- 
+	["44965"] = "\"It always wakes up dancing. What a happy little tree!\"", -- 
+	["45022"] = "\"These young orcs strive to embody the Argent Crusade's virtues: valor, strength, and integrity.\"", -- 
+	["44970"] = "\"The bears of Dun Morogh are prized for their hardiness, loyalty, and combat prowess. Their time among the dwarves does little to curb their ferocity.\"", -- 
+	["44980"] = "\"A tallstrider's speed on open ground is unrivaled, so predators rely on stealth and pack tactics when hunting them.\"", -- 
+	["45606"] = "\"This is actually three pets in one. You won't know what you'll get until you summon it!\"", -- 
+	["44973"] = "\"The volatile Durotar scorpion is a fierce desert predator. It's known for only occasionally stinging its owner.\"", -- 
+	["44974"] = "\"Unlike the polymorphed variety, trueborn sheep can be quite scary.\"", -- 
+	["44971"] = "\"Can sense an opponent's heartbeat through echolocation.\"", -- 
+	["44984"] = "\"The long-term effects of the contamination caused by the Exodar are still under observation.\"", -- 
+	["46820"] = "\"This extremely rare species of mana wyrm is prized for its unique coloration and even temperament.\"", -- 
+	["46821"] = "\"This extremely rare species of mana wyrm is prized for its unique coloration and even temperament.\"", -- 
+
+	--["PH"] = "\"PH\"", -- 
+
 --Cooking (Warcraft Cookbook)
 	--Spices and Basics
 	["17194"] = "\"With all the warmth and flavor imbued by these spices, an ordinary dish gets a little boost of holiday cheer for the feast of Winter Veil. You'll need these spices to whip up Greatfather Winter's favorite treats for his yearly visit.\"", -- Holiday Spices
@@ -1904,4 +2109,5 @@ if select(4, GetBuildInfo()) < 40000 then
 	classic["10641"] = "\"Often this plant grows along the roots supple in water.\"" -- Moonpetal Lily
 	classic["16262"] = "\"A rather large collection fish bones, some even as long as your forearm.\"" -- Nessa's Collection (was Dolanaar Recipe Book)
 	classic["2794"] = "\"Although the cover of this book is marred by scratches and caked with mud, the words 'The History of Stormwind' can still be read along its spine. The seal of the Stormwind Library is clearly stamped on the book's first page.\"" -- An Old History Book
+	classic["49636"] = "\"She has a lot in common with her mother, but she is young still.\"" -- Reins of the Onyxian Drake
 end
