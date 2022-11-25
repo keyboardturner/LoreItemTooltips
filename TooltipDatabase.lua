@@ -1230,6 +1230,14 @@ LIT.ItemIdTable = {
 	--["58281"] = "\"[PH]\"", -- Fang of Shadra
 	--[""] = "\"\"", -- 
 
+--Fishing
+	--Stormwind
+	["58809"] = "\"From the ocean waters off the coasts of Elwynn and Westfall, these delicious lobsters are often trapped in the bay of Stormwind Harbor.\"", -- Rock Lobster
+
+--Draenor
+	--Shadowmoon Valley
+	["114876"] = "\"These tasty fish feed upon the local moonshell crabs of Eventide Village.\"", -- Shadow Sturgeon
+
 --Shadowlands
 	--Bastion
 	--["178891"] = "\"[PH]\"", -- Elysian Thread

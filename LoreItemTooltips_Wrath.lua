@@ -1,5 +1,4 @@
 local LoreItemTooltips, LIT = ...
-local _dummy, core = ...; -- handles slash commands
 local match = string.match
 local strsplit = strsplit
 local logoImage = "Interface/AddOns/LoreItemTooltips/LITImage.blp"
@@ -37,9 +36,8 @@ LitDB.R, LitDB.G, LitDB.B = r, g, b;
  -- And update any UI elements that use this color...
 end
 
-local function OnTooltipSetItem(tooltip, data)
-	local _, link = TooltipUtil.GetDisplayedItem(tooltip)
-	--print(_ .. " " .. link ) -- this is for debug if things work :^)
+local function GameTooltip_OnTooltipSetItem(tooltip)
+	local _, link = tooltip:GetItem()
 	if not link then return; end
 	
 	local itemString = match(link, "item[%-?%d:]+")
@@ -74,6 +72,8 @@ local LitText = "|T" .. logoImage .. ":14|t" .. "|cffffd100Lore Item Tooltips|r:
 local function round(number, decimals)
 	return (("%%.%df"):format(decimals)):format(number)
 end
+
+local _dummy, core = ...; -- handles slash commands
 
 core.commands = {
 	["reset"] = function()
@@ -152,4 +152,5 @@ local events = CreateFrame("Frame");
 events:RegisterEvent("ADDON_LOADED");
 events:SetScript("OnEvent", core.init);
 
-TooltipDataProcessor.AddTooltipPostCall(Enum.TooltipDataType.Item, OnTooltipSetItem)
+GameTooltip:HookScript("OnTooltipSetItem", GameTooltip_OnTooltipSetItem)
+ItemRefTooltip:HookScript("OnTooltipSetItem", GameTooltip_OnTooltipSetItem)
