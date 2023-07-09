@@ -648,7 +648,23 @@ LIT.ItemIdTable = {
 	--Feralas
 	["53135"] = "\"Enriched in ancient mana, long forgotten.\"", -- Glowing Soil
 
+	--Felwood
+	["63687"] = "\"This infernal core pulsates with raw infernal power, ready to be reawakened by Shadow Council warlocks.\"", -- Kroshius' Infernal Core
+	["63522"] = "\"An ethereal manifestation of the chaotic forces that permeate Felwood, this pulsating essence contains a fragment of the Entropic Horrors' malevolent energy.\"", -- Entropic Essence
+	["63279"] = "\"Once belonging to Winna's mischievous feline companion, this weathered eartag bears the name 'Kitty' etched into its surface.\"", -- Kitty's Eartag
+	["63519"] = "\"A vile amalgamation of foul substances, it oozes with a nauseating stench that taints the air.\"", -- Crude Tarball
+
+	--Winterspring
+	["64677"] = "\"Designed to eradicate creepy crawlies of all shapes and sizes, these fumigators release a cloud of noxious vapor that sends insects scurrying in fear.\"", -- Box of Bugkill Fumigators
+	["64638"] = "\"Contained within this sturdy crate lies a seemingly ordinary boulder, but don't be fooled by its mundane appearance. As you unveil its mysteries, be prepared to witness the profound influence a simple rock can have on the world.\"", -- Boulder-in-a-Box
+
+
 	--[""] = "\"\"", -- 
+
+
+
+
+
 
 --Human
 	--Elwynn Forest
