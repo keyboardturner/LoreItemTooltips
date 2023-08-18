@@ -3,6 +3,9 @@
 <p>It's just meant to add a little bit of immersion into the game without a vast negative impact.</p>
 <p>If you've found a quest item missing flavour text, you can send it <a href="https://forms.gle/zpaspqNeWLucpQEb7">here</a>.</p>
 <p>If there's a grammar or lore mistake, you can send it <a href="https://forms.gle/qX29MHE9nTNCmAzn8">here</a>.</p>
+
+A link to my discord for addon projects and other things can be found [here](https://discord.gg/tA4rrmjPp8).
+
 <p>&nbsp;</p>
 <h3><strong><span style="text-decoration: underline;">Slash Commands</span></strong></h3>
 <p>There's 3 main slash commands:</p>
