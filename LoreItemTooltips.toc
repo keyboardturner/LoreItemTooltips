@@ -7,7 +7,7 @@
 ## SavedVariables: LitDB
 ## X-Curse-Project-ID: 463927
 ## X-WoWI-ID: 26475
-## X-Wago-ID: LvNA2R6
+## X-Wago-ID: LvNA2R6o
 
 TooltipDatabase.lua
 LoreItemTooltips.lua
