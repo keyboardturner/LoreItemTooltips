@@ -1,10 +1,13 @@
-## Interface: 100107
+## Interface: 100200
 ## Title: Lore Item Tooltips
 ## Notes: Adds lore to various quest items around the world.
 ## IconTexture: Interface/Addons/LoreItemTooltips/LITImage.blp
 ## Author: Keyboardturner
-## Version: 0.1.9
+## Version: @project-version@
 ## SavedVariables: LitDB
+## X-Curse-Project-ID: 463927
+## X-WoWI-ID: 26475
+## X-Wago-ID: LvNA2R6
 
 TooltipDatabase.lua
 LoreItemTooltips_Mainline.lua

@@ -1,9 +1,12 @@
-## Interface: 30402
+## Interface: 30403
 ## Title: Lore Item Tooltips
 ## Notes: Adds lore to various quest items around the world.
 ## Author: Keyboardturner
-## Version: 0.1.9
+## Version: @project-version@
 ## SavedVariables: LitDB
+## X-Curse-Project-ID: 463927
+## X-WoWI-ID: 26475
+## X-Wago-ID: LvNA2R6
 
 TooltipDatabase.lua
 LoreItemTooltips_Wrath.lua
