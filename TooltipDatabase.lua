@@ -697,11 +697,13 @@ LIT.ItemIdTable = {
 	["50432"] = "\"The fur is torn and ragged, oozing fluids that indicate infection.\"", -- Diseased Wolf Pelt
 	["752"] = "\"The lowest quality of cloth, these bandanas signify an equally shallow rank.\"", -- Package for Stormpike
 	["11119"] = "\"A bunch of ripe grapes, perfect for wine and consumption.\"", -- Milly's Harvest
+	["182"] = "\"A grim token of justice, obtained after dismantling the notorious Defias gang leader.\"", -- Garrick's Head
+	["7206"] = "\"A vial containing the essence of Mirror Lake's pristine waters, this sample serves as a crucial tool in uncovering the hidden secrets of a world forever changed by arcane struggles.\"", -- Mirror Lake Water Sample
 
 	--Stormwind
 	["2722"] = "\"Good for one free bottle of Dalaran Noir at the Gallina Winery.\"", -- Wine Ticket
 	["2760"] = "\"Filled with needles, shears, various threads, dyes, and buttons.\"", -- Thurman's Sewing Kit
-	["2806"] = "\"Packaged wtih an axe befitting a dwarf.\"", -- Package for Stormpike
+	["2806"] = "\"Packaged with an axe befitting a dwarf.\"", -- Package for Stormpike
 
 	--Westfall
 	["915"] = "\"Woven of fine silk and dyed red, these bandannas indicate a Defias member of higher stature.\"", -- Red Silk Bandana
@@ -738,6 +740,9 @@ LIT.ItemIdTable = {
 	--["59153"] = "\"[PH]\"", -- Fox Poop
 	--["59152"] = "\"[PH]\"", -- Pile of Leaves
 	--["59156"] = "\"[PH]\"", -- Muckdweller Gland
+	["10958"] = "\"A delicate necklace thought to be lost in the mysterious depths of Lake Everstill.\"", -- Hilary's Necklace
+	["1309"] = "\"Braving orcish onslaughts and a watery abyss, the toolbox now symbolizes resilience in the face of chaos and the invaluable partnership forged in times of dire need.\"", -- Oslow's Toolbox
+	["5534"] = "\"A simple, yet heartwarming meal packed with care.\"", -- Parker's Lunch
 
 	--Duskwood
 	["1130"] = "\"The vile toxin that comes from the fangs of the spiders of Duskwood. The dark magics pervading the land make this venom even more agonizing for its victims.\"", -- Vial of Spider Venom [Classic]
@@ -767,7 +772,7 @@ LIT.ItemIdTable = {
 	["10439"] = "\"Don't spill it!\"", -- Durnan's Scalding Mornbrew
 	["10440"] = "\"The delightful smell of Mornbrew still lingers. The mug seems well taken care for despite its heavy use.\"", -- Nori's Mug
 	["9566"] = "\"A message from Thorgas Grimson, a local hunter trainer.\"", -- Etched Rune
-	["2619"] = "\"A Report on the State of the Frostmane Trolls in the General Area of Coldridge Valley.\"", -- Grelin's Report
+	["2619"] = "\"A report on the state of the Frostmane Trolls in the general area of Coldridge Valley.\"", -- Grelin's Report
 	["7646"] = "\"For a crate full of just a couple mugs, cheeses, and stews, it's rather heavy.\"", -- Crate of Inn Supplies
 	["2999"] = "\"Filled to the brim with an assortment of spanners, wrenches, ratchets, hammers...\"", -- Steelgrill's Tools
 	--[""] = "\"already has quest text\"", -- Empty Leaden Collection Phial
@@ -793,7 +798,7 @@ LIT.ItemIdTable = {
 	["2536"] = "\"Most trog teeth are crooked and full of cavities.\"", -- Trogg Stone Tooth
 	["2606"] = "\"Carefully collected so as not to make yourself ill.\"", -- Lurker Venom
 	["2607"] = "\"The crystal shimmers and gleams in the sunlight in an enchanting way.\"", -- Mo'grosh Crystal
-	["2939"] = "\"Truly the tears of grief from these sincere, kind-heartred creatures. Just pay no attention to their diet.\"", -- Crocolisk Tear
+	["2939"] = "\"Truly the tears of grief from these sincere, kind-hearted creatures. Just pay no attention to their diet.\"", -- Crocolisk Tear
 	["2636"] = "\"These strange relics make you feel a bit on edge. Just how fragile are these?\"", -- Carved Stone Idol
 	["2713"] = "\"A grisly trophy meant to teach a lesson.\"", -- Ol' Sooty's Head 
 	["3183"] = "\"Seemingly almost torn to shreds as if it suffered frostbite.\"", -- Mangy Claw
