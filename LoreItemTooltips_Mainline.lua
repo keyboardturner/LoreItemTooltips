@@ -8,33 +8,56 @@ LitDB = LitDB or {
 	R = 1,
 	G = 0.82,
 	B = 0,
-}
+};
 
-local function ShowColorPicker(r, g, b, a, changedCallback)
-	ColorPickerFrame.hasOpacity, ColorPickerFrame.opacity = (a ~= nil), a;
-	ColorPickerFrame.previousValues = {r,g,b,a};
-	ColorPickerFrame.func, ColorPickerFrame.opacityFunc, ColorPickerFrame.cancelFunc = changedCallback, changedCallback, changedCallback;
-	ColorPickerFrame:SetColorRGB(r,g,b);
-	ColorPickerFrame:Hide(); -- Need to run the OnShow handler.
-	ColorPickerFrame:Show();
+local isMainline
+
+if WOW_PROJECT_ID == 1 then
+	isMainline = true
+else
+	isMainline = false
+end
+
+local function ShowColorPickerText(r, g, b, callbackFunc)
+	if ColorPickerFrame.SetupColorPickerAndShow then
+		local options = {
+			swatchFunc = callbackFunc,
+			opacityFunc = callbackFunc,
+			cancelFunc = callbackFunc,
+			hasOpacity = false,
+			r = r,
+			g = g,
+			b = b,
+		};
+
+		ColorPickerFrame:SetupColorPickerAndShow(options);
+	else
+		ColorPickerFrame.hasOpacity, ColorPickerFrame.opacity = false, a;
+		ColorPickerFrame.previousValues = {r,g,b};
+		ColorPickerFrame.func, ColorPickerFrame.opacityFunc, ColorPickerFrame.cancelFunc = callbackFunc, callbackFunc, callbackFunc;
+		ColorPickerFrame:SetColorRGB(r,g,b);
+		ColorPickerFrame:Hide();
+		ColorPickerFrame:Show();
+	end
 end
 
 local defR,defG,defB = 1,0.82,0;
 
 local function myColorCallback(restore)
-	local newR, newG, newB, newA; -- I forgot what to do with the alpha value but it's needed to not swap RGB values
+	local newR, newG, newB; -- I forgot what to do with the alpha value but it's needed to not swap RGB values
 	if restore then
 	 -- The user bailed, we extract the old color from the table created by ShowColorPicker.
-		newR, newG, newB, newA = unpack(restore);
+		newR = restore["r"]
+		newG = restore["g"]
+		newB = restore["b"]
 	else
 	 -- Something changed
-		newA, newR, newG, newB = OpacitySliderFrame:GetValue(), ColorPickerFrame:GetColorRGB();
+		newR, newG, newB = ColorPickerFrame:GetColorRGB();
 	end
-
- -- Update our internal storage.
-local r, g, b = newR, newG, newB;
-LitDB.R, LitDB.G, LitDB.B = r, g, b;
- -- And update any UI elements that use this color...
+	 -- Update our internal storage.
+	r, g, b = newR, newG, newB;
+	LitDB.R, LitDB.G, LitDB.B = r, g, b;
+	 -- And update any UI elements that use this color...
 end
 
 local function OnTooltipSetItem(tooltip, data)
@@ -82,7 +105,7 @@ core.commands = {
 	end,
 
     ["color"] = function()
-    	ShowColorPicker(LitDB.R, LitDB.G, LitDB.B, nil, myColorCallback);
+    	ShowColorPickerText(LitDB.R, LitDB.G, LitDB.B, myColorCallback);
     	print(LitText .. "Current values: " .. "\nRGB(0-1) - |cffff7f7f" .. round(LitDB.R,2) .. "|r, |cff7fff7f" .. round(LitDB.G,2) .. "|r, |cff7f7fff" .. round(LitDB.B,2) .. "|r\nRGB(0-255) - |cffff7f7f" .. round(LitDB.R*255) .. "|r, |cff7fff7f" .. round(LitDB.G*255) .. "|r, |cff7f7fff" .. round(LitDB.B*255) .. "|r")
 	end,
 

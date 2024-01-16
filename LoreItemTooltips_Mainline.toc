@@ -1,4 +1,4 @@
-## Interface: 100200
+## Interface: 100205
 ## Title: Lore Item Tooltips
 ## Notes: Adds lore to various quest items around the world.
 ## IconTexture: Interface/Addons/LoreItemTooltips/LITImage.blp
