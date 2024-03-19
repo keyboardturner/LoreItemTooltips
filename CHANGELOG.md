@@ -1,3 +1,7 @@
+# 0.2.3
+
+toc bump to 10.2.6
+
 # 0.2.2
 
 10.2.5 toc bump, color picker update (mainline)
