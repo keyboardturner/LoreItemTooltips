@@ -1,3 +1,7 @@
+# 0.2.7
+
+11.0.5 toc update
+
 # 0.2.6
 
 TOC updates for TWW
