@@ -1,4 +1,4 @@
-## Interface: 40401
+## Interface: 40404
 ## Title: Lore Item Tooltips
 ## Notes: Adds lore to various quest items around the world.
 ## Author: Keyboardturner
