@@ -1,4 +1,4 @@
-## Interface: 40404
+## Interface: 11507
 ## Title: Lore Item Tooltips
 ## Notes: Adds lore to various quest items around the world.
 ## Author: Keyboardturner
@@ -9,4 +9,4 @@
 ## X-Wago-ID: LvNA2R6o
 
 TooltipDatabase.lua
-LoreItemTooltips_Wrath.lua
+LoreItemTooltips_Classic.lua
