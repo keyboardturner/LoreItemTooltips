@@ -8,7 +8,10 @@ LitDB = LitDB or {
 	R = 1,
 	G = 0.82,
 	B = 0,
+	CustomTexts = {},
 };
+
+if not LitDB.CustomTexts then LitDB.CustomTexts = {} end
 
 local isMainline
 
@@ -82,7 +85,9 @@ local function OnTooltipSetItem(tooltip, data)
 		end
 	end
 
-	local itemText = LIT.ItemIdTable[itemId]
+	local customText = LitDB.CustomTexts and LitDB.CustomTexts[tostring(itemId)]
+	local itemText = customText or LIT.ItemIdTable[itemId]
+
 	if type(itemText) == "number" then
 		itemText = LIT.ItemIdTable[itemText]
 	end
@@ -104,12 +109,12 @@ core.commands = {
 		LitDB.R,LitDB.G,LitDB.B = defR,defG,defB
 	end,
 
-    ["color"] = function()
-    	ShowColorPickerText(LitDB.R, LitDB.G, LitDB.B, myColorCallback);
-    	print(LitText .. "Current values: " .. "\nRGB(0-1) - |cffff7f7f" .. round(LitDB.R,2) .. "|r, |cff7fff7f" .. round(LitDB.G,2) .. "|r, |cff7f7fff" .. round(LitDB.B,2) .. "|r\nRGB(0-255) - |cffff7f7f" .. round(LitDB.R*255) .. "|r, |cff7fff7f" .. round(LitDB.G*255) .. "|r, |cff7f7fff" .. round(LitDB.B*255) .. "|r")
+	["color"] = function()
+		ShowColorPickerText(LitDB.R, LitDB.G, LitDB.B, myColorCallback);
+		print(LitText .. "Current values: " .. "\nRGB(0-1) - |cffff7f7f" .. round(LitDB.R,2) .. "|r, |cff7fff7f" .. round(LitDB.G,2) .. "|r, |cff7f7fff" .. round(LitDB.B,2) .. "|r\nRGB(0-255) - |cffff7f7f" .. round(LitDB.R*255) .. "|r, |cff7fff7f" .. round(LitDB.G*255) .. "|r, |cff7f7fff" .. round(LitDB.B*255) .. "|r")
 	end,
 
-    ["help"] = function()
+	["help"] = function()
 		print(LitText .. "Type |cffffe880/lit|r, |cffffe880/litt|r, or |cffffe880/loreitemtooltips|r to bring up the color picker. Do |cffffe880/lit reset|r to reset the colors to the default game yellow flavor text. Special thanks to those who contributed in |cffffe880/lit credits|r!")
 	end,
 
@@ -162,13 +167,19 @@ local function HandleSlashCommands(str)
 end
 
 function core:init(event, name)
-	if (name ~= "LoreItemTooltips") then return end 
+	if (name ~= "LoreItemTooltips") then return end
+
+	if LitDB and not LitDB.CustomTexts then
+		LitDB.CustomTexts = {}
+	end
 
 	SLASH_LOREITEMTOOLTIPS1 = "/loreitemtooltips"
 	SLASH_LOREITEMTOOLTIPS2 = "/lit"
 	SLASH_LOREITEMTOOLTIPS3 = "/litt"
 	SLASH_LOREITEMTOOLTIPS4 = "/loreitemtooltip"
 	SlashCmdList.LOREITEMTOOLTIPS = HandleSlashCommands;
+	
+	_G.LoreItemTooltips_Database = LIT.ItemIdTable
 end
 
 local events = CreateFrame("Frame");

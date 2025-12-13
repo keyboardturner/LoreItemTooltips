@@ -22,4 +22,4 @@
 ## Category-zhTW: 角色扮演
 
 TooltipDatabase.lua
-LoreItemTooltips_Mainline.lua
+LoreItemTooltips.lua

@@ -2140,3 +2140,5 @@ if select(4, GetBuildInfo()) < 40000 then
 	classic["2794"] = "\"Although the cover of this book is marred by scratches and caked with mud, the words 'The History of Stormwind' can still be read along its spine. The seal of the Stormwind Library is clearly stamped on the book's first page.\"" -- An Old History Book
 	classic["49636"] = "\"She has a lot in common with her mother, but she is young still.\"" -- Reins of the Onyxian Drake
 end
+
+LoreItemTooltips_Database = LIT.ItemIdTable
