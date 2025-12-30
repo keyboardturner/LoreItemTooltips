@@ -179,7 +179,7 @@ function core:init(event, name)
 	SLASH_LOREITEMTOOLTIPS4 = "/loreitemtooltip"
 	SlashCmdList.LOREITEMTOOLTIPS = HandleSlashCommands;
 	
-	_G.LoreItemTooltips_Database = LIT.ItemIdTable
+	LoreItemTooltips_Database = LIT.ItemIdTable
 end
 
 local events = CreateFrame("Frame");
