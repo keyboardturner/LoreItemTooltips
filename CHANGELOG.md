@@ -1,3 +1,7 @@
+# 0.3.7
+
+12.0.0 toc update
+
 # 0.3.6
 
 Exposed the database via a global variable `LoreItemTooltips_Database` to allow integration with other addons.
