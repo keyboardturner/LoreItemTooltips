@@ -1,4 +1,4 @@
-## Interface: 50502
+## Interface: 20506
 ## Title: Lore Item Tooltips
 ## Notes: Adds lore to various quest items around the world.
 ## Author: Keyboardturner
