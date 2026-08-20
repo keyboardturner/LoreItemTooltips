@@ -13,13 +13,7 @@ LitDB = LitDB or {
 
 if not LitDB.CustomTexts then LitDB.CustomTexts = {} end
 
-local isMainline
-
-if WOW_PROJECT_ID == 1 then
-	isMainline = true
-else
-	isMainline = false
-end
+local isMainline = (WOW_PROJECT_ID == 1 or WOW_PROJECT_ID == WOW_PROJECT_MAINLINE)
 
 local function ShowColorPickerText(r, g, b, callbackFunc)
 	if ColorPickerFrame.SetupColorPickerAndShow then
@@ -32,10 +26,9 @@ local function ShowColorPickerText(r, g, b, callbackFunc)
 			g = g,
 			b = b,
 		};
-
 		ColorPickerFrame:SetupColorPickerAndShow(options);
 	else
-		ColorPickerFrame.hasOpacity, ColorPickerFrame.opacity = false, a;
+		ColorPickerFrame.hasOpacity, ColorPickerFrame.opacity = false, nil;
 		ColorPickerFrame.previousValues = {r,g,b};
 		ColorPickerFrame.func, ColorPickerFrame.opacityFunc, ColorPickerFrame.cancelFunc = callbackFunc, callbackFunc, callbackFunc;
 		ColorPickerFrame:SetColorRGB(r,g,b);
@@ -50,22 +43,33 @@ local function myColorCallback(restore)
 	local newR, newG, newB; -- I forgot what to do with the alpha value but it's needed to not swap RGB values
 	if restore then
 	 -- The user bailed, we extract the old color from the table created by ShowColorPicker.
-		newR = restore["r"]
-		newG = restore["g"]
-		newB = restore["b"]
+		if ColorPickerFrame.SetupColorPickerAndShow then
+			newR = restore["r"]
+			newG = restore["g"]
+			newB = restore["b"]
+		else
+			newR, newG, newB = unpack(restore)
+		end
 	else
-	 -- Something changed
+	 	-- Something changed
 		newR, newG, newB = ColorPickerFrame:GetColorRGB();
 	end
-	 -- Update our internal storage.
-	r, g, b = newR, newG, newB;
-	LitDB.R, LitDB.G, LitDB.B = r, g, b;
+	
+	-- Update our internal storage.
+	LitDB.R, LitDB.G, LitDB.B = newR, newG, newB;
 	 -- And update any UI elements that use this color...
 end
 
 local function OnTooltipSetItem(tooltip, data)
-	local _, link = TooltipUtil.GetDisplayedItem(tooltip)
+	local link
 	--print(_ .. " " .. link ) -- this is for debug if things work :^)
+	
+	if isMainline and TooltipUtil then
+		_, link = TooltipUtil.GetDisplayedItem(tooltip)
+	else
+		_, link = tooltip:GetItem()
+	end
+	
 	if not link then return; end
 	
 	local itemString = match(link, "item[%-?%d:]+")
@@ -147,16 +151,14 @@ local function HandleSlashCommands(str)
 	local path = core.commands; -- required for updating found table.
 	
 	for id, arg in ipairs(args) do
-	
 		if (#arg > 0) then --if string length is greater than 0
-			arg = arg:lower();          
+			arg = arg:lower();
 			if (path[arg]) then
-				if (type(path[arg]) == "function") then             
-					-- all remaining args passed to our function!
-					path[arg](select(id + 1, unpack(args))); 
-					return;                 
-				elseif (type(path[arg]) == "table") then                
-					path = path[arg]; -- another sub-table found!
+				if (type(path[arg]) == "function") then
+					path[arg](select(id + 1, unpack(args)));
+					return;
+				elseif (type(path[arg]) == "table") then
+					path = path[arg];
 				end
 			else
 				core.commands.help();
@@ -186,4 +188,9 @@ local events = CreateFrame("Frame");
 events:RegisterEvent("ADDON_LOADED");
 events:SetScript("OnEvent", core.init);
 
-TooltipDataProcessor.AddTooltipPostCall(Enum.TooltipDataType.Item, OnTooltipSetItem)
+if isMainline and TooltipDataProcessor then
+	TooltipDataProcessor.AddTooltipPostCall(Enum.TooltipDataType.Item, OnTooltipSetItem)
+else
+	GameTooltip:HookScript("OnTooltipSetItem", OnTooltipSetItem)
+	ItemRefTooltip:HookScript("OnTooltipSetItem", OnTooltipSetItem)
+end
