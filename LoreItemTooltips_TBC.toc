@@ -9,4 +9,4 @@
 ## X-Wago-ID: LvNA2R6o
 
 TooltipDatabase.lua
-LoreItemTooltips.lua
+LoreItemTooltips_Classic.lua
