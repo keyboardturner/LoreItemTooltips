@@ -1,3 +1,7 @@
+# 0.4.2
+
+Properly support TBC Classic clients in toc
+
 # 0.4.1
 
 12.1.0 toc update
