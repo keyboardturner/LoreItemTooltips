@@ -1,3 +1,7 @@
+# 0.4.3
+
+WoW Forever testing - This is an in-development testing version. Some things may throw errors or explode.
+
 # 0.4.2
 
 Properly support TBC Classic clients in toc
