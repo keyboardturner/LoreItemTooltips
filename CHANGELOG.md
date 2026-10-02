@@ -1,3 +1,7 @@
+# 0.4.4
+
+Fix to bindings error that was present on Forever
+
 # 0.4.3
 
 WoW Forever testing - This is an in-development testing version. Some things may throw errors or explode.

@@ -14,6 +14,7 @@ LitDB = LitDB or {
 if not LitDB.CustomTexts then LitDB.CustomTexts = {} end
 
 local isMainline = (WOW_PROJECT_ID == 1 or WOW_PROJECT_ID == WOW_PROJECT_MAINLINE)
+local isForever = (WOW_PROJECT_ID == WOW_PROJECT_CAMELOT)
 
 local function ShowColorPickerText(r, g, b, callbackFunc)
 	if ColorPickerFrame.SetupColorPickerAndShow then
@@ -188,7 +189,7 @@ local events = CreateFrame("Frame");
 events:RegisterEvent("ADDON_LOADED");
 events:SetScript("OnEvent", core.init);
 
-if isMainline and TooltipDataProcessor then
+if (isMainline or isForever) and TooltipDataProcessor then
 	TooltipDataProcessor.AddTooltipPostCall(Enum.TooltipDataType.Item, OnTooltipSetItem)
 else
 	GameTooltip:HookScript("OnTooltipSetItem", OnTooltipSetItem)
