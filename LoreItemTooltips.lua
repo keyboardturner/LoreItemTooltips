@@ -65,7 +65,7 @@ local function OnTooltipSetItem(tooltip, data)
 	local link
 	--print(_ .. " " .. link ) -- this is for debug if things work :^)
 	
-	if isMainline and TooltipUtil then
+	if (isMainline or isForever) and TooltipUtil then
 		_, link = TooltipUtil.GetDisplayedItem(tooltip)
 	else
 		_, link = tooltip:GetItem()

@@ -1,3 +1,7 @@
+# 0.4.4a
+
+Fixed small error in Forever
+
 # 0.4.4
 
 Fix to bindings error that was present on Forever
